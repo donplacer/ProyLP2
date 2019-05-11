@@ -1,0 +1,224 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+z-index: 0;
+}
+
+
+
+body{
+	background-image:url("img/god-of-war-ps4-wallpaper-03.png");
+	/*border:5px solid purple;*/
+	height: 100;
+}
+
+ header {
+    width: 100%;
+    height: 100px;
+   position: fixed;
+    color: #fff;
+	
+	top: 0;z-index: 1;
+	
+
+
+}
+
+
+/*menu principal------------------------>*/
+
+
+#contenedor {
+	
+    width: 99%;
+    
+    height: 100px;
+    display:flex;
+    justify-content:center;
+    
+z-index: 1;
+	
+	background-color: black;
+	/*border:5px solid purple;*/
+	
+	
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------/*
+
+/*baner--------------------->*/
+
+
+
+/*---------------------------------------------*/
+
+
+
+  /*2DO MENU */
+
+#navegacion{
+	
+	width: 100%;
+	height:90px;
+	
+	background: #F7B401;
+	margin-top: 30px;
+	/*border:3px solid red;*/
+
+}
+
+#navegacion ul{
+	list-style: none;
+text-align: center;
+}
+
+#menu > li{
+	position: relative;
+	display: inline-block;z-index: 1
+}
+
+#menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+
+	font-family: 'Open sans';
+	font-size:20px;
+	text-decoration: none;
+}
+
+
+#menu > li > a:hover{
+	color:#FAE800;
+	
+	
+}
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+
+	 background-color: black;
+	width: 120%;
+	visibility: hidden;
+	opacity: 1;
+
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+#menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+
+
+
+/*lado izquierdo ----------------------------*/
+
+
+
+
+
+.articulo img{width: 100%;z-index: 0}
+.articulo h4{width: 80%;text-align: center;margin: auto;}
+.articulo a{text-decoration: none;color: black;background-color: red;margin: 10px}
+
+
+
+.productos{
+	
+	/*border:1px solid purple;*/
+	width: 24.8%;
+	height: 100%;
+	
+}
+
+
+h3 strong{
+	font-size: 39px;
+	
+}
+
+
+.articulo a{
+	background-color: white;margin-top: 22px;
+	 
+}
+
+
+/*lado de derecho---------------------------------*/
+
+#derecha{width: 20%;;display: flex;flex-wrap: wrap;margin: auto}
+
+/*----------------caja 1 --------------*/
+#descarga{margin: auto;background-color: white; width: 90%; display: flex;flex-direction: column}
+
+#descarga h2{font-size: 15px;border-bottom: 2px solid #FAE800  }
+
+#descarga img{width: 90%;margin: auto;margin-top: 15px}
+
+
+/*----------------caja 2 --------------*/
+#recomendaciones{width: 90%;margin: auto; display: flex;flex-direction: column;background-color: white;margin-top: 25px}
+
+#recomendaciones h2{border-bottom: 2px solid #8E0D0F;font-size: 15px}
+
+#art{display: flex;flex-direction: column;margin-top: 10px}
+#recomendaciones article{width: 90%;display: flex;margin: auto;height: 70px;border-color: #EBEBEB}
+
+#recomendaciones img{width: 27%;}
+#recomendaciones p{font-size: 12px;}
+
+
+/*footer----------------------*/
+
+
+footer{height:10%;width: 100%;display: flex;flex-direction: column;align-items: center;border-top:0.5px solid #EBEBEB;}
+
+/*----------------caja 1 --------------*/
+
+
+
+/*----------------caja 2 --------------*/
+
+#caja{height:80%;width: 70%;margin-top: 25px;display: flex;margin-bottom:20px; font-size: 14px;}
+
+#caja article{margin-right: 2px;display: flex;flex-direction: column;flex-grow: 1;}
+
+#caja article h3{color: #F7B401; font-size: 20px;}
+
+#caja article a{text-decoration:none;margin-top: 5px;color: #515151;}
+
+ .contenedorFooter{  /*border:1px solid red;*/ background-color: #252525}
+
+#caja article a:hover { 
+ color: white;
+text-decoration: underline;
+}
+#caja article p{color: white}
+
+#social{font-size: 30px;}
+
+
+
+
