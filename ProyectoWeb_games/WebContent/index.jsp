@@ -5,8 +5,10 @@
 <html>
 <head>
 <title></title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 <link rel="stylesheet" type="text/css"
 	href="css/estilosBarraBusquedad.css">
 <link rel="stylesheet" type="text/css" href="estilosIndex.css">
@@ -42,7 +44,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 
 
-	<header>
+	<header >
 
 
 		<div id="contenedor">
@@ -77,11 +79,48 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 			</div>
 
+		</div>
 
-
-
-
-
+		<div class="div-navegacion">
+		<nav id="navegacion" >
+		<ul id="menu" >
+			<li >
+				<a class="icon-home" href=""> Inicio</a>
+					<ul class="submenu">
+					<li><a href="">Ps3</a></li>
+					<li><a href="">Ps4</a></li>
+					<li><a href="">Nintendo wii</a></li>
+					<li><a href="">Nintendo switch</a></li>
+					<li><a href="">Xbox 360</a></li>
+					</ul>
+			</li>
+			<li><a class="icon-angle-double-down" href=""> Promociones </a>
+				<ul class="submenu">
+					<li><a href="">VideoJuegos</a></li>
+					<li><a href="">Funko</a></li>
+					
+				</ul></li>
+			<li><a class="icon-angle-double-down" href="">  VideoJuegos
+			</a>
+				<ul class="submenu">
+					<li><a href="">PlayStation</a></li>
+					<li><a href="">Nintendo</a></li>
+					<li><a href="">Advance</a></li>
+					<li><a href="">Apple</a></li>
+					<li><a href="">Acer</a></li>
+				</ul></li>
+			<li><a href="">Preventas</a>
+				<ul class="submenu">
+					<li><a href="">VideoJuegos</a></li>
+					<li><a href="">Funko</a></li>
+					
+				</ul></li>
+			<li><a href="">EXCLUSIVO ONLINE</a>
+				</li>
+		</ul>
+	</nav>
+		
+		
 		</div>
 
 	</header>
@@ -131,65 +170,25 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 		</div>
 	</section>
 
-	<nav id="navegacion">
-		<ul id="menu">
-			<li><a class="icon-home" href=""> Inicio</a>
-				<ul class="submenu">
-					<li><a href="">Ps3</a></li>
-					<li><a href="">Ps4</a></li>
-					<li><a href="">Nintendo wii</a></li>
-					<li><a href="">Nintendo switch</a></li>
-					<li><a href="">Xbox 360</a></li>
-				</ul></li>
-			<li><a class="icon-angle-double-down" href=""> Categorias </a>
-				<ul class="submenu">
-					<li><a href="">Ps3</a></li>
-					<li><a href="">Ps4</a></li>
-					<li><a href="">Nintendo wii</a></li>
-					<li><a href="">Nintendo switch</a></li>
-					<li><a href="">Xbox 360</a></li>
-				</ul></li>
-			<li><a class="icon-angle-double-down" href=""> Software Pc's
-			</a>
-				<ul class="submenu">
-					<li><a href="">Hp</a></li>
-					<li><a href="">Lenovo</a></li>
-					<li><a href="">Advance</a></li>
-					<li><a href="">Apple</a></li>
-					<li><a href="">Acer</a></li>
-				</ul></li>
-			<li><a href="">Noticias</a>
-				<ul class="submenu">
-					<li><a href="">Ps3</a></li>
-					<li><a href="">Ps4</a></li>
-					<li><a href="">Nintendo wii</a></li>
-					<li><a href="">Nintendo switch</a></li>
-					<li><a href="">Xbox 360</a></li>
-				</ul></li>
-			<li><a href="">tutoriales</a>
-				<ul class="submenu">
-					<li><a href="">Ps3</a></li>
-					<li><a href="">Ps4</a></li>
-					<li><a href="">Nintendo wii</a></li>
-					<li><a href="">Nintendo switch</a></li>
-					<li><a href="">Xbox 360</a></li>
-				</ul></li>
-		</ul>
-	</nav>
+
+	<%--navegacion --%>
+
+
+
 	<div style="background-color: #EEEEEE">
 		<section id="principal">
 
 
-			<div id="div-carrusel-productos" >
+			<div id="div-carrusel-productos">
 
 				<div class="carrusel-productos">
 
 					<div class="top border-bottom ">
-							
+
 						<h3>
-							<strong class="text-monospace " >Preventas</strong>
+							<strong class="text-monospace ">Preventas</strong>
 						</h3>
-						<a  href="#" class="text-warning ">Màs Resultados</a>
+						<a href="#" class="text-warning ">Màs Resultados</a>
 
 					</div>
 
@@ -202,8 +201,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
-											<img 
-												src="img/PS4fallout.png" alt="" />
+											<img src="img/PS4fallout.png" alt="" />
 										</div>
 										<div
 											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
@@ -385,7 +383,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 					<div class="top border-bottom" style="">
 
 						<h3>
-							<strong>Preventas</strong>
+							<strong>Más vendidos</strong>
 						</h3>
 						<a href="#" class="text-warning ">Màs Resultados</a>
 
@@ -572,7 +570,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 					<div class="top border-bottom">
 
 						<h3>
-							<strong  class="text-monospace">Preventas</strong>
+							<strong class="text-monospace">Funko Exclusivos</strong>
 						</h3>
 						<a href="#" class="text-warning ">Màs Resultados</a>
 
@@ -759,10 +757,10 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 				<div class="carrusel-productos">
 
-					<div class="top border-bottom"  >
+					<div class="top border-bottom">
 
 						<h3>
-							<strong class="text-monospace">Preventas</strong>
+							<strong class="text-monospace">Promociones</strong>
 						</h3>
 						<a href="#" class="text-warning ">Màs Resultados</a>
 
@@ -879,7 +877,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 											<h5>$235,90</h5>
 										</div>
 										<button type="button" class="btn btn-outline-warning">Warning</button>
-								</div>
+									</div>
 								</div>
 							</li>
 							<li class="imagenes">
@@ -943,10 +941,10 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 				<div class="carrusel-productos">
 
-					<div class="top border-bottom" >
+					<div class="top border-bottom">
 
 						<h3>
-							<strong class="text-monospace">Preventas</strong>
+							<strong class="text-monospace">PlayStation</strong>
 						</h3>
 						<a href="#" class="text-warning ">Màs Resultados</a>
 
@@ -955,7 +953,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom" >
+								<div class="div border-bottom">
 
 
 
@@ -976,7 +974,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 
 									<div class="carrusel">
-									
+
 										<div class="div-imagen-carrusel">
 											<img src="img/PS4dance.png" alt="" />
 										</div>
@@ -990,8 +988,8 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 									</div>
 
 									<div class="carrusel">
-									<div class="div-imagen-carrusel">
-										<img src="img/PS4destiny2.png" alt="" />
+										<div class="div-imagen-carrusel">
+											<img src="img/PS4destiny2.png" alt="" />
 										</div>
 										<div
 											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
@@ -1003,65 +1001,10 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 									</div>
 
 									<div class="carrusel">
-									<div class="div-imagen-carrusel">
+										<div class="div-imagen-carrusel">
 
-										<img src="img/PS4division2.png" alt="" />
+											<img src="img/PS4division2.png" alt="" />
 										</div>
-										<div
-											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-warning">Warning</button>
-									</div>
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom">
-									<div class="carrusel">
-									<div class="div-imagen-carrusel">
-										<img src="img/PS4farcry.png" alt="" />
-</div>
-										<div
-											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-warning">Warning</button>
-									</div>
-
-									<div class="carrusel">
-									<div class="div-imagen-carrusel">
-										<img src="img/PS4fornite.png" alt="" />
-</div>
-										<div
-											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-warning">Warning</button>
-									</div>
-
-									<div class="carrusel">
-									<div class="div-imagen-carrusel">
-										<img src="img/PS4fallout.png" alt="" />
-</div>
-										<div
-											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-warning">Warning</button>
-									</div>
-
-									<div class="carrusel">
-									<div class="div-imagen-carrusel">
-										<img src="img/PS4devilMaiCry5.png" alt="" />
-</div>
 										<div
 											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
 											<a href="#">Juego PS4 </a>
@@ -1076,7 +1019,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 								<div class="div border-bottom">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
-										<img src="img/PS4devilMaiCry5.png" alt="" />
+											<img src="img/PS4farcry.png" alt="" />
 										</div>
 										<div
 											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
@@ -1088,9 +1031,9 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 									</div>
 
 									<div class="carrusel">
-									<div class="div-imagen-carrusel">
-										<img src="img/PS4dance.png" alt="" />
-</div>
+										<div class="div-imagen-carrusel">
+											<img src="img/PS4fornite.png" alt="" />
+										</div>
 										<div
 											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
 											<a href="#">Juego PS4 </a>
@@ -1101,9 +1044,9 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 									</div>
 
 									<div class="carrusel">
-									<div class="div-imagen-carrusel">
-										<img src="img/PS4fallout.png" alt="" />
-</div>
+										<div class="div-imagen-carrusel">
+											<img src="img/PS4fallout.png" alt="" />
+										</div>
 										<div
 											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
 											<a href="#">Juego PS4 </a>
@@ -1114,9 +1057,64 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 									</div>
 
 									<div class="carrusel">
-									<div class="div-imagen-carrusel">
-										<img src="img/PS4fornite.png" alt="" />
-</div>
+										<div class="div-imagen-carrusel">
+											<img src="img/PS4devilMaiCry5.png" alt="" />
+										</div>
+										<div
+											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
+											<a href="#">Juego PS4 </a>
+
+											<h5>$235,90</h5>
+										</div>
+										<button type="button" class="btn btn-outline-warning">Warning</button>
+									</div>
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom">
+									<div class="carrusel">
+										<div class="div-imagen-carrusel">
+											<img src="img/PS4devilMaiCry5.png" alt="" />
+										</div>
+										<div
+											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
+											<a href="#">Juego PS4 </a>
+
+											<h5>$235,90</h5>
+										</div>
+										<button type="button" class="btn btn-outline-warning">Warning</button>
+									</div>
+
+									<div class="carrusel">
+										<div class="div-imagen-carrusel">
+											<img src="img/PS4dance.png" alt="" />
+										</div>
+										<div
+											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
+											<a href="#">Juego PS4 </a>
+
+											<h5>$235,90</h5>
+										</div>
+										<button type="button" class="btn btn-outline-warning">Warning</button>
+									</div>
+
+									<div class="carrusel">
+										<div class="div-imagen-carrusel">
+											<img src="img/PS4fallout.png" alt="" />
+										</div>
+										<div
+											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
+											<a href="#">Juego PS4 </a>
+
+											<h5>$235,90</h5>
+										</div>
+										<button type="button" class="btn btn-outline-warning">Warning</button>
+									</div>
+
+									<div class="carrusel">
+										<div class="div-imagen-carrusel">
+											<img src="img/PS4fornite.png" alt="" />
+										</div>
 										<div
 											style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 50px;">
 											<a href="#">Juego PS4 </a>
@@ -1138,8 +1136,8 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 	<div class="contenedorFooter">
 		<footer>
-		
-			<div id="caja" style="display: flex;justify-content:space-around;">
+
+			<div id="caja" style="display: flex; justify-content: space-around;">
 
 				<%-- <article>
 					<h3>SECCIONES</h3>
@@ -1180,11 +1178,11 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 					</div>
 
 				</article>
-				
+
 				<article style="width: 10%;">
 
 					<h3>Medio de Pago:</h3>
-					<div >
+					<div>
 						<img alt="" src="img/medios-de-pago.jpg">
 					</div>
 
@@ -1196,7 +1194,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 					<h3>© MÁSGAMERS 2016</h3>
 					<p>Todos los derechos reservado</p>
 				</article>
-			
+
 			</div>
 		</footer>
 	</div>
