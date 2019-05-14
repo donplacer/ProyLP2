@@ -5,6 +5,12 @@
 <html>
 <head>
 <title></title>
+<!-- ESTILOS PARA FUENTES -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1'
+	rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Wire+One&v1'
+	rel='stylesheet' type='text/css' />
+
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -15,36 +21,20 @@
 <link rel="stylesheet" type="text/css" href="css/estilosCarrusel.css">
 <link rel="stylesheet" type="text/css"
 	href="css/estilosCarruselProductos.css">
+<!-- ESTILOS PARA MENU ANIMADO -->
+<link rel="stylesheet" type="text/css" href="css/menuAnimado.css">
+
 <link
 	href="https://file.myfontastic.com/7Y2CeESwdu83DsVFwBMsPb/icons.css"
 	rel="stylesheet">
-<script src="js/jquery-3.2.1.js"></script>
 
-
-<!-- carrusel Productos -->
-
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<meta name="viewport"
-	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-<script src="js/jquery.flexslider.js"></script>
-
-<script type="text/javascript" charset="utf-8">
-	$(window).load(function() {
-		$(".flexslider").flexslider({
-			touch : true,
-			pauseOnAction : false,
-			pauseOnHover : false
-		});
-	});
-</script>
 </head>
 
 <body>
 
 
 
-	<header >
+	<header>
 
 
 		<div id="contenedor">
@@ -81,46 +71,44 @@
 
 		</div>
 
-		<div class="div-navegacion">
-		<nav id="navegacion" >
-		<ul id="menu" >
-			<li >
-				<a class="icon-home" href=""> Inicio</a>
-					<ul class="submenu">
-					<li><a href="">Ps3</a></li>
-					<li><a href="">Ps4</a></li>
-					<li><a href="">Nintendo wii</a></li>
-					<li><a href="">Nintendo switch</a></li>
-					<li><a href="">Xbox 360</a></li>
-					</ul>
-			</li>
-			<li><a class="icon-angle-double-down" href=""> Promociones </a>
-				<ul class="submenu">
-					<li><a href="">VideoJuegos</a></li>
-					<li><a href="">Funko</a></li>
-					
-				</ul></li>
-			<li><a class="icon-angle-double-down" href="">  VideoJuegos
-			</a>
-				<ul class="submenu">
-					<li><a href="">PlayStation</a></li>
-					<li><a href="">Nintendo</a></li>
-					<li><a href="">Advance</a></li>
-					<li><a href="">Apple</a></li>
-					<li><a href="">Acer</a></li>
-				</ul></li>
-			<li><a href="">Preventas</a>
-				<ul class="submenu">
-					<li><a href="">VideoJuegos</a></li>
-					<li><a href="">Funko</a></li>
-					
-				</ul></li>
-			<li><a href="">EXCLUSIVO ONLINE</a>
-				</li>
-		</ul>
-	</nav>
-		
-		
+		<div class="div-navegacion" ">
+			<nav id="navegacion" ">
+				<ul id="menu" style="margin-left: 290px;">
+					<li><a class="icon-home" href=""> Inicio</a>
+						<ul class="submenu">
+							<li><a href="">Ps3</a></li>
+							<li><a href="">Ps4</a></li>
+							<li><a href="">Nintendo wii</a></li>
+							<li><a href="">Nintendo switch</a></li>
+							<li><a href="">Xbox 360</a></li>
+						</ul></li>
+					<li><a class="icon-angle-double-down" href=""> Promociones
+					</a>
+						<ul class="submenu">
+							<li><a href="">VideoJuegos</a></li>
+							<li><a href="">Funko</a></li>
+
+						</ul></li>
+					<li><a class="icon-angle-double-down" href=""> VideoJuegos
+					</a>
+						<ul class="submenu">
+							<li><a href="">PlayStation</a></li>
+							<li><a href="">Nintendo</a></li>
+							<li><a href="">Advance</a></li>
+							<li><a href="">Apple</a></li>
+							<li><a href="">Acer</a></li>
+						</ul></li>
+					<li><a href="">Preventas</a>
+						<ul class="submenu">
+							<li><a href="">VideoJuegos</a></li>
+							<li><a href="">Funko</a></li>
+
+						</ul></li>
+					<li><a href="">EXCLUSIVO ONLINE</a></li>
+				</ul>
+			</nav>
+
+
 		</div>
 
 	</header>
@@ -175,11 +163,57 @@
 
 
 
-	<div style="background-color: #EEEEEE">
+
+
+
+	<div id="menu-Principal">
+	<div id="menu_animado">
+	<ul id="sti-menu" class="sti-menu">
+				<li data-hovercolor="black" >
+					<a href="#" >
+					<!-- <img alt="" src="img/images/mando.png" style="width: 70%;margin: 0;"> -->
+						<h2 data-type="mText" class="sti-item">Promociones</h2>
+						<article class="opc_menu"></article>
+						<span data-type="icon" class="sti-icon sti-icon-care sti-item" ></span>
+					</a>
+				</li>
+				<li data-hovercolor="black">
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Preventas</h2>
+						 	<article class="opc_menu"></article>
+						<span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="black">
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Videojuegos</h2>
+						 	<article class="opc_menu"></article>
+						<span data-type="icon" class="sti-icon sti-icon-info sti-item"></span>
+					</a>
+				</li>
+				<li  data-hovercolor="black">
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Funko</h2>
+					 	<article class="opc_menu"></article>
+						<span   data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
+					</a>
+				</li>
+				<li  data-hovercolor="black" >
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Audifonos</h2>
+					 
+						<span    data-type="icon" class="sti-icon sti-icon-technology sti-item"></span>
+					</a>
+				</li>
+			</ul>
+			</div>
 		<section id="principal">
 
 
+			
+
 			<div id="div-carrusel-productos">
+			
 
 				<div class="carrusel-productos">
 
@@ -1199,4 +1233,36 @@
 		</footer>
 	</div>
 </body>
+
+<script src="js/jquery-3.2.1.js"></script>
+
+
+<!-- carrusel Productos -->
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<script src="js/jquery.flexslider.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+	$(window).load(function() {
+		$(".flexslider").flexslider({
+			touch : true,
+			pauseOnAction : false,
+			pauseOnHover : false
+		});
+	});
+</script>
+
+
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/jsMenu/jquery.iconmenu.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#sti-menu').iconmenu();
+	});
+</script>
 </html>

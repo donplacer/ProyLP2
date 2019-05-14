@@ -24,7 +24,7 @@
 		<%
 			// ENCABEZADO DE LA PAGINA
 		%>
-		<header>
+		<header >
 
 			<div id="encabezado">
 
@@ -105,7 +105,7 @@
 		<%
 			//  CUERPO DE LA PAGINA
 		%>
-		<div id="principal">
+		<div id="principal" style="margin-top: 30px;">
 
 			<aside >
 		

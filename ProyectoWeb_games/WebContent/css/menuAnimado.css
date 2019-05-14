@@ -1,0 +1,129 @@
+
+
+ol,ul {
+	list-style:none;
+}
+
+
+a{
+	color:#000;
+	text-decoration:none;
+}
+.clr{
+	clear:both;
+}
+
+
+h1{
+	margin:10px 0 0px 20px;
+	font-size:80px;
+	color:#000;
+	text-shadow:1px 1px 1px #fff;
+	font-family: 'Wire One', arial, serif; 
+}
+h1 span{
+	font-size:22px;
+	text-transform:uppercase;
+}
+
+
+.content{
+	width:100%;
+	position:relative;
+}
+
+
+
+/*Sliding Text and Icon Menu Style*/
+
+.sti-menu{
+margin: 0;
+display: flex;
+margin-left: 270px;
+
+		
+}
+.sti-menu li{
+	float:left;
+	width:200px;
+	height:210px;
+	margin:1px;
+	
+}
+.sti-menu li a{
+	display:block;
+	overflow:hidden;
+	background:#FFAD00;
+	text-align:center;
+	height:100%;
+	width:100%;
+	position:relative;
+	
+		
+}
+.sti-menu li a h2{
+	color:#000;
+	font-family: 'Wire One', arial, serif; 
+	font-size:42px;
+	font-weight:bold;
+	text-transform:uppercase;
+	position:absolute;
+	padding:10px;
+	width:180px;
+	top:140px;
+	left:0px;
+	text-shadow: 0px 1px 1px black;
+}
+.sti-menu li a h3{
+	font-family: Baskerville, "Hoefler Text", Garamond, "Times New Roman", serif; 
+	font-size:18px;
+	font-style:italic;
+	color: #111;
+	position:absolute;
+	top:248px;
+	left:0px;
+	width:180px;
+	padding:10px;
+}
+.sti-icon{
+	width:200px;
+	height:100px;
+	position:absolute;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	left:22px;
+	top:30px;
+	
+}
+.sti-icon-care{
+		
+	background-image:url(../img/images/promo.png);
+	
+}
+.sti-icon-alternative{
+	background-image:url(../img/images/temporizador.png);
+}
+.sti-icon-family{
+	background-image:url(../img/images/temporizador.png);
+}
+.sti-icon-info{
+	background-image:url(../img/images/mando5.png);
+}
+.sti-icon-technology{
+	background-image:url(../img/images/technology.png);
+}
+
+.sti-icon-family{
+	background-image: url(../img/images/funkosOriginal.png);
+	
+	
+
+}
+
+
+.sti-icon-technology{
+	background-image: url(../img/images/audifonosOriginal.png);
+	
+	
+}
