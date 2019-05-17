@@ -5,15 +5,16 @@
 <html>
 <head>
 <title></title>
-
+<!-- ESTILOS BARRA BUSQUEDA -->
 <link rel="stylesheet" type="text/css"
 	href="css/estilosBarraBusquedad.css">
-
+<!-- ENLACCE PARA ICONOS -->
 <link
 	href="https://file.myfontastic.com/7Y2CeESwdu83DsVFwBMsPb/icons.css"
 	rel="stylesheet">
+<!-- ESTILOS PARA PAGINA 1 -->
 <link rel="stylesheet" type="text/css" href="css/estilosPagina1.css">
-<script src="js/jquery-3.2.1.js"></script>
+
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 		<%
 			// ENCABEZADO DE LA PAGINA
 		%>
-		<header >
+		<header>
 
 			<div id="encabezado">
 
@@ -107,34 +108,35 @@
 		%>
 		<div id="principal" style="margin-top: 30px;">
 
-			<aside >
-		
-		<div id="nav_categorias">
-				<div id="titulo_nav_izq">
-					<h2>Titulo</h2>
-					<h3>subtitulo 2</h3>
-				</div>
-				<div id="nav_izq">
-					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">Archivos</a></li>
-						<li><a href="">Enlaces</a></li>
-						<li><a href="">Acerca de</a></li>
-					</ul>
-				</div>
+			<!-- LADO IZQUIERDO DEL CUERPO  -->
+			<aside>
+
+				<div id="nav_categorias">
+					<div id="titulo_nav_izq">
+						<h2>Titulo</h2>
+						<h3>subtitulo 2</h3>
+					</div>
+					<div id="nav_izq">
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">Archivos</a></li>
+							<li><a href="">Enlaces</a></li>
+							<li><a href="">Acerca de</a></li>
+						</ul>
+					</div>
 				</div>
 			</aside>
 
-
+			<!-- LADO CENTRAL DEL CUERPO -->
 			<section id="contenedorPrincipal">
 
 				<div id="articulos">
-				
-				<div id="titulo_articulo">
-					<h2>Titulo</h2>
-					
-				</div>
-				
+
+					<div id="titulo_articulo">
+						<h2>Titulo</h2>
+
+					</div>
+
 					<div class="articulo">
 
 
@@ -169,22 +171,22 @@
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
 						</div>
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
 						</div>
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
 						</div>
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg"  >
 						</div>
 
 					</div>
@@ -195,48 +197,22 @@
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
 						</div>
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
 						</div>
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
 						</div>
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
-						</div>
-					</div>
-
-
-					<div class="articulo">
-
-
-
-
-						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
-						</div>
-
-
-						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
-						</div>
-
-
-						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
-						</div>
-
-
-						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
 						</div>
 					</div>
 
@@ -247,22 +223,48 @@
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
 						</div>
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg">
 						</div>
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
 						</div>
 
 
 						<div class="productos">
-							<img alt="" src="img/imgProductos.jpg" style="height: 95%;">
+							<img alt="" src="img/imgProductos.jpg" >
+						</div>
+					</div>
+
+
+					<div class="articulo">
+
+
+
+
+						<div class="productos">
+							<img alt="" src="img/imgProductos.jpg" >
+						</div>
+
+
+						<div class="productos">
+							<img alt="" src="img/imgProductos.jpg" >
+						</div>
+
+
+						<div class="productos">
+							<img alt="" src="img/imgProductos.jpg" >
+						</div>
+
+
+						<div class="productos">
+							<img alt="" src="img/imgProductos.jpg">
 						</div>
 					</div>
 				</div>
@@ -334,4 +336,7 @@
 		</div>
 	</div>
 </body>
+
+<!-- SCRIPT PARA USAR JQUERERY -->
+<script src="js/jquery-3.2.1.js"></script>
 </html>
