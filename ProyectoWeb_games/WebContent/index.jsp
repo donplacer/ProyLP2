@@ -187,7 +187,7 @@
 				</li>
 				<li  data-hovercolor="black">
 					<a href="#">
-						<h2 data-type="mText" class="sti-item">Funko</h2>
+						<h2 data-type="mText" class="sti-item">Funk</h2>
 					 	
 						<span   data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
 					</a>
