@@ -1,4 +1,10 @@
+	#menu-Principal{background-color: #EEEEEE;width: 100%;display: flex;flex-direction: column;}
 
+
+#menu_animado{width: 100%;background-color:#FFAD00;margin-top: 2px;}
+
+
+.opc_menu{width: 80%;border-right: 1px solid black;height: 120px;margin-top: 25px;margin-left: 25px}
 
 ol,ul {
 	list-style:none;
@@ -39,7 +45,7 @@ h1 span{
 .sti-menu{
 margin: 0;
 display: flex;
-margin-left: 270px;
+justify-content: center;
 
 		
 }
@@ -64,7 +70,7 @@ margin-left: 270px;
 .sti-menu li a h2{
 	color:#000;
 	font-family: 'Wire One', arial, serif; 
-	font-size:42px;
+	font-size:35px;
 	font-weight:bold;
 	text-transform:uppercase;
 	position:absolute;
@@ -98,24 +104,22 @@ margin-left: 270px;
 }
 .sti-icon-care{
 		
-	background-image:url(../img/images/promo.png);
+	background-image:url(../img/imagenesNavegacion/promo.png);
 	
 }
 .sti-icon-alternative{
-	background-image:url(../img/images/temporizador.png);
+	background-image:url(../img/imagenesNavegacion/temporizador.png);
 }
-.sti-icon-family{
-	background-image:url(../img/images/temporizador.png);
-}
+
 .sti-icon-info{
-	background-image:url(../img/images/mando5.png);
+	background-image:url(../img/imagenesNavegacion/mando5.png);
 }
 .sti-icon-technology{
-	background-image:url(../img/images/technology.png);
+	background-image:url(../img/imagenesNavegacion/technology.png);
 }
 
 .sti-icon-family{
-	background-image: url(../img/images/funkosOriginal.png);
+	background-image: url(../img/imagenesNavegacion/funkosOriginal.png);
 	
 	
 

@@ -12,7 +12,7 @@
 #body {
 	background-color: #F0F3F4;
 	width: 100%;
-	border: 1px solid red;
+	
 }
 
 #encabezado {
@@ -21,6 +21,9 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+
+
 
 /*-----------------------------> ESTILOS PARA MENU NAVEGACION Y SUB MENU ---------------------------------------------------------*/
 #navegacion {
@@ -49,7 +52,7 @@
 }
 
 #menu  li  a:hover {
-	color: #FAE800;
+	color: #FFC107;
 	transition: all .3s;
 }
 
@@ -88,20 +91,16 @@
 
 
 /*---------------------------------------- CUEPO  PRINCIPAL ---------------------*/
-#principal {
-	
-	width: 90%;
-	display: flex;
-	margin: auto;
-	
-}
+.div-principal{display: flex;justify-content: center;width: 100%;height: 100%;border:1px solid aqua;}
+#principal{flex-direction: row;height:90%;width: 60%;display: flex;
+ /*background-image: url(img/573739.jpg)*/ background-color:#EEEEEE;border:1px solid red; }
 
 /*lado izquierdo ----------------------------*/
 aside {
 	width: 20%;
 	display: flex;
 	flex-direction: column;
-
+	
 	background-color: white;
 }
 
@@ -110,14 +109,14 @@ aside {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 85px;
+	margin-top: 60px;
 	
 }
 
 #titulo_nav_izq {
 	width: 80%;
 	height: 75px;
-	margin-top: 55px;
+	
 	border-bottom: 1px solid #D1D1D1;
 
 }
@@ -184,36 +183,74 @@ aside {
 }
 
 /*- -----------------CAJA DE TODOS LOS ARTICULOS ------------ -------------------------*/
-#articulos {
+.articulos {
 	width: 100%;
 	display: flex;
-	margin-top: 90px;
+	
 	flex-direction: column;
 	align-items: center;
-	border-left: 1px solid #d1d1d1;
+	
+	height: 100%;
+	
 	
 }
 
 
 /*---------------- CAJA DE ARTICULOS EN FILA DE 4  ---------------------*/
-.articulo {
+.articulo-Principal {
 	
 	width: 98%;
-	
+
 	height: 350px;
 	margin-bottom: 50px;
 
 	display: flex;
 	flex-direction: row;
-	justify-content: center
+	justify-content: center;
+
 }
 
 /* IMAGENES DE LOS PRODUCTOS */
-.articulo img {
-	width: 100%;
+.articulo {
+	width:25%;
+	height: 99%;
+border: 0.5px solid #DBF4ED;
+border-top: 0px;
+/*-webkit-border-radius:3px;
+-moz-border-radius:3px;*/
+display: flex;
+flex-direction: column;
+text-align: center;
+
+
+
+background-color: #FFFFFF;
 
 }
 
+.articulo:hover{
+
+box-shadow:inset 0px 1px 6px 1px  #E0E0E0;
+
+
+}
+
+.imagenes-carrusel-Producto{
+	width: 50%;
+	height: 82%;
+	
+	margin-top: 28px;
+
+
+
+
+-webkit-transition:all .9s ease; /* Safari y Chrome */
+-moz-transition:all .9s ease; /* Firefox */
+-o-transition:all .9s ease; /* IE 9 */
+-ms-transition:all .9s ease; /* Opera */
+
+
+}
 
 /*   CAJAS DE CADA PRODUCTO -------------------*/
 .productos {
@@ -254,7 +291,7 @@ footer img {
 }
 
 #caja article h3 {
-	color: #FAE800;
+	color: #FFC107;
 }
 
 #caja article a {
