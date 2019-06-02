@@ -1,14 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:400);
 
 
-
-
-.contenedorNav{
-
-	height: 100px; display: flex; 
-	flex-direction: row; 
-	justify-content: space-between;
-	width: 100%; 
+#contenedor {
+	
+    width: 100%;
+    
+    height: 70%;
+    display:flex;
+    justify-content:center;
+    
+z-index: 1;
+	
+	background-color: black;
 	
 	
 	
@@ -19,8 +22,32 @@
 	width: 98%;
 	display: flex;
 	justify-content: center;
+	flex-direction: row; 
+	
+
+}
+
+.contenedorNav{
+
+	height: 100%; display: flex; 
+	
+	justify-content:space-between;
+	width: 90%; 
 	
 	
+}
+
+.contenedorNav img{
+
+	width: 100px;
+	height: 90%;
+	
+}
+
+.img-carrito{
+	margin-top:20px;
+	width: 59px;
+	height: 65%;
 }
 
 .Contenedor-Busquedad:before,
@@ -92,7 +119,7 @@
 	margin: 0;
 	padding: 0 10px;
 	text-shadow: 0 -1px 0 #000;
-	width: 400px;
+	width: 48%;
 }
 
 .ie .Contenedor-Busquedad input {
@@ -162,7 +189,7 @@
 	padding: 0;
 	position: relative;
 	text-shadow: 0 -1px 0 #000;
-	width: 80px;
+	width: 10%;
 }	
 
 .Contenedor-Busquedad button:hover,
