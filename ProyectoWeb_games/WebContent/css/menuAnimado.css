@@ -1,7 +1,7 @@
 	#menu-Principal{background-color: #EEEEEE;width: 100%;display: flex;flex-direction: column;}
 
 
-#menu_animado{width: 100%;background-color:#FFAD00;margin-top: 2px;}
+#menu_animado{width: 100%;height:200px;background-color:#FFAD00;margin-top: 2px;display: flex; justify-content: center;}
 
 
 .opc_menu{width: 80%;border-right: 1px solid black;height: 120px;margin-top: 25px;margin-left: 25px}
@@ -46,18 +46,27 @@ h1 span{
 margin: 0;
 display: flex;
 justify-content: center;
+width:100%;
+height:98%;
 
 		
 }
 .sti-menu li{
 	float:left;
-	width:200px;
-	height:210px;
-	margin:1px;
+		min-width:110px;
+		width:210px;
+
+
 	
+	height:100%;
+	margin:1px;
+	display: flex;
+	justify-content: center;
+
 }
 .sti-menu li a{
-	display:block;
+	display;flex;
+	justify-content:center;
 	overflow:hidden;
 	background:#FFAD00;
 	text-align:center;
@@ -65,21 +74,10 @@ justify-content: center;
 	width:100%;
 	position:relative;
 	
+	
 		
 }
-.sti-menu li a h2{
-	color:#000;
-	font-family: 'Wire One', arial, serif; 
-	font-size:35px;
-	font-weight:bold;
-	text-transform:uppercase;
-	position:absolute;
-	padding:10px;
-	width:180px;
-	top:140px;
-	left:0px;
-	text-shadow: 0px 1px 1px black;
-}
+
 .sti-menu li a h3{
 	font-family: Baskerville, "Hoefler Text", Garamond, "Times New Roman", serif; 
 	font-size:18px;
@@ -91,19 +89,38 @@ justify-content: center;
 	width:180px;
 	padding:10px;
 }
+
+@media (min-width:555px){
 .sti-icon{
-	width:200px;
+	min-width:100px;
+	width:150px;
 	height:100px;
 	position:absolute;
 	background-position:top left;
 	background-repeat:no-repeat;
 	background-color:transparent;
-	left:22px;
+	left:30px;
 	top:30px;
 	
 }
+
+
+}
+.sti-menu li a h2{
+	color:#000;
+	font-family: 'Wire One', arial, serif; 
+	font-size:35px;
+	font-weight:bold;
+	text-transform:uppercase;
+	position:absolute;
+	
+	width:100%;
+	top:140px;
+	
+	text-shadow: 0px 1px 1px black;
+}
 .sti-icon-care{
-		
+	
 	background-image:url(../img/imagenesNavegacion/promo.png);
 	
 }
