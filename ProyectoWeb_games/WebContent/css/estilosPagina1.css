@@ -1,320 +1,374 @@
 @charset "ISO-8859-1";
-
 * {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+
 /*--------------------------------------> ENCABEZADO <--------------------------------------------------*/
+
 #body {
-	background-color: #F0F3F4;
-	width: 100%;
-	
+    background-color: #F0F3F4;
+    width: 100%;
 }
 
 #encabezado {
-	width: 100%;
-	background-color: #000000;
-	display: flex;
-	justify-content: space-between;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
 }
-
-
 
 
 /*-----------------------------> ESTILOS PARA MENU NAVEGACION Y SUB MENU ---------------------------------------------------------*/
+
 #navegacion {
-	width: 100%;
-	background-color: black;
+    width: 100%;
+    background-color: black;
 }
 
 #navegacion ul {
-	list-style: none;
-	text-align: center;
+    list-style: none;
+    text-align: center;
 }
 
 #menu>li {
-	position: relative;
-	display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 #menu>li>a {
-	display: block;
-	padding: 15px 20px;
-	color: white;
-	font-family: "Homer Simpson", cursive;
-	font-size: 17px;
-	font-weight: bold;
-	text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-family: "Homer Simpson", cursive;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-#menu  li  a:hover {
-	color: #FFC107;
-	transition: all .3s;
+#menu li a:hover {
+    color: #FFC107;
+    transition: all .3s;
 }
 
 #navegacion:hover {
-	box-shadow: 0px 15px 20px 1px #E0E0E0;
+    box-shadow: 0px 15px 20px 1px #E0E0E0;
 }
 
+
 /*------- SUBMENU---*/
+
 .submenu {
-	position: absolute;
-	background-color: #000000;
-	width: 120%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
+    position: absolute;
+    background-color: #000000;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
 }
 
 .submenu li a {
-	display: block;
-	padding: 15px;
-	color: #696868;
-	font-family: "Homer Simpson", cursive;
-	font-size: 14px;
-	text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: #696868;
+    font-family: "Homer Simpson", cursive;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .submenu li a:hover {
-	color: #A6A6A6;
+    color: #A6A6A6;
 }
 
 #menu li:hover .submenu {
-	visibility: visible;
-	opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
-
 
 
 /*---------------------------------------- CUEPO  PRINCIPAL ---------------------*/
-.div-principal{display: flex;justify-content: center;width: 100%;height: 100%;border:1px solid aqua;}
-#principal{flex-direction: row;height:90%;width: 60%;display: flex;
- /*background-image: url(img/573739.jpg)*/ background-color:#EEEEEE;border:1px solid red; }
+
+#principal {
+    margin: auto;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    /*background-image: url(img/573739.jpg)*/
+    border: 1px solid blue;
+}
+
 
 /*lado izquierdo ----------------------------*/
+
 aside {
-	width: 20%;
-	display: flex;
-	flex-direction: column;
-	
-	background-color: white;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
 
 #nav_categorias {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 60px;
-	
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
 }
 
 #titulo_nav_izq {
-	width: 80%;
-	height: 75px;
-	
-	border-bottom: 1px solid #D1D1D1;
-
+    width: 80%;
+    height: 75px;
+    border-bottom: 1px solid #D1D1D1;
 }
 
 #nav_izq {
-	width: 80%;
-	margin-top: 25px;
+    width: 80%;
+    margin-top: 25px;
 }
 
 #nav_izq ul {
-	list-style-type: none;
-	
-	
-	
-	font-family: Arial, sans-serif;
-	font-size: 11pt;
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
 }
 
 #nav_izq ul li {
-	background-color: white;
-	margin-top: 2px;
-	width: 100%;
-	transition: width 0.5s;
-	margin-top: 10px;
+    background-color: white;
+    margin-top: 2px;
+    width: 100%;
+    transition: width 0.5s;
+    margin-top: 10px;
 }
 
 #nav_izq ul li a {
-	text-decoration: none;
-	color: black;
-	display: block;
-	padding: 10px 10px 10px 20px;
-	transition: width 1s;
-	transition: margin-left 1s;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 10px 10px 20px;
+    transition: width 1s;
+    transition: margin-left 1s;
 }
 
 #nav_izq ul li a:hover {
-	
-	color: black;
-	margin-left: 5px;
-	box-shadow: 5px 6px 5px black;
+    color: black;
+    margin-left: 5px;
+    box-shadow: 5px 6px 5px black;
 }
 
 #nav_izq ul li:hover {
-	width: 105%;
-	
+    width: 105%;
 }
 
+
 /*-------------------------------------------------LADO CENTRAL DEL CUERPO ----------------------------*/
+
 #contenedorPrincipal {
-	width: 80%;
-	display: flex;
-	background-color: white
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
 
 
 /*----------------------------- TITULO DEL CUERPO CENTRAL --------------------*/
+
 #titulo_articulo {
-	
-	width: 95%;
-	height: 95px;
-	font-size: 27px;
-	display: flex;
-	align-items: center
+    width: 95%;
+    height: 95px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
 }
 
+
 /*- -----------------CAJA DE TODOS LOS ARTICULOS ------------ -------------------------*/
+
 .articulos {
-	width: 100%;
-	display: flex;
-	
-	flex-direction: column;
-	align-items: center;
-	
-	height: 100%;
-	
-	
+    width: 98%;
+    height: 350px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
 /*---------------- CAJA DE ARTICULOS EN FILA DE 4  ---------------------*/
-.articulo-Principal {
-	
-	width: 98%;
 
-	height: 350px;
-	margin-bottom: 50px;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-
-}
 
 /* IMAGENES DE LOS PRODUCTOS */
+
+.div-imagen-carrusel {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.div-contenido-carrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+}
+
+.imagenes-carrusel-Producto {
+    width: 50%;
+    height: 80%;
+    margin-top: 28px;
+}
+
+.imagenes-carrusel-Producto:hover {
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+    transform: scale(1.10);
+}
+
 .articulo {
-	width:25%;
-	height: 99%;
-border: 0.5px solid #DBF4ED;
-border-top: 0px;
-/*-webkit-border-radius:3px;
+    width: 25%;
+    height: 99%;
+    border: 0.5px solid #DBF4ED;
+    /*-webkit-border-radius:3px;
 -moz-border-radius:3px;*/
-display: flex;
-flex-direction: column;
-text-align: center;
-
-
-
-background-color: #FFFFFF;
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FFFFFF;
 }
 
-.articulo:hover{
-
-box-shadow:inset 0px 1px 6px 1px  #E0E0E0;
-
-
+.articulo:hover {
+    box-shadow: inset 0px 1px 6px 1px #E0E0E0;
 }
 
-.imagenes-carrusel-Producto{
-	width: 50%;
-	height: 82%;
-	
-	margin-top: 28px;
-
-
-
-
--webkit-transition:all .9s ease; /* Safari y Chrome */
--moz-transition:all .9s ease; /* Firefox */
--o-transition:all .9s ease; /* IE 9 */
--ms-transition:all .9s ease; /* Opera */
-
-
+.imagenes-carrusel-Producto {
+    width: 50%;
+    height: 82%;
+    margin-top: 28px;
 }
+
 
 /*   CAJAS DE CADA PRODUCTO -------------------*/
-.productos {
-	border: 1px solid purple;
-	width: 25%;
-	
-}
+
 
 /*--------------------------------------------- FOOTER ----------------------*/
-footer {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
+
+#contenedorF {
+    width: 100%;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 }
+
 
 /*----------------caja 1 --------------*/
-footer img {
-	width: 260px;
-	margin-top: 55px;
+
+#contenedorF img {
+    width: 260px;
+    margin-top: 55px;
 }
+
 
 /*----------------caja 2 --------------*/
-#caja {
-	width: 60%;
-	margin-top: 40px;
-	display: flex;
-	margin-bottom: 105px;
-	font-size: 14px;
+
+#caja2_footer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
 }
 
-#caja article {
-	margin-right: 2px;
-	display: flex;
-	flex-direction: column;
-	flex-grow: 2;
+.cf {
+    width: 20%;
+    margin-right: 2px;
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    border: 1px solid red;
 }
 
-#caja article h3 {
-	color: #FFC107;
+.cf h3 {
+    font-size: 17px;
+    color: #FFC107;
 }
 
-#caja article a {
-	text-decoration: none;
-	margin-top: 4px;
-	color: #515151;
+.cf h5 {
+    font-size: 14px;
+    color: #515151
 }
 
-#contenedorFooter {
-	
-	background-color: #252525
+.cf a {
+    border: 1px solid green;
+    text-decoration: none;
+    color: #515151;
 }
 
-#caja article a:hover {
-	color: white;
-
+.cf a:hover {
+    color: white;
 }
 
-#caja article p {
-	color: white;
+.cf p {
+    color: white;
 }
 
 #social {
-	font-size: 30px;
-	margin-top: 15px
+    border: 1px solid red;
+}
+
+@media screen and (max-width:415px) {
+    #principal {
+        width: 100%;
+        height: auto;
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        display: flex;
+    }
+    #contenedorPrincipal {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid aqua;
+    }
+    .articulos {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .articulo {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    #caja2_footer {
+        flex-direction: column;
+       
+    }
+    .cf {
+        width: 100%;
+        flex-direction: column;
+       
+    }
+    .cf a {
+        font-size: 7px
+    }
 }
