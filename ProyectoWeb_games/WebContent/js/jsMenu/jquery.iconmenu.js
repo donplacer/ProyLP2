@@ -24,6 +24,7 @@
 						defaultTextColor	: '#44D62D',
 						// default bg color (same defined in the css)
 						defaultBgColor		: '#111111'
+
 					};
 					
 					return this.each(function() {
