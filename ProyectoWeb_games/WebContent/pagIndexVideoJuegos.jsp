@@ -410,7 +410,7 @@
 
 
                     <article class="cf">
-                        <h3>© GAME CM 2019</h3>
+                        <h3>© GAMES CM 2019</h3>
                         <p>Todos los derechos reservado</p>
                     </article>
                 </div>
