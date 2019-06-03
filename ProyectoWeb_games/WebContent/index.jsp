@@ -1252,7 +1252,7 @@
 
 
 
-		<footer class="contenedorFooter">
+		<footer id="contenedorFooter">
 
 			<div id="caja" style="display: flex; justify-content: space-around;">
 
