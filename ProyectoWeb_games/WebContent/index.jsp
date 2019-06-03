@@ -163,12 +163,12 @@
 		<div id="menu_animado">
 			<ul id="sti-menu" class="sti-menu">
 				<li data-hovercolor="black"><a href="#"> <!-- <img alt="" src="img/images/mando.png" style="width: 70%;margin: 0;"> -->
-						<h2 data-type="mText" class="sti-item">Promociones</h2>
+						<h2 data-type="mText" class="sti-item">Promocionesd</h2>
 						<article class="opc_menu"></article> <span data-type="icon"
 						class="sti-icon sti-icon-care sti-item"></span>
 				</a></li>
 				<li data-hovercolor="black" class="Preventas"><a href="#">
-						<h2 data-type="mText" class="sti-item">Preventas</h2>
+						<h2 data-type="mText" class="sti-item">Preventasdasdasdas</h2>
 						<article class="opc_menu"></article> <span data-type="icon"
 						class="sti-icon sti-icon-alternative sti-item"></span>
 				</a></li>
@@ -206,9 +206,9 @@
 					<div class="top border-bottom " >
 
 						<h3>
-							<strong class="text-monospace ">Preventas</strong>
+							<strong class="text-monospace ">Preventass</strong>
 						</h3>
-						<a href="#" class="text-warning ">Màs Resultados</a>
+						<a href="#" >Màs Resultados</a>
 
 					</div>
 
@@ -230,7 +230,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class=" btn btn-outline-warning">AGREGAR
+										<button type="button" class=" btn btn-outline-success"  >AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -248,7 +248,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -263,7 +263,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -279,7 +279,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -296,7 +296,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -313,7 +313,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -328,7 +328,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -344,7 +344,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -362,7 +362,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -376,7 +376,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -392,7 +392,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -408,7 +408,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -426,7 +426,7 @@
 						<h3>
 							<strong>Más vendidos</strong>
 						</h3>
-						<a href="#" class="text-warning ">Màs Resultados</a>
+						<a href="#" >Màs Resultados</a>
 
 					</div>
 
@@ -447,7 +447,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -464,7 +464,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -479,7 +479,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -494,7 +494,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -511,7 +511,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -526,7 +526,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -541,7 +541,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -556,7 +556,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -574,7 +574,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -588,7 +588,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -603,7 +603,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -618,7 +618,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -634,7 +634,7 @@
 						<h3>
 							<strong class="text-monospace">Funko Exclusivos</strong>
 						</h3>
-						<a href="#" class="text-warning ">Màs Resultados</a>
+						<a href="#" >Màs Resultados</a>
 
 					</div>
 
@@ -655,7 +655,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -672,7 +672,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -686,7 +686,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -700,7 +700,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -718,7 +718,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -732,7 +732,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -746,7 +746,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -760,7 +760,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -777,7 +777,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -791,7 +791,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -805,7 +805,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -819,7 +819,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -836,7 +836,7 @@
 						<h3>
 							<strong class="text-monospace">Promociones</strong>
 						</h3>
-						<a href="#" class="text-warning ">Màs Resultados</a>
+						<a href="#" >Màs Resultados</a>
 
 					</div>
 
@@ -855,7 +855,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -869,7 +869,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -884,7 +884,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -899,7 +899,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -918,7 +918,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -933,7 +933,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -948,7 +948,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -963,7 +963,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -981,7 +981,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -995,7 +995,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1010,7 +1010,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1025,7 +1025,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -1041,7 +1041,7 @@
 						<h3>
 							<strong class="text-monospace">PlayStation</strong>
 						</h3>
-						<a href="#" class="text-warning ">Màs Resultados</a>
+						<a href="#" >Màs Resultados</a>
 
 					</div>
 
@@ -1063,7 +1063,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1081,7 +1081,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1096,7 +1096,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1112,7 +1112,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -1129,7 +1129,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1144,7 +1144,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1159,7 +1159,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1174,7 +1174,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -1191,7 +1191,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1206,7 +1206,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1221,7 +1221,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -1236,7 +1236,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class="btn btn-outline-warning">AGREGAR
+										<button type="button" class="btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 								</div>
@@ -1252,69 +1252,51 @@
 
 
 
-		<footer id="contenedorFooter">
+	<footer>
+            <div id="contenedorF">
 
-			<div id="caja" style="display: flex; justify-content: space-around;">
-
-				<%-- <article>
-					<h3>SECCIONES</h3>
-
-					<a id="unmuteButton" href="">INICIO</a> <a href="">PC</a> <a
-						href="">NINTENDO</a> <a href="">PLAYSTATION</a> <a href="">XBOX</a>
-					<a href="">VIDEOS</a> <a href="">E-SPORTS</a> <a href="">TECNOLOGÍA</a>
-					<a href="">OCIO</a>
-				</article>
---%>
-
-				<article>
-
-					<h3>Nosotros:</h3>
-
-					<a href="">QUIÉNES SOMOS</a> <a href="">STAFF</a> <a href="">CONTACTO</a>
-
-				</article>
-
-				<article>
-
-					<h3>Secciones:</h3>
-					<a href=""> TÉRMINOS Y CONDICIONES</a> <a href="">PUBLICIDAD</a> <a
-						href="">SIGUENOS</a>
-
-				</article>
+                <div id="caja2_footer">
 
 
 
-				<article>
 
-					<h3>Siguenos:</h3>
-					<div id="social">
-						<a class="icon-facebook-square"
-							href="https://www.facebook.com/GamesCM.SRL/"></a> <a
-							class="icon-twitter-square" href="https://twitter.com/?lang=es"></a>
-						<a class="icon-instagram"
-							href="https://www.instagram.com/gamescm/?hl=es-la"></a> <a
-							class="icon-youtube-play"
-							href="https://www.youtube.com/?hl=es-419&gl=PE"></a>
+                    <article class="cf">
+                        <h3>Informaciones:</h3>
+
+                        <h5>telefono : 222222</h5>
+                        <h5>Lunes a viernes :</h5>
+                        <h5>10:00 - 20:00</h5>
+
+                        <h5>correo: sdasdas@gmail.com</h5>
+                    </article>
+
+
+
+                    <article class="cf">
+
+                        <h3>Siguenos:</h3>
+                        <div id="social">
+						<a href="https://www.facebook.com/GamesCM.SRL/" > <img class="imgsocial" alt="" src="img/facebook.png" style="width: 40px;height: 40px"> </a> 
+						
+						<a href="https://twitter.com/?lang=es">  <img class="imgsocial" alt="" src="img/icon-twitter.png" style="width: 40px;height: 40px">	</a>
+						
+						<a 
+							href="https://www.instagram.com/gamescm/?hl=es-la"><img class="imgsocial" alt="" src="img/icon-instagram.png" style="width: 40px;height: 40px">  </a>
+							
+						 
 					</div>
 
-				</article>
-
-				<article style="width: 10%; bordeR: 1px solid red;">
-
-					<h3>ESCRÍBENOS</h3>
+                    </article>
 
 
-				</article>
+                    <article class="cf">
+                        <h3>© GAMES CM 2019</h3>
+                        <p>Todos los derechos reservado</p>
+                    </article>
+                </div>
 
-			</div>
-			<div id="caja1" style="margin-top: 0px;">
-				<article style="text-align: center;">
-					<h3>© GAMES CM 2019</h3>
-					<p>Todos los derechos reservado</p>
-				</article>
-
-			</div>
-		</footer>
+            </div>
+        </footer>
 </body>
 
 <script src="js/jquery-3.2.1.js"></script>
@@ -1327,7 +1309,7 @@
 <meta name="viewport"
 	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 <script src="js/jquery.flexslider.js"></script>
-
+<script src="js/script.js"></script>
 <script type="text/javascript" charset="utf-8">
 	$(window).load(function() {
 		$(".flexslider").flexslider({
@@ -1349,3 +1331,4 @@
 	});
 </script>
 </html>
+
