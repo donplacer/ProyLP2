@@ -449,7 +449,15 @@
 
 					</article>
 
+
 				</div>
+
+                    <article class="cf">
+                        <h3>© GAMES CM 2019</h3>
+                        <p>Todos los derechos reservado</p>
+                    </article>
+                </div>
+
 
 			</footer>
 		</div>
