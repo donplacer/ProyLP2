@@ -21,9 +21,9 @@
 						// speed for the item bg color animation
 						boxAnimSpeed		: 300,
 						// default text color (same defined in the css)
-						defaultTextColor	: '#FFAD00',
+						defaultTextColor	: '#44D62D',
 						// default bg color (same defined in the css)
-						defaultBgColor		: '#FFAD00'
+						defaultBgColor		: '#111111'
 					};
 					
 					return this.each(function() {

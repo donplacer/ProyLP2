@@ -1,7 +1,7 @@
-	#menu-Principal{background-color: #EEEEEE;width: 100%;display: flex;flex-direction: column;}
+	#menu-Principal{background-color: #111111;width: 100%;display: flex;flex-direction: column;}
 
 
-#menu_animado{width: 100%;height:200px;background-color:#FFAD00;margin-top: 2px;display: flex; justify-content: center;}
+#menu_animado{width: 100%;height:200px;background-color:#111111;margin-top: 2px;display: flex; justify-content: center;}
 
 
 .opc_menu{width: 80%;border-right: 1px solid black;height: 120px;margin-top: 25px;margin-left: 25px}
@@ -68,7 +68,7 @@ height:98%;
 	display;flex;
 	justify-content:center;
 	overflow:hidden;
-	background:#FFAD00;
+	background:#111111;
 	text-align:center;
 	height:100%;
 	width:100%;
