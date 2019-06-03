@@ -23,11 +23,8 @@
 						// default text color (same defined in the css)
 						defaultTextColor	: '#44D62D',
 						// default bg color (same defined in the css)
-<<<<<<< HEAD
-						defaultBgColor		: 'black'
-=======
 						defaultBgColor		: '#111111'
->>>>>>> branch 'master' of https://github.com/donplacer/ProyLP2.git
+
 					};
 					
 					return this.each(function() {
