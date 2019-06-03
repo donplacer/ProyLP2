@@ -1261,7 +1261,7 @@
 
 
                     <article class="cf">
-                        <h3>Informaciones</h3>
+                        <h3>Informaciones:</h3>
 
                         <h5>telefono : 222222</h5>
                         <h5>Lunes a viernes :</h5>
