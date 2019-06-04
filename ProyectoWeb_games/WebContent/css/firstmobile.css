@@ -26,25 +26,9 @@
 	}
 
 	/*parte menu animado*/
-	.sti-icon {
-		min-width: 100px;
-		width: 150px;
-		height: 100px;
-		position: absolute;
-		background-position: top left;
-		background-repeat: no-repeat;
-		background-color: transparent;
-		left: 5px;
-		top: 30px;
-	}
-	.sti-menu li {
-		float: left;
-		width: 100px;
-		height: 110px;
-		margin: 1px;
-		display: flex;
-		justify-content: center;
-	}
+	
+	
+	
 	.Preventas {
 		display: none !important;
 	}
@@ -89,7 +73,7 @@
 		text-align: center;
 		/*background-image: url(img/573739.jpg)*/
 		background-color: #EEEEEE;
-		border: 5px solid green;
+		border: 5px solid red;
 	}
 	.div-carrusel-productos {
 		border: 2px solid purple;

@@ -137,6 +137,94 @@ color: #696868;
 
 }
 
+/*------------ NAVEGACION CENTRAL ------------------*/
+
+#nav_central{
+	width: 100%;
+	display:flex;
+	justify-content:center;
+    background-color:#111111;
+	height:250px;
+	
+	align-items: center;
+}
+
+#content_menu{
+	
+	width: 50%;
+	height:200px;
+	display: flex;
+	justify-content: center;
+}
+
+#content_menu li{
+	
+
+	width: 25%;
+	list-style: none;
+	display:flex;
+	justify-content: center;
+	text-align: center;
+    align-items: center;
+    flex-direction: row;
+  
+}
+#content_menu a{
+	text-decoration: none;
+}
+#content_menu h2{
+	font-size: 17px;
+	color: #5E5E5E;
+	margin-top: 17px;
+}
+
+
+
+@media screen and (max-width:415px){
+	
+	#nav_central{
+	  
+	width:100%;
+	height:250px;
+	
+	border: 1px solid blue;
+	
+	}
+	#content_menu{
+	width: 90%;
+	height:200px;
+	border: 1px solid yellow;
+	}
+	#content_menu li {
+		
+		width: 25%;
+		
+		display: flex;
+		justify-content: center;
+	}
+	
+	#content_menu a{
+	width:100%;
+	text-decoration: none;
+}
+
+   #content_menu img{
+   width: 90%}
+   #content_menu h2{
+	font-size: 14px;
+	color: #5E5E5E;
+	margin-top: 17px;
+}
+
+}
+
+
+
+
+
+
+
+/*nose que es */
 
 .imagenes button{
 margin-left:25px;

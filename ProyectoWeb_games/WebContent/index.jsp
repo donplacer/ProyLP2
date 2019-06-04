@@ -160,36 +160,39 @@
 
 
 	<div id="menu-Principal">
-		<div id="menu_animado">
-			<ul id="sti-menu" class="sti-menu">
-				<li data-hovercolor="black"><a href="#"> <!-- <img alt="" src="img/images/mando.png" style="width: 70%;margin: 0;"> -->
-						<h2 data-type="mText" class="sti-item">Promocionesd</h2>
-						<article class="opc_menu"></article> <span data-type="icon"
-						class="sti-icon sti-icon-care sti-item"></span>
+
+
+		<div id="nav_central">
+			<ul id="content_menu">
+				
+				
+				<li><a href="#"> <img onMouseOver="cambio(0)" onMouseOut="original(0)" class="imgnav" 
+						src="img/imagenesNavegacion/promocion.png">
+						<h2>Promociones</h2>
+
 				</a></li>
-				<li data-hovercolor="black" class="Preventas"><a href="#">
-						<h2 data-type="mText" class="sti-item">Preventasdasdasdas</h2>
-						<article class="opc_menu"></article> <span data-type="icon"
-						class="sti-icon sti-icon-alternative sti-item"></span>
+				
+
+				<li><a href="#"> <img onMouseOver="cambio(1)" onMouseOut="original(1)" class="imgnav" 
+						src="img/imagenesNavegacion/preventa.png">
+						<h2>Preventas</h2>
+
 				</a></li>
-				<li data-hovercolor="black"><a href="#">
-						<h2 data-type="mText" class="sti-item">Videojuegos</h2>
-						<article class="opc_menu"></article> <span data-type="icon"
-						class="sti-icon sti-icon-info sti-item"></span>
+				<li><a href="#"> <img onMouseOver="cambio(2)" onMouseOut="original(2)" class="imgnav" 
+						src="img/imagenesNavegacion/mando.png">
+						<h2>Videojuegos</h2>
+
 				</a></li>
-				<li data-hovercolor="black"><a href="#">
-						<h2 data-type="mText" class="sti-item">Funk</h2>
-						<article class="opc_menu"></article> <span data-type="icon"
-						class="sti-icon sti-icon-family sti-item"></span>
+				<li>
+				
+				<a href="#"> <img onMouseOver="cambio(3)" onMouseOut="original(3)" class="imgnav" 
+						src="img/imagenesNavegacion/superman.png">
+
+						<h2>Funko</h2>
+						
+
 				</a></li>
-				<!-- <li  data-hovercolor="black" >
-					<a href="#">
-						<h2 data-type="mText" class="sti-item">Audifonos</h2>
-					 
-						<span    data-type="icon" class="sti-icon sti-icon-technology sti-item"></span>
-					</a>
-				</li>
-				 -->
+
 			</ul>
 		</div>
 
@@ -203,12 +206,12 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top border-bottom " >
+					<div class="top border-bottom ">
 
 						<h3>
 							<strong class="text-monospace ">Preventass</strong>
 						</h3>
-						<a href="#" >Màs Resultados</a>
+						<a href="#">Màs Resultados</a>
 
 					</div>
 
@@ -230,7 +233,7 @@
 
 											<h5>$235,90</h5>
 										</div>
-										<button type="button" class=" btn btn-outline-success"  >AGREGAR
+										<button type="button" class=" btn btn-outline-success">AGREGAR
 											AL CARRITO</button>
 									</div>
 
@@ -426,7 +429,7 @@
 						<h3>
 							<strong>Más vendidos</strong>
 						</h3>
-						<a href="#" >Màs Resultados</a>
+						<a href="#">Màs Resultados</a>
 
 					</div>
 
@@ -634,7 +637,7 @@
 						<h3>
 							<strong class="text-monospace">Funko Exclusivos</strong>
 						</h3>
-						<a href="#" >Màs Resultados</a>
+						<a href="#">Màs Resultados</a>
 
 					</div>
 
@@ -836,7 +839,7 @@
 						<h3>
 							<strong class="text-monospace">Promociones</strong>
 						</h3>
-						<a href="#" >Màs Resultados</a>
+						<a href="#">Màs Resultados</a>
 
 					</div>
 
@@ -1041,7 +1044,7 @@
 						<h3>
 							<strong class="text-monospace">PlayStation</strong>
 						</h3>
-						<a href="#" >Màs Resultados</a>
+						<a href="#">Màs Resultados</a>
 
 					</div>
 
@@ -1247,58 +1250,61 @@
 				</div>
 			</div>
 		</section>
-</div>
+	</div>
 
 
 
 
 	<footer>
-            <div id="contenedorF">
+		<div id="contenedorF">
 
-                <div id="caja2_footer">
-
-
-
-
-                    <article class="cf">
-                        <h3>Informaciones:</h3>
-
-                        <h5>telefono : 222222</h5>
-                        <h5>Lunes a viernes :</h5>
-                        <h5>10:00 - 20:00</h5>
-
-                        <h5>correo: sdasdas@gmail.com</h5>
-                    </article>
+			<div id="caja2_footer">
 
 
 
-                    <article class="cf">
 
-                        <h3>Siguenos:</h3>
-                        <div id="social">
-						<a href="https://www.facebook.com/GamesCM.SRL/" > <img class="imgsocial" alt="" src="img/facebook.png" style="width: 40px;height: 40px"> </a> 
-						
-						<a href="https://twitter.com/?lang=es">  <img class="imgsocial" alt="" src="img/icon-twitter.png" style="width: 40px;height: 40px">	</a>
-						
-						<a 
-							href="https://www.instagram.com/gamescm/?hl=es-la"><img class="imgsocial" alt="" src="img/icon-instagram.png" style="width: 40px;height: 40px">  </a>
-							
-						 
+				<article class="cf">
+					<h3>Informaciones:</h3>
+
+					<h5>telefono : 222222</h5>
+					<h5>Lunes a viernes :</h5>
+					<h5>10:00 - 20:00</h5>
+
+					<h5>correo: sdasdas@gmail.com</h5>
+				</article>
+
+
+
+				<article class="cf">
+
+					<h3>Siguenos:</h3>
+					<div id="social">
+						<a href="https://www.facebook.com/GamesCM.SRL/"> <img
+							class="imgsocial" alt="" src="img/facebook.png"
+							style="width: 40px; height: 40px">
+						</a> <a href="https://twitter.com/?lang=es"> <img
+							class="imgsocial" alt="" src="img/icon-twitter.png"
+							style="width: 40px; height: 40px">
+						</a> <a href="https://www.instagram.com/gamescm/?hl=es-la"><img
+							class="imgsocial" alt="" src="img/icon-instagram.png"
+							style="width: 40px; height: 40px"> </a>
+
+
 					</div>
 
-                    </article>
+				</article>
 
 
-                    <article class="cf">
-                        <h3>© GAMES CM 2019</h3>
-                        <p>Todos los derechos reservado</p>
-                    </article>
-                </div>
+				<article class="cf">
+					<h3>© GAMES CM 2019</h3>
+					<p>Todos los derechos reservado</p>
+				</article>
+			</div>
 
-            </div>
-        </footer>
+		</div>
+	</footer>
 </body>
-
+<script type="text/javascript" src="js/codigos-valida.js"></script>
 <script src="js/jquery-3.2.1.js"></script>
 
 
