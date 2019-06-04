@@ -162,13 +162,13 @@
 	<div id="menu-Principal">
 
 
-		<div id="nav_centra">
+		<div id="nav_central">
 			<ul id="content_menu">
 				
 				
 				<li><a href="#"> <img onMouseOver="cambio(0)" onMouseOut="original(0)" class="imgnav" 
 						src="img/imagenesNavegacion/promocion.png">
-						<h2>Promociones</h2>
+						<h2>Promocione</h2>
 
 				</a></li>
 				
