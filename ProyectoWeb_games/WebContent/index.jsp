@@ -162,7 +162,7 @@
 	<div id="menu-Principal">
 
 
-		<div id="nav_central">
+		<div id="nav_centra">
 			<ul id="content_menu">
 				
 				
