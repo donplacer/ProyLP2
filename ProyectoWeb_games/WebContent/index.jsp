@@ -206,7 +206,7 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top border-bottom ">
+					<div class="top ">
 
 						<h3>
 							<strong class="text-monospace ">Preventass</strong>
@@ -424,7 +424,7 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top border-bottom" style="">
+					<div class="top " style="">
 
 						<h3>
 							<strong>Más vendidos</strong>
@@ -632,7 +632,7 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top border-bottom">
+					<div class="top ">
 
 						<h3>
 							<strong class="text-monospace">Funko Exclusivos</strong>
@@ -834,7 +834,7 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top border-bottom">
+					<div class="top ">
 
 						<h3>
 							<strong class="text-monospace">Promociones</strong>
@@ -1039,7 +1039,7 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top border-bottom">
+					<div class="top ">
 
 						<h3>
 							<strong class="text-monospace">PlayStation</strong>
@@ -1297,8 +1297,7 @@
 
 				<article class="cf">
 					<h3>© GAMES CM 2019</h3>
-					<p>Todos los derechos reservado</p>
-				</article>
+					<p>Todos los derechos reservado</p>   
 			</div>
 
 		</div>
