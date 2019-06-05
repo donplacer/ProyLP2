@@ -168,7 +168,7 @@
 				
 				<li><a href="#"> <img onMouseOver="cambio(0)" onMouseOut="original(0)" class="imgnav" 
 						src="img/imagenesNavegacion/promocion.png">
-						<h2>Promocione</h2>
+						<h2>Promociones</h2>
 
 				</a></li>
 				
