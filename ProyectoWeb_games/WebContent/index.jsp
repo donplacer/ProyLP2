@@ -66,7 +66,7 @@
 					<div class="img-carrito">
 
 						<a href="#" style="width: 100%; height: 100%;"> <img alt=""
-							src="img/icon-basquet.png"
+							src="img/icono-carrito.png"
 							style="background-repeat: no-repeat; width: 100%; height: 100%;">
 						</a>
 
@@ -209,7 +209,7 @@
 					<div class="top ">
 
 						<h3>
-							<strong class="text-monospace ">Preventass</strong>
+							<strong class="text-monospace ">Preventas</strong>
 						</h3>
 						<a href="#">Màs Resultados</a>
 
@@ -218,7 +218,7 @@
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary" >
 
 
 
@@ -288,7 +288,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary" >
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -353,7 +353,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -436,7 +436,7 @@
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom ">
+								<div class="div border-bottom border-secondary ">
 
 									<div class="carrusel">
 
@@ -503,7 +503,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -565,7 +565,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -644,7 +644,7 @@
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 
 
 
@@ -709,7 +709,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -769,7 +769,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -846,7 +846,7 @@
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -910,7 +910,7 @@
 
 
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -972,7 +972,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -1051,7 +1051,7 @@
 					<div class="flexslider">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 
 
 
@@ -1121,7 +1121,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -1183,7 +1183,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom">
+								<div class="div border-bottom border-secondary">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -1281,13 +1281,13 @@
 					<div id="social">
 						<a href="https://www.facebook.com/GamesCM.SRL/"> <img
 							class="imgsocial" alt="" src="img/facebook.png"
-							style="width: 40px; height: 40px">
+							style="width: 35px; height: 35px">
 						</a> <a href="https://twitter.com/?lang=es"> <img
 							class="imgsocial" alt="" src="img/icon-twitter.png"
-							style="width: 40px; height: 40px">
+							style="width: 35px; height: 35px">
 						</a> <a href="https://www.instagram.com/gamescm/?hl=es-la"><img
 							class="imgsocial" alt="" src="img/icon-instagram.png"
-							style="width: 40px; height: 40px"> </a>
+							style="width: 35px; height: 35px"> </a>
 
 
 					</div>
@@ -1298,6 +1298,7 @@
 				<article class="cf">
 					<h3>© GAMES CM 2019</h3>
 					<p>Todos los derechos reservado</p>   
+					</article>
 			</div>
 
 		</div>

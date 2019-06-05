@@ -25,7 +25,7 @@ margin-top: 30px;}
 
 width:25%;
 height: 90%;
-border: 0.5px solid #DBF4ED;
+border: 0.5px solid #7E7E7E;
 border-bottom:none;
 
 /*-webkit-border-radius:3px;
@@ -56,7 +56,7 @@ background-color: #1B1B1B;
 	color:#08C808;
 }
 .top h3{
-	color:#44D62D;
+	color:#04E404;
 	margin-top: 13px;
 	
 }
@@ -131,12 +131,12 @@ overflow:hidden;
 }
 
 .div-contenido-carrusel{
-	display: flex; flex-direction: column; justify-content: space-around; width: 100%; height: 20%;
+	display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 20%;
 }
 
 .imagenes-carrusel-Producto{
 	width: 50%;
-	height: 80%;
+	height: 75%;
 	
 	margin-top: 28px;
 
@@ -150,6 +150,7 @@ overflow:hidden;
 
 
 }
+/*
 .imagenes-carrusel-Producto:hover{
 	-webkit-transform:scale(1.10);
 -moz-transform:scale(1.10);
@@ -158,18 +159,18 @@ overflow:hidden;
 transform:scale(1.10);
 	
 }
-
+*/
 
 
 .slides a{
 	color: #7E7E7E;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 15px;
 
 }
 .slides h5{
 	color: #7E7E7E;
-
+font-size: 20px;
 }
 
 
