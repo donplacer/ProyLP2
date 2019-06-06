@@ -206,10 +206,10 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top ">
+					<div class="top border-bottom border-dark">
 
 						<h3>
-							<strong class="text-monospace ">Preventas</strong>
+							<strong class="text-monospace ">Preveasdasntas</strong>
 						</h3>
 						<a href="#">Màs Resultados</a>
 
@@ -218,7 +218,7 @@
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary" >
+								<div class="div border-bottom border-dark" >
 
 
 
@@ -288,7 +288,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary" >
+								<div class="div border-bottom border-dark" >
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -353,7 +353,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -424,7 +424,7 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top " style="">
+					<div class="top border-bottom border-dark " style="">
 
 						<h3>
 							<strong>Más vendidos</strong>
@@ -436,7 +436,7 @@
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary ">
+								<div class="div border-bottom border-dark ">
 
 									<div class="carrusel">
 
@@ -503,7 +503,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -565,7 +565,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -632,7 +632,7 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top ">
+					<div class="top border-bottom border-dark ">
 
 						<h3>
 							<strong class="text-monospace">Funko Exclusivos</strong>
@@ -644,7 +644,7 @@
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 
 
 
@@ -709,7 +709,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -769,7 +769,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -834,7 +834,7 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top ">
+					<div class="top border-bottom border-dark ">
 
 						<h3>
 							<strong class="text-monospace">Promociones</strong>
@@ -846,7 +846,7 @@
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -910,7 +910,7 @@
 
 
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -972,7 +972,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -1039,7 +1039,7 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top ">
+					<div class="top border-bottom border-dark ">
 
 						<h3>
 							<strong class="text-monospace">PlayStation</strong>
@@ -1051,7 +1051,7 @@
 					<div class="flexslider">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 
 
 
@@ -1121,7 +1121,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
@@ -1183,7 +1183,7 @@
 								</div>
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-secondary">
+								<div class="div border-bottom border-dark">
 									<div class="carrusel">
 										<div class="div-imagen-carrusel">
 											<img class="imagenes-carrusel-Producto"
