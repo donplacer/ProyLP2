@@ -219,7 +219,46 @@ color: #696868;
 }
 
 
+@media screen and (max-width:1000px ){
 
+	#nav_central{
+	  
+	width:100%;
+	height:250px;
+	
+	
+	
+	}
+	#content_menu{
+	width: 70%;
+	height:200px;
+	
+	}
+	#content_menu li {
+		
+		width: 25%;
+		
+		display: flex;
+		justify-content: center;
+	}
+	
+	#content_menu a{
+	width:100%;
+	text-decoration: none;
+}
+
+   #content_menu img{
+   width: 90%;
+   height:100px;
+  
+   
+   }
+   #content_menu h2{
+	font-size: 17px;
+	color: #5E5E5E;
+	margin-top: 17px;
+}
+}
 
 
 

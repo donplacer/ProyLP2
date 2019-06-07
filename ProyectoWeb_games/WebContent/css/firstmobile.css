@@ -13,7 +13,9 @@
 	.contenedorNav {
 		height: 100%;
 		display: flex;
+		
 		width: 200%;
+		
 	}
 	.contenedorNav input {
 		width: 70%;
@@ -59,12 +61,18 @@
 	}
 }
 
-@media ( max-width :1000px) {
+@media screen and (max-width :1000px) {
 	.Contenedor-Busquedad button {
 		width: 25%;
 	}
 	.contenedorNav input {
 		width: 85%;
+	}
+	.contenedorNav{
+	width:1300px;
+	display:flex;
+	
+
 	}
 	#principalIndex {
 		flex-direction: column;
@@ -87,4 +95,12 @@
 		width: 35%;
 		height: 90%;
 	}
+	
+	#social img{
+	
+	padding:4px;
+	
+	}
+	
+
 }
