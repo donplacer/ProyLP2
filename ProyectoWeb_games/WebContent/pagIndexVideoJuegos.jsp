@@ -62,8 +62,7 @@
 
 
 
-		<div class="div-navegacion"
-			style="width: 100%; bordeR: 1px solid red;">
+		
 			<nav id="navegacion" style="width: 100%;">
 				<ul id="menu">
 					<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
@@ -94,7 +93,7 @@
 			</nav>
 
 
-		</div>
+		
 
 
 
