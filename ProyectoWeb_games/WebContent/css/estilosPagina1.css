@@ -12,9 +12,10 @@
 /*--------------------------------------> ENCABEZADO <--------------------------------------------------*/
 
 #body {
-    background-color: #1B1B1B;
+    background-color: #111111;
     width: 100%;
 }
+
 
 #encabezado {
     width: 100%;
@@ -29,7 +30,7 @@
 
 #navegacion {
     width: 100%;
-    background-color: #1B1B1B;
+    background-color: #111111;
 }
 
 #navegacion ul {
@@ -53,14 +54,15 @@
 }
 
 #menu li a:hover {
-    color: #FFC107;
+    color: #04E404;
     transition: all .3s;
 }
 
-#navegacion:hover {
-    box-shadow: 0px 15px 20px 1px #E0E0E0;
-}
 
+header:hover{
+	
+	box-shadow: 0px 1px 7px 1px  #E0E0E0;
+}
 
 
  
@@ -136,14 +138,14 @@
  #principal {
         width: 100%;
        background-color:#1B1B1B;
-        border: 1px solid blue;
+     
         display: flex;
            align-items: center;
   
         flex-direction: column;
    
     }
-    
+    /*ESTAN OCULTOS,SOLO SE ACTIVA CUANDO ESTA EN FIRST MOVIL*/
     .sidenav{
     display: none;}
     .topnav{
@@ -214,11 +216,11 @@ aside {
 /*-------------------------------------------------LADO CENTRAL DEL CUERPO ----------------------------*/
 
 #contenedorPrincipal {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    
-    background-color: #1B1B1B;
+   
+
 }
 
 
@@ -245,9 +247,19 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
+
 }
 
+.articulo button{
+	color: #44D62D;
+}
 
+.articulo button:hover{
+
+color: #44D62D;
+background-color: #111111;
+}
 /*---------------- CAJA DE ARTICULOS EN FILA DE 4  ---------------------*/
 
 
@@ -260,6 +272,7 @@ aside {
     overflow: hidden;
 }
 
+
 .div-contenido-carrusel {
     display: flex;
     flex-direction: column;
@@ -267,6 +280,8 @@ aside {
     width: 100%;
     height: 20%;
 }
+
+
 .div-contenido-carrusel a{
 	color: #515151;
 }
@@ -290,7 +305,7 @@ aside {
 .articulo {
     width: 25%;
     height: 99%;
-   border: 0.5px solid  #343A40;
+  border: 0.5px solid  #343A40;
 bordeR-top:none;
 border-bottom:none;
 
@@ -302,12 +317,10 @@ text-align: center;
 
 
 
-background-color: #1B1B1B;
+
 }
 
-.articulo:hover {
-    box-shadow: inset 0px 1px 6px 1px #E0E0E0;
-}
+
 
 .imagenes-carrusel-Producto {
     width: 50%;
@@ -319,11 +332,15 @@ background-color: #1B1B1B;
 /*   CAJAS DE CADA PRODUCTO -------------------*/
 
 
+
+
 /*--------------------------------------------- FOOTER ----------------------*/
+
+
 
 #contenedorF {
     width: 100%;
-    background-color: #252525;
+    background-color: #1B1B1B;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,7 +353,7 @@ background-color: #1B1B1B;
 
 #contenedorF img {
     width: 260px;
-    margin-top: 55px;
+   
 }
 
 
@@ -346,21 +363,24 @@ background-color: #1B1B1B;
     width: 80%;
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
+    
+  
 }
 
 .cf {
     width: 20%;
-    margin-right: 2px;
+   
     display: flex;
     flex-grow: 2;
     flex-direction: column;
-    border: 1px solid red;
+  
+    text-align: center;
+  
 }
 
 .cf h3 {
-    font-size: 17px;
-    color: #FFC107;
+    font-size: 25px;
+    color: #44D62D;
 }
 
 .cf h5 {
@@ -369,9 +389,11 @@ background-color: #1B1B1B;
 }
 
 .cf a {
-    border: 1px solid green;
+    
     text-decoration: none;
     color: #515151;
+  
+    
 }
 
 .cf a:hover {
@@ -383,8 +405,17 @@ background-color: #1B1B1B;
 }
 
 #social {
-    border: 1px solid red;
+    width: 40%;
+    height:50px;
+ 
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+   margin: auto;
 }
+
+
+
 
 @media screen and (max-width:550px) {
     #principal {
@@ -494,9 +525,17 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-	display:block;
+	height:100px;
+	
     background-color: #333;
     overflow: hidden;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-content:center;
+    align-items:center;
+   
+    
 }
  
 /* Style the links inside the navigation bar */
@@ -512,7 +551,7 @@ body {
  
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #1B1B1B;
     color: black;
 }
  

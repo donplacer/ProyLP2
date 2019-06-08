@@ -54,47 +54,55 @@
 
 			</div>
 
+
+			<!--NAVEGACION DE LA PAGINA-->
+			<div class="div-navegacion">
+				<nav id="navegacion" style="width: 100%;">
+					<ul id="menu">
+						<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
+						<li><a class="icon-angle-double-down"
+							href="pagIndexPromocion.jsp"> Promociones </a>
+							<ul class="submenu">
+								<li><a href="pagIndexVideoJuegos.jsp">VideoJuegos</a></li>
+								<li><a href="">Funko</a></li>
+
+							</ul></li>
+						<li><a class="icon-angle-double-down" href="">
+								VideoJuegos </a>
+							<ul class="submenu">
+								<li><a href="">PlayStation</a></li>
+								<li><a href="">Nintendo</a></li>
+								<li><a href="">Advance</a></li>
+								<li><a href="">Apple</a></li>
+								<li><a href="">Acer</a></li>
+							</ul></li>
+						<li><a href="">Preventas</a>
+							<ul class="submenu">
+								<li><a href="">VideoJuegos</a></li>
+								<li><a href="">Funko</a></li>
+
+							</ul></li>
+						<li><a href=""> Accesorios</a>
+						<ul class="submenu">
+								<li><a href="">teclados</a></li>
+								<li><a href="">mouse</a></li>
+
+							</ul></li>
+					</ul>
+				</nav>
+
+
+			</div>
+
+
 		</header>
 
 
 
-		<!--NAVEGACION DE LA PAGINA-->
 
 
 
-		<div class="div-navegacion"
-			style="width: 100%; bordeR: 1px solid red;">
-			<nav id="navegacion" style="width: 100%;">
-				<ul id="menu">
-					<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
-					<li><a class="icon-angle-double-down"
-						href="pagIndexPromocion.jsp"> Promociones </a>
-						<ul class="submenu">
-							<li><a href="pagIndexVideoJuegos.jsp">VideoJuegos</a></li>
-							<li><a href="">Funko</a></li>
 
-						</ul></li>
-					<li><a class="icon-angle-double-down" href=""> VideoJuegos
-					</a>
-						<ul class="submenu">
-							<li><a href="">PlayStation</a></li>
-							<li><a href="">Nintendo</a></li>
-							<li><a href="">Advance</a></li>
-							<li><a href="">Apple</a></li>
-							<li><a href="">Acer</a></li>
-						</ul></li>
-					<li><a href="">Preventas</a>
-						<ul class="submenu">
-							<li><a href="">VideoJuegos</a></li>
-							<li><a href="">Funko</a></li>
-
-						</ul></li>
-					<li><a href="">EXCLUSIVO ONLINE</a></li>
-				</ul>
-			</nav>
-
-
-		</div>
 
 
 
@@ -107,8 +115,7 @@
 
 		<div id="sideNavigation" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#">About</a> <a href="#">Features</a> <a href="#">Contact
-				Us</a>
+			<a href="#">Inicasdasds</a> <a href="#">PS4</a> <a href="#">Nintendo</a>
 		</div>
 
 		<nav class="topnav">
@@ -119,6 +126,15 @@
        		 <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
     				</svg>
 			</a>
+			<div class="img-carrito"
+				style="height: 80%; width: 80px; margin-bottom: 20px;">
+
+				<a href="#" style="width: 100%; height: 100%;"> <img alt=""
+					src="img/icono-carrito.png"
+					style="background-repeat: no-repeat; width: 100%; height: 100%;">
+				</a>
+
+			</div>
 		</nav>
 
 
@@ -128,7 +144,7 @@
 
 
 
-			<section id="contenedorPrincipal" style="border: red;">
+			<section id="contenedorPrincipal">
 
 
 
@@ -140,19 +156,18 @@
 				<div class="articulos">
 
 					<div class="articulo ">
-						<div class="div-imagen-carrusel">
-							<img class="imagenes-carrusel-Producto"
-								src="img/imagenesProductos/imagenesPS4/PS4fallout.png" alt="" />
+						<div class="div-imagen-carrusel ">
+							<img class="imagenes-carrusel-Producto "
+								src="img/imagenesProductos/imagenesFUNKO/img02.jpg " alt=" " />
 						</div>
-						<div class="div-contenido-carrusel">
-							<a href="#">Juego PS4 </a>
+						<div class="div-contenido-carrusel ">
+							<a href="# ">Juego PS4 </a>
 
 							<h5>$235,90</h5>
 						</div>
-						<button type="button" class=" btn btn-outline-success">AGREGAR
+						<button type="button " class="btn btn-outline-success ">AGREGAR
 							AL CARRITO</button>
 					</div>
-
 
 
 
@@ -395,60 +410,65 @@
 		</div>
 
 
-
-
-
-		<!--// PIE DE LA PAGINA-->
-
-
-
-		<footer>
-			<div id="contenedorF">
-
-				<div id="caja2_footer">
-
-
-
-
-					<article class="cf">
-						<h3>Informaciones:</h3>
-
-						<h5>telefono : 222222</h5>
-						<h5>Lunes a viernes :</h5>
-						<h5>10:00 - 20:00</h5>
-
-						<h5>correo: sdasdas@gmail.com</h5>
-					</article>
-
-
-
-					<article class="cf">
-
-						<h3>Siguenos:</h3>
-						<div id="social">
-
-							<a class="icon-facebook-square " href=" "></a> <a
-								class="icon-twitter-square " href=" "></a> <a
-								class="icon-instagram " href=" "></a> <a
-								class="icon-youtube-play " href=" "></a>
-
-						</div>
-
-					</article>
-
-
-					<article class="cf">
-						<h3>© GAMES CM 2019</h3>
-						<p>Todos los derechos reservado</p>
-					</article>
-				</div>
-
-			</div>
-		</footer>
 	</div>
 
-	<!-- LADO CENTRAL DEL CUERPO -->
 
+
+
+
+
+	
+
+	
+		<!--// PIE DE LA PAGINA-->
+<footer>
+		<div id="contenedorF">
+
+			<div id="caja2_footer">
+
+
+
+
+				<article class="cf">
+					<h3>Informaciones:</h3>
+
+					<h5>telefono : 222222</h5>
+					<h5>Lunes a viernes :</h5>
+					<h5>10:00 - 20:00</h5>
+
+					<h5>correo: sdasdas@gmail.com</h5>
+				</article>
+
+
+
+				<article class="cf">
+
+					<h3>Siguenos:</h3>
+					<div id="social">
+						<a href="https://www.facebook.com/GamesCM.SRL/"> <img
+							class="imgsocial" alt="" src="img/facebook.png"
+							style="width: 35px; height: 35px">
+						</a> <a href="https://twitter.com/?lang=es"> <img
+							class="imgsocial" alt="" src="img/icon-twitter.png"
+							style="width: 35px; height: 35px">
+						</a> <a href="https://www.instagram.com/gamescm/?hl=es-la"><img
+							class="imgsocial" alt="" src="img/icon-instagram.png"
+							style="width: 35px; height: 35px"> </a>
+
+
+					</div>
+
+				</article>
+
+
+				<article class="cf">
+					<h3>© GAMES CM 2019</h3>
+					<p>Todos los derechos reservado</p>   
+					</article>
+			</div>
+
+		</div>
+	</footer>
 
 </body>
 <script>

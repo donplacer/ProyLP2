@@ -182,40 +182,7 @@ color: #696868;
 
 @media screen and (max-width:415px){
 	
-	#nav_central{
-	  
-	width:100%;
-	height:250px;
 	
-	border: 1px solid blue;
-	
-	}
-	#content_menu{
-	width: 90%;
-	height:200px;
-	border: 1px solid yellow;
-	}
-	#content_menu li {
-		
-		width: 25%;
-		
-		display: flex;
-		justify-content: center;
-	}
-	
-	#content_menu a{
-	width:100%;
-	text-decoration: none;
-}
-
-   #content_menu img{
-   width: 90%}
-   #content_menu h2{
-	font-size: 14px;
-	color: #5E5E5E;
-	margin-top: 17px;
-}
-
 }
 
 
@@ -230,7 +197,7 @@ color: #696868;
 	
 	}
 	#content_menu{
-	width: 70%;
+	width: 100%;
 	height:200px;
 	
 	}
@@ -244,15 +211,9 @@ color: #696868;
 	
 	#content_menu a{
 	width:100%;
-	text-decoration: none;
 }
 
-   #content_menu img{
-   width: 90%;
-   height:100px;
-  
    
-   }
    #content_menu h2{
 	font-size: 17px;
 	color: #5E5E5E;
