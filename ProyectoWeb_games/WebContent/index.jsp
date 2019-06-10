@@ -105,7 +105,13 @@
 						<li><a href="">Funko</a></li>
 
 					</ul></li>
-				<li class="li-eliminado"><a href="">EXCLUSIVO ONLINE</a></li>
+				<li class="li-eliminado"><a href="">Accesorios</a>
+					<ul class="submenu">
+                        <li><a href="">teclado</a></li>
+                        <li><a href="">mouse</a></li>
+
+                    </ul>
+				</li>
 			</ul>
 		</nav>
 

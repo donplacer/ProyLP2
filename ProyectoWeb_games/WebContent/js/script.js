@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$(".carrusel").mouseover(function(){
     		
 		$(this).find('h5').css("color","white");

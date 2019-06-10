@@ -12,9 +12,10 @@
     <!-- ENLACCE PARA ICONOS -->
     <link href="https://file.myfontastic.com/7Y2CeESwdu83DsVFwBMsPb/icons.css" rel="stylesheet">
     <!-- ESTILOS PARA PAGINA 1 -->
-    <link rel="stylesheet" type="text/css" href="estilosPagina1.css">
+    <link rel="stylesheet" type="text/css" href="css/estilosPagina1.css">
 
 
+	
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
     <meta charset="UTF-8">
@@ -30,22 +31,42 @@
 
         <header>
 
-            <div id="encabezado">
-
-                <article class="cajasHeader">
-                    <img style="height: 100px" src="img/logoVideo.jpg" alt="">
-
-                </article>
 
 
 
-                <article class="cajasHeader">
-                    <img style="height: 100px" src="img/logoVideo.jpg" alt="">
-
-                </article>
+            <div id="contenedor"style="background-color: #111111">
 
 
-            </div>
+			<div class="Contenedor-Busquedad">
+
+				<div class="contenedorNav">
+
+					<div>
+						<img src="img/logo.jpg" alt="">
+					</div>
+
+
+					<div style="width: 60%; display: flex; justify-content: center;">
+						<input style="margin-top: 20px;" type="search"
+							placeholder="Buscar...">
+						<button style="margin-top: 20px;">Buscar</button>
+					</div>
+
+					<div class="img-carrito">
+
+						<a href="#" style="width: 100%; height: 100%;"> <img alt=""
+							src="img/icono-carrito.png"
+							style="background-repeat: no-repeat; width: 100%; height: 100%;">
+						</a>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</div>
 
         </header>
 
@@ -82,7 +103,13 @@
 
                     </ul>
                 </li>
-                <li><a href="">EXCLUSIVO ONLINE</a></li>
+                <li><a href="">Accesorios</a>
+               		 <ul class="submenu">
+                        <li><a href="">teclado</a></li>
+                        <li><a href="">mouse</a></li>
+
+                    </ul>
+                </li>
             </ul>
         </nav>
 
@@ -401,56 +428,67 @@
 
 
 
-        <footer>
-            <div id="contenedorF">
+       <footer>
+		<div id="contenedorF">
 
-                <div id="caja2_footer">
-
-
-
-
-                    <article class="cf">
-                        <h3>Informaciones:</h3>
-
-                        <h5>telefono : 222222</h5>
-                        <h5>Lunes a viernes :</h5>
-                        <h5>10:00 - 20:00</h5>
-
-                        <h5>correo: sdasdas@gmail.com</h5>
-                    </article>
+			<div id="caja2_footer">
 
 
 
-                    <article class="cf">
 
-                        <h3>Siguenos:</h3>
-                        <div id="social">
+				<article class="cf">
+					<h3>Informaciones:</h3>
 
-                            <a class="icon-facebook-square " href=" "></a>
-                            <a class="icon-twitter-square " href=" "></a>
-                            <a class="icon-instagram " href=" "></a>
-                            <a class="icon-youtube-play " href=" "></a>
+					<h5>telefono : 222222</h5>
+					<h5>Lunes a viernes :</h5>
+					<h5>10:00 - 20:00</h5>
 
-                        </div>
-
-                    </article>
+					<h5>correo: sdasdas@gmail.com</h5>
+				</article>
 
 
-                    <article class="cf">
-                        <h3>© GAMES CM 2019</h3>
-                        <p>Todos los derechos reservado</p>
-                    </article>
-                </div>
 
-            </div>
-        </footer>
+				<article class="cf">
+
+					<h3>Siguenos:</h3>
+					<div id="social">
+						<a href="https://www.facebook.com/GamesCM.SRL/"> <img
+							class="imgsocial" alt="" src="img/facebook.png"
+							style="width: 35px; height: 35px">
+						</a> <a href="https://twitter.com/?lang=es"> <img
+							class="imgsocial" alt="" src="img/icon-twitter.png"
+							style="width: 35px; height: 35px">
+						</a> <a href="https://www.instagram.com/gamescm/?hl=es-la"><img
+							class="imgsocial" alt="" src="img/icon-instagram.png"
+							style="width: 35px; height: 35px"> </a>
+
+
+					</div>
+
+				</article>
+
+
+				<article class="cf">
+					<h3>© GAMES CM 2019</h3>
+					<p>Todos los derechos reservado</p>   
+					</article>
+			</div>
+
+		</div>
+	</footer>
     </div>
 
     <!-- LADO CENTRAL DEL CUERPO -->
 
 
 </body>
+<!-- SCRIPT PARA USAR JQUERERY -->
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/scriptPagVideojuegos.js"></script>
 <script>
+
+	
+	
     function openNav() {
         document.getElementById("sideNavigation").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
@@ -461,8 +499,7 @@
         document.getElementById("main").style.marginLeft = "0";
     }
 </script>
-<!-- SCRIPT PARA USAR JQUERERY -->
-<script src="jquery-3.2.1.js "></script>
-<script src="scriptPagVideojuegos.js"></script>
+
+
 
 </html>

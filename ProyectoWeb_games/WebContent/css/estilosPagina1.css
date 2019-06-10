@@ -67,8 +67,8 @@
 
 .submenu {
     position: absolute;
-    background-color: #000000;
-    width: 120%;
+    background-color: #111111;
+    width: 100%;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
@@ -187,7 +187,7 @@ aside {
     font-size: 27px;
     display: flex;
     align-items: center;
-    color: #888888;
+    color: #04E404;
 }
 
 
@@ -202,6 +202,28 @@ aside {
     justify-content: center;
 }
 
+.div-contenido-carrusel a{
+	color: #7E7E7E;
+	text-decoration: none;
+	font-size: 15px;
+
+}
+
+.div-contenido-carrusel h5{
+	color: #7E7E7E;
+font-size: 20px;
+}
+
+
+.articulo button{
+	color: #44D62D;
+}
+
+.articulo button:hover{
+
+color: #44D62D;
+background-color: #111111;
+}
 
 /*---------------- CAJA DE ARTICULOS EN FILA DE 4  ---------------------*/
 
@@ -240,7 +262,7 @@ aside {
 .articulo {
     width: 25%;
     height: 99%;
-    border: 0.5px solid #DBF4ED;
+    border: 0.5px solid #343A40;
     /*-webkit-border-radius:3px;
 -moz-border-radius:3px;*/
     display: flex;
@@ -250,7 +272,11 @@ aside {
 }
 
 .articulo:hover {
-    box-shadow: inset 0px 1px 6px 1px #E0E0E0;
+   
+box-shadow:inset 1px 1px 6px 1px  #515151;
+background-color: #111111;
+
+color: white;
 }
 
 .imagenes-carrusel-Producto {
@@ -273,7 +299,7 @@ aside {
     align-items: center;
     justify-content: center;
     height: auto;
-    border: 1px solid red;
+    border: 1px solid aqua;
 }
 
 
@@ -281,7 +307,7 @@ aside {
 
 #contenedorF img {
     width: 260px;
-    margin-top: 55px;
+    
 }
 
 
@@ -291,7 +317,8 @@ aside {
     width: 80%;
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
+    justify-content:space-between;
+    border: 1px solid blue;
 }
 
 .cf {
@@ -300,11 +327,13 @@ aside {
     display: flex;
     flex-grow: 2;
     flex-direction: column;
+      text-align: center;
+    border:1px solid red;
 }
 
 .cf h3 {
     font-size: 17px;
-    color: #FFC107;
+    color: #04E404;
 }
 
 .cf h5 {
@@ -323,6 +352,16 @@ aside {
 
 .cf p {
     color: white;
+}
+
+#social {
+    width: 40%;
+    height:50px;
+ 
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+   margin: auto;
 }
 
 @media screen and (max-width:415px) {
