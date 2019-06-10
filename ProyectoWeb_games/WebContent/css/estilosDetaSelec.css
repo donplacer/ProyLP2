@@ -1,0 +1,451 @@
+@charset "ISO-8859-1";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*--------------------------------------> ENCABEZADO <--------------------------------------------------*/
+
+#body {
+    width: 100%;
+}
+
+#encabezado {
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cajasHeader {
+    width: 33.3%;
+    height: 75px;
+    border: 1px solid white;
+}
+
+
+/*-----------------------------> ESTILOS PARA MENU NAVEGACION Y SUB MENU ---------------------------------------------------------*/
+
+#navegacion {
+    width: 100%;
+    background-color: #111111;
+}
+
+#navegacion ul {
+    list-style: none;
+    text-align: center;
+}
+
+#menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+#menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #888888;
+    font-family: "Homer Simpson", cursive;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    color: #f7f7f7;
+    transition: all .3s;
+}
+
+
+/*------- SUBMENU---*/
+
+.submenu {
+    position: absolute;
+    background-color: #000000;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #696868;
+    font-family: "Homer Simpson", cursive;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    color: #A6A6A6;
+}
+
+#menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*---------------------------------------- CUEPO  PRINCIPAL ---------------------*/
+
+#content-principal {
+    width: 100%;
+    background-color: #1B1B1B;
+    height: auto;
+}
+
+#principal {
+    margin: auto;
+    flex-direction: row;
+    width: 90%;
+    display: flex;
+    /*background-image: url(img/573739.jpg)*/
+    ;
+    padding-bottom: 90px;
+    height: 1200px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*lado izquierdo ----------------------------*/
+
+aside {
+    width: 50%;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: center;
+}
+
+aside .precio {
+    display: none;
+}
+
+aside .disponibilidad {
+    display: none;
+}
+
+#galeria {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#panel img {
+    width: 100%;
+    height: 300px;
+}
+
+#img_opc {
+    width: 100%;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+#img_opc img {
+    width: 24%;
+    height: 100px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+/*-------------------------------------------------LADO DERECHO DEL CUERPO ----------------------------*/
+
+#content_desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B1B1B;
+    height: 526px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #888888;
+}
+
+.desc,
+.marca,
+.precio,
+.disponibilidad {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    color: #888888
+}
+
+.desc span {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.disponibilidad span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.precio span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+}
+
+
+/*---------------------------------- LADO BAJO DEL CUERPO -------------------------------------------------*/
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.tabs {
+    display: block;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #efedef;
+}
+
+.tabs [class^="tab"] label,
+.tabs [class*=" tab"] label {
+    color: #efedef;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.tabs [class^="tab"] [type="radio"],
+.tabs [class*=" tab"] [type="radio"] {
+    border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.tabs [class^="tab"] [type="radio"]:checked,
+.tabs [class*=" tab"] [type="radio"]:checked {
+    border-bottom: 2px solid #04e404;
+}
+
+.tabs [class^="tab"] [type="radio"]:checked+div,
+.tabs [class*=" tab"] [type="radio"]:checked+div {
+    opacity: 1;
+}
+
+.tabs [class^="tab"] [type="radio"]+div,
+.tabs [class*=" tab"] [type="radio"]+div {
+    display: block;
+    opacity: 0;
+    padding: 2rem 0;
+    width: 90%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.tabs .tab-2 {
+    width: 50%;
+}
+
+.tabs .tab-2 [type="radio"]+div {
+    width: 200%;
+    margin-left: 200%;
+}
+
+.tabs .tab-2 [type="radio"]:checked+div {
+    margin-left: 0;
+}
+
+.tabs .tab-2:last-child [type="radio"]+div {
+    margin-left: 100%;
+}
+
+.tabs .tab-2:last-child [type="radio"]:checked+div {
+    margin-left: -100%;
+}
+
+
+/*--------------------------------------------- FOOTER ----------------------*/
+
+#contenedorF {
+    width: 100%;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border: 1px solid red;
+}
+
+
+/*----------------caja 1 --------------*/
+
+#contenedorF img {
+    width: 260px;
+    margin-top: 55px;
+}
+
+
+/*----------------caja 2 --------------*/
+
+#caja2_footer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+
+.cf {
+    border: 1px solid teal;
+    width: 20%;
+    margin-right: 2px;
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cf h3 {
+    font-size: 17px;
+    color: #efedef;
+    padding: 25px;
+}
+
+.cf h5 {
+    font-size: 14px;
+    color: #515151
+}
+
+.cf a {
+    text-decoration: none;
+    color: #515151;
+}
+
+.cf a:hover {
+    color: white;
+}
+
+.cf p {
+    color: #515151;
+}
+
+@media screen and (max-width:415px) {
+    /*---------------------------------------- CUERPO PRINCIPAL ---------------------------------- */
+    #principal {
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+    /*---------------------------------------- DESCRIPCION DEL PRODUCTO (CUERPO PRINCIPAL) ---------------------------------- */
+    #content_desc {
+        width: 90%;
+        order: 1;
+        height: auto;
+        padding-top: 55px;
+        border: none;
+    }
+    .desc,
+    .marca,
+    .precio,
+    .disponibilidad {
+        padding: 4px;
+    }
+    #content_desc .precio {
+        display: none;
+        /*-------->  SE AGREGA PARA DESAPARECER DE LA CAJA DESCRIPCION Y PASARLO AL DIV GALERIA*/
+    }
+    #content_desc .disponibilidad {
+        display: none;
+        /*-------->  SE AGREGA PARA DESAPARECER DE LA CAJA DESCRIPCION Y PASARLO AL DIV GALERIA*/
+    }
+    .marca h4 {
+        font-size: 11px;
+    }
+    .desc span {
+        font-size: 23px;
+    }
+    .precio span {
+        font-size: 25px;
+    }
+    /*-------------------------- GALERIA IMAGENES DEL PRODUCTO (CUERPO PRINCIPAL) ---------------------------------- */
+    aside {
+        width: 100%;
+        order: 2;
+        padding-top: 25px
+    }
+    aside #galeria {
+        width: 100%;
+    }
+    aside #img_opc {
+        width: 90%;
+        margin: auto;
+    }
+    aside .precio {
+        display: block;
+        /*-------->  SE AGREGA LO DESAPARECIDO DEL DIV DESCRIPCION PRODUCTO*/
+        width: 90%;
+        font-size: 25px;
+        color: wheat;
+        padding-top: 55px;
+        margin: auto;
+    }
+    aside .disponibilidad {
+        display: block;
+        /*-------->  SE AGREGA LO DESAPARECIDO DEL DIV DESCRIPCION PRODUCTO*/
+        width: 90%;
+        font-size: 25px;
+        color: wheat;
+        margin: auto;
+        padding-bottom: 45px;
+    }
+    #panel img {
+        width: 100%;
+        /*-------->  SE AGRANDA IMAGEN PRINCIPAL AL 100%*/
+    }
+    /*--------------------------- DIV INFORMACION Y ESPECIFICACION DEL PRODUCTO (CUERPO PRINCIPAL) ------------- */
+    .tabs {
+        order: 3;
+    }
+    /*------------------------------------ FOOTER ------------------------------------ */
+    #conntenedorF {
+        width: 100%;
+        border: 1px solid yellow;
+    }
+    #caja2_footer {
+        flex-direction: column;
+        height: auto;
+    }
+    .cf {
+        width: 100%;
+        flex-direction: column;
+    }
+    .cf a {
+        font-size: 7px
+    }
+}
