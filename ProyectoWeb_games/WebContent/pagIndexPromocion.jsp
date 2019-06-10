@@ -12,7 +12,7 @@
     <!-- ENLACCE PARA ICONOS -->
     <link href="https://file.myfontastic.com/7Y2CeESwdu83DsVFwBMsPb/icons.css" rel="stylesheet">
     <!-- ESTILOS PARA PAGINA 1 -->
-    <link rel="stylesheet" type="text/css" href="estilosPagina1.css">
+    <link rel="stylesheet" type="text/css" href="css/estilosPagina1.css">
 
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
