@@ -84,7 +84,12 @@
 
                     </ul>
                 </li>
-                <li><a href="">EXCLUSIVO ONLINE</a></li>
+                <li><a href="">Accesorios</a>
+					<ul class="submenu">
+						<li><a href="">teclado</a></li>
+						<li><a href="">mouse</a></li>
+
+					</ul></li>
             </ul>
         </nav>
 
@@ -144,11 +149,12 @@
                 <section id="content_desc">
 
 
-                    <div class="marca">
+                    <div class="marca" >
                         <h4 style="font-weight: bold"> SONY</h4>
+                        <h4 style="font-weight: bold"> Código del producto: 16518524</h4>
                     </div>
 
-                    <div class="desc">
+                    <div class="desc" >
 
                         <span style="font-weight: 100"> Consola ps4 1tb Negro + control :V</span>
                     </div>
@@ -236,14 +242,19 @@
                     <article class="cf">
 
                         <h3>Siguenos:</h3>
-                        <div id="social">
+                       <div id="social">
+							<a href="https://www.facebook.com/GamesCM.SRL/"> <img
+								class="imgsocial" alt="" src="img/facebook.png"
+								style="width: 35px; height: 35px">
+							</a> <a href="https://twitter.com/?lang=es"> <img
+								class="imgsocial" alt="" src="img/icon-twitter.png"
+								style="width: 35px; height: 35px">
+							</a> <a href="https://www.instagram.com/gamescm/?hl=es-la"><img
+								class="imgsocial" alt="" src="img/icon-instagram.png"
+								style="width: 35px; height: 35px"> </a>
 
-                            <a class="icon-facebook-square " href=" "></a>
-                            <a class="icon-twitter-square " href=" "></a>
-                            <a class="icon-instagram " href=" "></a>
-                            <a class="icon-youtube-play " href=" "></a>
 
-                        </div>
+						</div>
 
                     </article>
 

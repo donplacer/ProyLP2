@@ -60,7 +60,7 @@ $(document).ready(function(){
     		
 		$(this).find('h5').css("color","white");
 		$(this).find('a').css("color","white");
-		$(this).find('.imagenes-carrusel-Producto').css("transform","scale(1.05)");
+		
 		
 		
 		$.each($(".btn-outline-success"),function(){
@@ -79,7 +79,7 @@ $(document).ready(function(){
 	$(".div-contenido-carrusel").mouseout(function(){
 		$(this).find('h5').css("color","#7E7E7E");
 		$(this).find('a').css("color","#7E7E7E");
-		$(this).find('.imagenes-carrusel-Producto').css("transform","scale(1)");
+		
 		
 		$.each($(".btn-outline-success"),function(){
 			$(this).css("opacity","1");

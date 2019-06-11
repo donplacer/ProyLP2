@@ -215,7 +215,7 @@
 					<div class="top border-bottom border-dark">
 
 						<h3>
-							<strong class="text-monospace ">Preveasdasntas</strong>
+							<strong class="text-monospace ">Preventas</strong>
 						</h3>
 						<a href="#">Màs Resultados</a>
 

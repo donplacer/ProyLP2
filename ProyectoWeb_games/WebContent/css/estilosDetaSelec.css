@@ -172,10 +172,18 @@ aside .disponibilidad {
 .marca,
 .precio,
 .disponibilidad {
-    width: 100%;
+    width: 60%;
     height: auto;
     padding: 20px;
     color: #888888
+}
+
+.marca{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: #515151;
+	
 }
 
 .desc span {
@@ -297,8 +305,8 @@ select:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
-    border: 1px solid red;
+    height: 180px;;
+    
 }
 
 
@@ -306,7 +314,7 @@ select:focus {
 
 #contenedorF img {
     width: 260px;
-    margin-top: 55px;
+  
 }
 
 
@@ -316,11 +324,11 @@ select:focus {
     width: 80%;
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
+    
 }
 
 .cf {
-    border: 1px solid teal;
+   	
     width: 20%;
     margin-right: 2px;
     display: flex;
@@ -331,7 +339,7 @@ select:focus {
 
 .cf h3 {
     font-size: 17px;
-    color: #efedef;
+    color: #04E10E;
     padding: 25px;
 }
 
@@ -351,6 +359,15 @@ select:focus {
 
 .cf p {
     color: #515151;
+}
+#social {
+    width: 40%;
+    height:50px;
+ 
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+   margin: auto;
 }
 
 @media screen and (max-width:415px) {
