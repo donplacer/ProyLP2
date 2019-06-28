@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 
 
+<%@page import="Mantenimiento.gestionProducto"%>
+<%@page import="model.Producto"%>
+<%@page import="java.util.ArrayList"%>
 <html>
 
 <head>
-
+<%@ taglib uri="http://displaytag.sf.net" prefix="display"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="/WEB-INF/libreria.tld" prefix="ct"%>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -41,16 +46,16 @@
 
 
 
-			<div id="contenedor" style="background-color: #111111">
+			<div id="contenedor" style="background-color: #111111;height: 80px;">
 
 
 				<div class="Contenedor-Busquedad">
 
 					<div class="contenedorNav">
 
-						<div>
-							<img src="img/logo.jpg" alt="">
-						</div>
+						<div class="img-carrito">
+						<img alt="" src="img/letra2.png">
+					</div>
 
 
 						<div style="width: 60%; display: flex; justify-content: center;">
@@ -63,7 +68,7 @@
 
 							<a href="#" style="width: 100%; height: 100%;"> <img alt=""
 								src="img/icono-carrito.png"
-								style="background-repeat: no-repeat; width: 100%; height: 100%;">
+								style="background-repeat: no-repeat; width: 60px; height: 100%;">
 							</a>
 
 						</div>
@@ -184,259 +189,39 @@
 
 					</div>
 
+
 					<div class="articulos">
 
-						<div class="articulo ">
-							<div class="div-imagen-carrusel">
-								<img class="imagenes-carrusel-Producto"
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png" alt="" />
-							</div>
-							<div class="div-contenido-carrusel">
-								<a href="#">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
 
 
+						<ct:imagen pagina="${param.pagina}" />
+						<%
+							int pagina = 0;
+							double filas = new gestionProducto().cantidadDeFilas();
 
+							double filaSinRedondear = (filas / 16);
 
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesFUNKO/img02.jpg " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
+							long numPag = Math.round(filaSinRedondear);
 
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
+							for (int i = 0; i < numPag; i++) {
+						%>
+						
+						<a style="color: #04E404;text-decoration: none;"  href="?pagina=<%=i%>">
+				<button type="button" class="btn btn-outline-success btn1">
+				<%=i + 1%>
+				</button>
+				</a>
+						<%
+							}
+						%>
 
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesFUNKO/img04.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesFUNKO/img05.jpg " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-					</div>
-
-
-					<div class="articulos ">
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
 
 					</div>
 
 
-					<div class="articulos ">
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
 
 
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
 
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-					</div>
-
-
-					<div class="articulos ">
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-
-						<div class="articulo ">
-							<div class="div-imagen-carrusel ">
-								<img class="imagenes-carrusel-Producto "
-									src="img/imagenesProductos/imagenesPS4/PS4fallout.png " alt=" " />
-							</div>
-							<div class="div-contenido-carrusel ">
-								<a href="# ">Juego PS4 </a>
-
-								<h5>$235,90</h5>
-							</div>
-							<a href="detSelect.jsp"><button type="button"
-									class=" btn btn-outline-success">AGREGAR AL CARRITO</button></a>
-						</div>
-
-					</div>
 
 				</section>
 			</div>

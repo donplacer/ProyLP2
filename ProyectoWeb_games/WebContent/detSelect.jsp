@@ -117,12 +117,12 @@
 
                     <div id="galeria">
                         <div id="panel">
-                            <img id="img_vista" src="img/1.jpg" />
+                            <img id="img/P00<%=request.getParameter("id") %>.jpg" src="img/1.jpg" />
 
                         </div>
 
                         <div id="img_opc">
-                            <img src="img/1.jpg" />
+                            <img src="" alt="no img"/>
                             <img src="img/2.jpg" />
                             <img src="img/3.jpg" />
                             <img src="img/4.jpg" />
@@ -156,14 +156,14 @@
 
                     <div class="desc" >
 
-                        <span style="font-weight: 100"> Consola ps4 1tb Negro + control :V</span>
+                        <span style="font-weight: 100"> <%=request.getParameter("des") %></span>
                     </div>
 
                     <div class="precio">
                         <span>S/. 1,799</span>
                     </div>
                     <div class="disponibilidad">
-                        <span>Disponibilidad : </span><span style="color: #04e404">En Existencia</span>
+                        <span>stock : </span><span style="color: #04e404"><%=request.getParameter("estadoPro") %></span>
                     </div>
 
 

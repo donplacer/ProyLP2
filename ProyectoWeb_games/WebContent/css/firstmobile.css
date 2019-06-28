@@ -1,6 +1,6 @@
 @media ( max-width :550px) {
 	body {
-		border: 2px solid red;
+		bordeR:4px solid blue;
 	}
 	.li-eliminado {
 		display: none !important;
@@ -32,7 +32,7 @@
 	#content_menu{
 	
 	
-	border: 1px solid aqua;
+	
 	}
 	
 	#content_menu li {
@@ -71,10 +71,10 @@
 		text-align: center;
 		/*background-image: url(img/573739.jpg)*/
 		background-color: #EEEEEE;
-		border: 5px solid green;
+		
 	}
 	.div-carrusel-productos {
-		border: 2px solid red;
+		
 		height: 100%;
 		width: 100%;
 		display: flex;
@@ -111,7 +111,7 @@
 		text-align: center;
 		/*background-image: url(img/573739.jpg)*/
 		background-color: #EEEEEE;
-		border: 5px solid red;
+		
 	}
 	.div-carrusel-productos {
 		border: 2px solid purple;

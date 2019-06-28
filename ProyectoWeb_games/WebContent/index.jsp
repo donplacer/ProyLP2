@@ -9,11 +9,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- ESTILOS PARA FUENTES -->
-
+<%@ taglib uri="/WEB-INF/libreria.tld" prefix="ct"%>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1'
 	rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Wire+One&v1'
 	rel='stylesheet' type='text/css' />
+
+<link href="http://allfont.es/allfont.css?fonts=bauhaus-bold-bt" rel="stylesheet" type="text/css" />
 
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -52,9 +54,14 @@
 
 				<div class="contenedorNav">
 
-					<div>
-						<img src="img/logo.jpg" alt="">
+					
+					
+					<div class="img-carrito">
+						<img alt="" src="img/letra2.png">
 					</div>
+						
+        
+					
 
 
 					<div style="width: 60%; display: flex; justify-content: center;">
@@ -65,10 +72,7 @@
 
 					<div class="img-carrito">
 
-						<a href="#" style="width: 100%; height: 100%;"> <img alt=""
-							src="img/icono-carrito.png"
-							style="background-repeat: no-repeat; width: 100%; height: 100%;">
-						</a>
+						
 
 					</div>
 
@@ -84,7 +88,7 @@
 			<ul id="menu">
 				<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
 				<li><a class="icon-angle-double-down"
-					href="pagIndexPromocion.jsp"> Promociones </a>
+					href="servletProducto"> Promociones </a>
 					<ul class="submenu">
 						<li><a href="">VideoJuegos</a></li>
 						<li><a href="">Funko</a></li>
@@ -112,6 +116,9 @@
 
                     </ul>
 				</li>
+				<li class="li-eliminado"><a href="#">Noticias</a>
+					
+				</li>
 			</ul>
 		</nav>
 
@@ -130,14 +137,18 @@
 
 	<div class="flexslider" style="height: 450px; margin-top: 120px;">
 		<ul class="slides" style="height: 100%; width: 100%;">
-			<li><img class="imagenes-Carrusel-Principal"
-				src="img/imagenesCarruselPrincipal/banner-home-preventa-fifa-18.jpg"
-				alt=""></li>
-			<li><img class="imagenes-Carrusel-Principal"
-				src="img/imagenesCarruselPrincipal/fondo.jpg" alt=""></li>
+			<li>
+			<a href="#"><img class="imagenes-Carrusel-Principal"
+				alt="" src="img/bannerCrash.png" ></a></li>
+				
+			<li>
+			<a href="#"><img class="imagenes-Carrusel-Principal"
+				src="img/imagenesCarruselPrincipal/fondo.jpg" alt=""></a></li>
 
-			<li><img class="imagenes-Carrusel-Principal"
-				src="img/bannerCrash.png" alt=""></li>
+
+			<li>
+			<a href="#"><img class="imagenes-Carrusel-Principal"
+				src="img/bannerCrash.png" alt=""></a></li>
 
 
 
@@ -172,23 +183,26 @@
 			<ul id="content_menu">
 				
 				
-				<li><a href="#"> <img onMouseOver="cambio(0)" onMouseOut="original(0)" class="imgnav" 
+				<li><a href="servletProducto"> <img onMouseOver="cambio(0)" onMouseOut="original(0)" class="imgnav" 
 						src="img/imagenesNavegacion/promocion.png">
 						<h2>Promociones</h2>
 
 				</a></li>
 				
 
+			
 				<li><a href="#"> <img onMouseOver="cambio(1)" onMouseOut="original(1)" class="imgnav" 
-						src="img/imagenesNavegacion/preventa.png">
-						<h2>Preventas</h2>
-
-				</a></li>
-				<li><a href="#"> <img onMouseOver="cambio(2)" onMouseOut="original(2)" class="imgnav" 
 						src="img/imagenesNavegacion/mando.png">
 						<h2>Videojuegos</h2>
 
 				</a></li>
+				<li><a href="#"> <img onMouseOver="cambio(2)" onMouseOut="original(2)" class="imgnav" 
+						src="img/imagenesNavegacion/preventa.png">
+						<h2>Preventas</h2>
+
+				</a></li>
+				
+				
 				<li>
 				
 				<a href="#"> <img onMouseOver="cambio(3)" onMouseOut="original(3)" class="imgnav" 
@@ -215,1046 +229,222 @@
 					<div class="top border-bottom border-dark">
 
 						<h3>
-							<strong class="text-monospace ">Preventas</strong>
+							<strong class="text-monospace ">Promociones</strong>
 						</h3>
 						<a href="#">Màs Resultados</a>
 
 					</div>
-
+					
+					
+					<%   %>
+					
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
 
-
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class=" btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-
-
-
-									<div class="carrusel">
-
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4dance.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4destiny2.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4division2.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
+									<ct:PaginaPromociones pagina="${param.pagina}"  />
+									
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4farcry.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fornite.png"
-												alt="" />
-										</div>
-
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4devilMaiCry5.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
+								
+									<ct:PaginaPromociones  pagina="${param.pagina}"  />
+									
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4devilMaiCry5.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
+									
+									<ct:PaginaPromociones pagina="${param.pagina}"  />
 
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4dance.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fornite.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
 								</div>
 							</li>
 						</ul>
 					</div>
 
-				</div>
-
-
-				<div class="carrusel-productos">
-
-					<div class="top border-bottom border-dark " style="">
-
-						<h3>
-							<strong>Más vendidos</strong>
-						</h3>
-						<a href="#">Màs Resultados</a>
-
-					</div>
-
-					<div class="flexslider" style="">
-						<ul class="slides">
-							<li class="imagenes">
-								<div class="div border-bottom border-dark ">
-
-									<div class="carrusel">
-
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-
-
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4dance.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4destiny2.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4division2.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4farcry.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fornite.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4devilMaiCry5.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4devilMaiCry5.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4dance.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fornite.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="carrusel-productos">
-
-					<div class="top border-bottom border-dark ">
-
-						<h3>
-							<strong class="text-monospace">Funko Exclusivos</strong>
-						</h3>
-						<a href="#">Màs Resultados</a>
-
-					</div>
-
-					<div class="flexslider" style="">
-						<ul class="slides">
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-
-
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img01.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-
-
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img02.jpg" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img04.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img05.jpg" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img07.png" alt="" />
-										</div>
-
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img08.jpg" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img08.jpg" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img10.jpg" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img11.jpg" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img12.jpg" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img13.jpg" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesFUNKO/img14.jpg" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-
-				<div class="carrusel-productos">
-
-					<div class="top border-bottom border-dark ">
-
-						<h3>
-							<strong class="text-monospace">Promociones</strong>
-						</h3>
-						<a href="#">Màs Resultados</a>
-
-					</div>
-
-					<div class="flexslider" style="">
-						<ul class="slides">
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4devilMaiCry5.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4dance.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-
-
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4farcry.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fornite.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class=" div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4devilMaiCry5.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4devilMaiCry5.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4dance.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fornite.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="carrusel-productos">
-
-					<div class="top border-bottom border-dark ">
-
-						<h3>
-							<strong class="text-monospace">PlayStation</strong>
-						</h3>
-						<a href="#">Màs Resultados</a>
-
-					</div>
-
-					<div class="flexslider">
-						<ul class="slides">
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-
-
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-
-
-
-									<div class="carrusel">
-
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4dance.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4destiny2.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4division2.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4farcry.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fornite.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4devilMaiCry5.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark">
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4farcry.png" alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fornite.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4fallout.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-
-									<div class="carrusel carrusel-eliminado">
-										<div class="div-imagen-carrusel">
-											<img class="imagenes-carrusel-Producto"
-												src="img/imagenesProductos/imagenesPS4/PS4devilMaiCry5.png"
-												alt="" />
-										</div>
-										<div class="div-contenido-carrusel">
-											<a href="#">Juego PS4 </a>
-
-											<h5>$235,90</h5>
-										</div>
-										<button type="button" class="btn btn-outline-success">AGREGAR
-											AL CARRITO</button>
-									</div>
-								</div>
-							</li>
-
-						</ul>
-					</div>
 				</div>
 			</div>
+			
+			
+			
+			<div class="div-carrusel-productos">
+
+
+				<div class="carrusel-productos">
+
+					<div class="top border-bottom border-dark">
+
+						<h3>
+							<strong class="text-monospace ">Perifericos</strong>
+						</h3>
+						<a href="#">Màs Resultados</a>
+
+					</div>
+
+					<div class="flexslider" style="">
+						<ul class="slides">
+							<li class="imagenes">
+								<div class="div border-bottom border-dark" >
+
+									<ct:PaginaPerifericos pagina="${param.pagina}" />
+									
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark" >
+								
+									<ct:PaginaPerifericos pagina="${param.pagina}" />
+									
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark">
+									
+									<ct:PaginaPerifericos pagina="${param.pagina}" />
+
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			
+			
+			<div class="div-carrusel-productos">
+
+
+				<div class="carrusel-productos">
+
+					<div class="top border-bottom border-dark">
+
+						<h3>
+							<strong class="text-monospace ">Funko</strong>
+						</h3>
+						<a href="#">Màs Resultados</a>
+
+					</div>
+
+					<div class="flexslider" style="">
+						<ul class="slides">
+							<li class="imagenes">
+								<div class="div border-bottom border-dark" >
+
+									<ct:PaginaFunkos pagina="${param.pagina}" />
+									
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark" >
+								
+									<ct:PaginaFunkos pagina="${param.pagina}" />
+									
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark">
+									
+									<ct:PaginaFunkos pagina="${param.pagina}" />
+
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			
+			
+			<div class="div-carrusel-productos">
+
+
+				<div class="carrusel-productos">
+
+					<div class="top border-bottom border-dark">
+
+						<h3>
+							<strong class="text-monospace ">PS4</strong>
+						</h3>
+						<a href="#">Màs Resultados</a>
+
+					</div>
+
+					<div class="flexslider" style="">
+						<ul class="slides">
+							<li class="imagenes">
+								<div class="div border-bottom border-dark" >
+
+									<ct:PaginaNintendo pagina="${param.pagina}" />
+									
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark" >
+								
+									<ct:PaginaNintendo pagina="${param.pagina}" />
+									
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark">
+									
+									<ct:PaginaNintendo pagina="${param.pagina}" />
+
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			
+			
+			<div class="div-carrusel-productos">
+
+
+				<div class="carrusel-productos">
+
+					<div class="top border-bottom border-dark">
+
+						<h3>
+							<strong class="text-monospace ">Nintendo</strong>
+						</h3>
+						<a href="#">Màs Resultados</a>
+
+					</div>
+
+					<div class="flexslider" style="">
+						<ul class="slides">
+							<li class="imagenes">
+								<div class="div border-bottom border-dark" >
+
+									<ct:PaginaPromociones pagina="${param.pagina}" />
+									
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark" >
+								
+									<ct:PaginaPromociones pagina="${param.pagina}" />
+									
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark">
+									
+									<ct:PaginaPromociones pagina="${param.pagina}" />
+
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			
 		</section>
 	</div>
 

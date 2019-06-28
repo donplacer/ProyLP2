@@ -195,7 +195,8 @@ aside {
 
 .articulos {
     width: 98%;
-    height: 350px;
+    
+    flex-wrap:wrap;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
@@ -211,7 +212,7 @@ aside {
 
 .div-contenido-carrusel h5{
 	color: #7E7E7E;
-font-size: 20px;
+font-size:30px;
 }
 
 
@@ -231,7 +232,8 @@ background-color: #111111;
 /* IMAGENES DE LOS PRODUCTOS */
 
 .div-imagen-carrusel {
-    height: 80%;
+    
+    height:200px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -240,10 +242,15 @@ background-color: #111111;
 .div-contenido-carrusel {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    height: 20%;
+    justify-content:space-around;
+   	
+    width: 50%;
+    height: 60px;
+
+   
+  
 }
+
 
 .imagenes-carrusel-Producto {
     width: 50%;
@@ -267,8 +274,10 @@ background-color: #111111;
 -moz-border-radius:3px;*/
     display: flex;
     flex-direction: column;
+    align-items:center;
     text-align: center;
     background-color: #1B1B1B;
+    margin-top: 18px;
 }
 
 .articulo:hover {
@@ -287,6 +296,17 @@ color: white;
 
 
 /*   CAJAS DE CADA PRODUCTO -------------------*/
+/*Boton de paginacion*/
+
+.btn1{
+	margin: 20px 20px 0px 0;
+}
+
+.btn1:hover{
+	
+	background-color: black;
+	color: #04E404;
+}
 
 
 /*--------------------------------------------- FOOTER ----------------------*/
@@ -364,7 +384,7 @@ color: white;
    margin: auto;
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:550px) {
     #principal {
         width: 100%;
         height: auto;
@@ -373,8 +393,7 @@ color: white;
         flex-direction: column;
     }
     aside {
-        width: 100%;
-        display: flex;
+        display: none;
     }
     #contenedorPrincipal {
         width: 100%;
@@ -397,13 +416,17 @@ color: white;
         display: flex;
         flex-direction: column;
     }
-    #conntenedorF {
+    footer{
+    	height: 270px;
+    }
+    #contenedorF {
         width: 100%;
-        border: 1px solid yellow;
+       
+        height: 100%;
     }
     #caja2_footer {
         flex-direction: column;
-        height: auto;
+        height: 100%;
     }
     .cf {
         width: 100%;
