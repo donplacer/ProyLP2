@@ -279,7 +279,7 @@
 						<h3>
 							<strong class="text-monospace ">Perifericos</strong>
 						</h3>
-						<a href="#">Màs Resultados</a>
+						<a href="#">Màs Resultado</a>
 
 					</div>
 
