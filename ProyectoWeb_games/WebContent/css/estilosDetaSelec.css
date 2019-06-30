@@ -65,7 +65,7 @@
 
 .submenu {
     position: absolute;
-    background-color: #000000;
+    background-color: #111111;
     width: 120%;
     visibility: hidden;
     opacity: 0;
@@ -370,7 +370,7 @@ select:focus {
    margin: auto;
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:550px) {
     /*---------------------------------------- CUERPO PRINCIPAL ---------------------------------- */
     #principal {
         width: 100%;
@@ -450,9 +450,13 @@ select:focus {
         order: 3;
     }
     /*------------------------------------ FOOTER ------------------------------------ */
-    #conntenedorF {
+    footer{
+    height: 360px;
+    }
+    #contenedorF {
         width: 100%;
-        border: 1px solid yellow;
+        
+        height: 100%;
     }
     #caja2_footer {
         flex-direction: column;

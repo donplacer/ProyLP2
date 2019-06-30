@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib>
+
+
+  <tlibversion> 1.0</tlibversion>
+  <jspversion>1.0</jspversion>
+  <shortname>ct</shortname>
+  
+
+  
+
+  
+    <tag>
+   <name>imagen</name>
+   <tagclass>etiquetas.paginacionTag</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra la fecha del sistema</info>
+   
+   <attribute>
+    <name> pagina</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   
+  </tag>
+  
+  
+  
+  <!-- Promociones -->
+  
+  
+  <tag>
+   <name>PaginaPromociones</name>
+   <tagclass>etiquetas.PaginacionTagIndexPromociones</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos en el mini-carrusel</info>
+   
+   <attribute>
+    <name> pagina</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   
+   
+  </tag>
+  
+  
+    <!-- Perifericos -->
+  
+  <tag>
+   <name>PaginaPerifericos</name>
+   <tagclass>etiquetas.PaginacionTagIndexPerifericos</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos Perifericos</info>
+   
+   <attribute>
+    <name> pagina</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   
+   
+  </tag>
+  
+  
+    <!-- Funkos -->
+  
+  	 <tag>
+   <name>PaginaFunkos</name>
+   <tagclass>etiquetas.paginacionTagIndexFunkos</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos Funkos</info>
+   
+   <attribute>
+    <name> pagina</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+  </tag>
+  
+  
+  
+    <!-- NINTENDO -->
+  
+  	 <tag>
+   <name>PaginaNintendo</name>
+   <tagclass>etiquetas.paginacionTagIndexFunkos</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos Funkos</info>
+   
+   <attribute>
+    <name> pagina</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+  </tag>
+  
+  
+  
+</taglib>

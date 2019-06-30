@@ -1,7 +1,7 @@
 
-var imgcambio=["promocion2.png", "preventa2.png","mando2.png","superman2.png"];
+var imgcambio=["promocion2.png", "mando2.png","preventa2.png","superman2.png"];
 
-var imgorig=["promocion.png", "preventa.png",  "mando.png",  "superman.png"];
+var imgorig=["promocion.png", "mando.png",  "preventa.png",  "superman.png"];
 
 function cambio(x){
 	document.getElementsByClassName("imgnav")[x].src="img/imagenesNavegacion/"+imgcambio[x];
