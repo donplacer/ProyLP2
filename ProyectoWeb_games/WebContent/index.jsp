@@ -60,7 +60,7 @@
 					<div style="width: 60%; display: flex; justify-content: center;">
 						<input style="margin-top: 20px;" type="search"
 							placeholder="Buscar...">
-						<button style="margin-top: 20px;">Buscar</button>
+						<button style="margin-top: 20px;">Busca</button>
 					</div>
 
 					<div class="img-carrito">
