@@ -150,7 +150,7 @@
 
 
                     <div class="marca" >
-                        <h4 style="font-weight: bold"> SONYy</h4>
+                        <h4 style="font-weight: bold"> SONY</h4>
                         <h4 style="font-weight: bold"> Código del producto: 16518524</h4>
                     </div>
 
