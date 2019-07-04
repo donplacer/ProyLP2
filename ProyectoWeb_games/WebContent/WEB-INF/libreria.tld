@@ -23,6 +23,8 @@
     <rtexprvalue>true</rtexprvalue>
    </attribute>
    
+    
+   
   </tag>
   
   
@@ -50,15 +52,44 @@
   
   <tag>
    <name>PaginaPerifericos</name>
-   <tagclass>etiquetas.PaginacionTagIndexPerifericos</tagclass>
+   <tagclass>etiquetas.TagListarPerifericos</tagclass>
    <bodycontent>empty</bodycontent>
    <info>Muestra los productos Perifericos</info>
    
    <attribute>
-    <name> pagina</name>
+    <name> pag</name>
     <required>false</required>
     <rtexprvalue>true</rtexprvalue>
    </attribute>
+   
+    <attribute>
+    <name>fila</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   
+    <attribute>
+    <name>prodXpag</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   
+  </tag>
+  
+  <!--  CARRUSEL PERIFERICOS -->
+  <tag>
+   <name>carruselPerifericos</name>
+   <tagclass>etiquetas.TagCarruselPerifericos</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos Perifericos</info>
+   
+   <attribute>
+    <name> pag</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   
+    
    
    
   </tag>
@@ -67,35 +98,124 @@
     <!-- Funkos -->
   
   	 <tag>
-   <name>PaginaFunkos</name>
-   <tagclass>etiquetas.paginacionTagIndexFunkos</tagclass>
+   <name>carruselFunko</name>
+   <tagclass>etiquetas.TagCarruselFunkos</tagclass>
    <bodycontent>empty</bodycontent>
    <info>Muestra los productos Funkos</info>
    
    <attribute>
-    <name> pagina</name>
+    <name> pag</name>
     <required>false</required>
     <rtexprvalue>true</rtexprvalue>
    </attribute>
   </tag>
   
   
-  
+  <tag>
+   <name>PaginaFunkos</name>
+   <tagclass>etiquetas.TagListarFunkos</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos Funkos</info>
+   
+   <attribute>
+    <name> pag</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+  </tag>
     <!-- NINTENDO -->
   
   	 <tag>
-   <name>PaginaNintendo</name>
-   <tagclass>etiquetas.paginacionTagIndexFunkos</tagclass>
+   <name>carruselNintendo</name>
+   <tagclass>etiquetas.TagCarruselNintendo</tagclass>
    <bodycontent>empty</bodycontent>
    <info>Muestra los productos Funkos</info>
    
    <attribute>
-    <name> pagina</name>
+    <name> pag</name>
     <required>false</required>
     <rtexprvalue>true</rtexprvalue>
    </attribute>
   </tag>
   
   
+   <tag>
+   <name>PaginaNintendo</name>
+   <tagclass>etiquetas.TagListarNintendo</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos Funkos</info>
+   
+   <attribute>
+    <name> pag</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+  </tag>
+     <!-- playStation -->
+  	 <tag>
+   <name>CarruselPlayStation</name>
+   <tagclass>etiquetas.TagCarruselPlayStation</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos Funkos</info>
+   
+   <attribute>
+    <name>pag</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+
+  </tag>
   
+  
+   <tag>
+   <name>PaginaPlayStation</name>
+   <tagclass>etiquetas.TagListarPlayStation</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos Funkos</info>
+   
+   <attribute>
+    <name>pag</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+
+  </tag>
+   <!-- PRODUCTOS X BUSQUEDA -->
+  
+  <tag>
+   <name>PaginaBusqueda</name>
+   <tagclass>etiquetas.PaginacionTagBusqueda</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos pr busqueda</info>
+   
+   <attribute>
+    <name> pagina</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   
+   <attribute>
+    <name> prod</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+   
+  </tag>
+  
+  
+     <!-- PRODUCTOS Videojuegos General -->
+  
+  <tag>
+   <name>paginaVideojuegos</name>
+   <tagclass>etiquetas.TagListarVideojuegos</tagclass>
+   <bodycontent>empty</bodycontent>
+   <info>Muestra los productos Funkos</info>
+   
+   <attribute>
+    <name>pag</name>
+    <required>false</required>
+    <rtexprvalue>true</rtexprvalue>
+   </attribute>
+
+  </tag>
 </taglib>

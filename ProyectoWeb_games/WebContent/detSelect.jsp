@@ -149,24 +149,30 @@
                 <section id="content_desc">
 
 
+<form action="AgregarServlet">
+
                     <div class="marca" >
-                        <h4 style="font-weight: bold"> SONY</h4>
-                        <h4 style="font-weight: bold"> Código del producto: 16518524</h4>
+                        <h4 style="font-weight: bold">${p.marcaProd}</h4>
+                        <h4 style="font-weight: bold"> Código del producto: ${p.codPro} </h4>
                     </div>
 
                     <div class="desc" >
 
-                        <span style="font-weight: 100"> <%=request.getParameter("des") %></span>
+                        <span style="font-weight: 100">${p.descPro}</span>
                     </div>
 
                     <div class="precio">
-                        <span>S/. 1,799</span>
+                        <span>S/.${p.precioPro}</span>
                     </div>
                     <div class="disponibilidad">
                         <span>stock : </span><span style="color: #04e404"><%=request.getParameter("estadoPro") %></span>
                     </div>
+                    <div>
+                      <input type="number" name="cantidad">
+                    </div>
+                    <input type="submit">
 
-
+</form>
 
 
                 </section>

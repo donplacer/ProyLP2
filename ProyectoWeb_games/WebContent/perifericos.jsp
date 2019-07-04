@@ -48,7 +48,7 @@
 
 
 
-			<div id="contenedor" style="background-color: #111111; height: 80px;">
+			<div id="contenedor" style="background-color: #111111;height: 80px;">
 
 
 				<div class="Contenedor-Busquedad">
@@ -56,8 +56,8 @@
 					<div class="contenedorNav">
 
 						<div class="img-carrito">
-							<img alt="" src="img/letra2.png">
-						</div>
+						<img alt="" src="img/letra2.png">
+					</div>
 
 
 						<div style="width: 60%; display: flex; justify-content: center;">
@@ -157,23 +157,18 @@
 						</div>
 						<div id="nav_izq">
 							<ul>
-								<a href="" style="font-weight: bold;">Videojuegos</a>
-								<li><a href="">PlayStation</a></li>
-								<li><a href="">Nintendo</a></li>
+								<a href="" style="font-weight: bold;">Audifonos</a>
+							
 
 							</ul>
 							<ul>
-								<a href="" style="font-weight: bold;">Accesorios</a>
-								<li><a href="">Audifonos</a></li>
-								<li><a href="">Teclados</a></li>
-								<li><a href="">Mouses</a></li>
+								<a href="" style="font-weight: bold;">Mouse</a>
+							
 
 							</ul>
 							<ul>
-								<a href="" style="font-weight: bold;">Funkos</a>
-								<li><a href="">Funko Pop</a></li>
-								<li><a href="">Funko 5 Star</a></li>
-								<li><a href="">Funko Rock Candy</a></li>
+								<a href="" style="font-weight: bold;">Teclados</a>
+								
 							</ul>
 						</div>
 					</div>
@@ -183,14 +178,14 @@
 
 
 				<!-- LADO DERECHO DEL CUERPO  -->
-
-
+				
+				
 				<section id="contenedorPrincipal" style="border: red;">
 
 
 
 					<div id="titulo_articulo">
-						<h2>Promocionesasdasd</h2>
+						<h2>Perifericos</h2>
 
 					</div>
 
@@ -199,13 +194,13 @@
 
 
 
-						<ct:imagen pagina="${param.pagina}" />
+						<ct:PaginaPerifericos pag="${param.pagina}" prodXpag="16" />
 
 						<%
 							int pagina = 0;
 
 							double filas = new gestionProducto()
-									.cantidadDeFilas("select count(*)from producto where nom_prod like 'ps4%'");
+									.cantidadDeFilas("select count(*)from producto where id_cat=5 ");
 							System.out.println(filas);
 
 							double filaSinRedondear = (filas / 16);
@@ -216,7 +211,9 @@
 						%>
 
 					</div>
-					<div
+					
+					
+						<div
 						style="display: flex; flex-direction: row; justify-content: center">
 						<%
 							for (int i = 0; i < filaSinRedondear; i++) {
@@ -233,6 +230,11 @@
 							}
 						%>
 					</div>
+
+
+
+
+
 				</section>
 			</div>
 		</div>

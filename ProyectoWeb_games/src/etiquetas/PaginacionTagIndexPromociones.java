@@ -51,7 +51,7 @@ private int pagina;
 								 		"\r\n" + 
 								 		"										<div class=\"div-imagen-carrusel\">\r\n" + 
 								 		"											<img class=\"imagenes-carrusel-Producto\"\r\n" + 
-								 		"												src=\"img/imagenesProductos/imagenesPS4/PS4division2.png\"\r\n" + 
+								 		"												src=\"img/imagenesProductos/imagenesPS4/PS4-1.png\"\r\n" + 
 								 		"												alt=\"\" />\r\n" + 
 								 		"										</div>\r\n" + 
 								 		"										<div class=\"div-contenido-carrusel\">\r\n" + 

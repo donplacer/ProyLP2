@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
 
-<%@page import="com.sun.org.apache.xalan.internal.xsltc.compiler.sym"%>
-<%@page import="java.sql.ResultSet"%>
 <%@page import="Mantenimiento.gestionProducto"%>
 <%@page import="model.Producto"%>
 <%@page import="java.util.ArrayList"%>
@@ -48,7 +46,7 @@
 
 
 
-			<div id="contenedor" style="background-color: #111111; height: 80px;">
+			<div id="contenedor" style="background-color: #111111;height: 80px;">
 
 
 				<div class="Contenedor-Busquedad">
@@ -56,8 +54,8 @@
 					<div class="contenedorNav">
 
 						<div class="img-carrito">
-							<img alt="" src="img/letra2.png">
-						</div>
+						<img alt="" src="img/letra2.png">
+					</div>
 
 
 						<div style="width: 60%; display: flex; justify-content: center;">
@@ -171,7 +169,7 @@
 							</ul>
 							<ul>
 								<a href="" style="font-weight: bold;">Funkos</a>
-								<li><a href="">Funko Pop</a></li>
+								<li> <a n href="">Funko Pop</a></li>
 								<li><a href="">Funko 5 Star</a></li>
 								<li><a href="">Funko Rock Candy</a></li>
 							</ul>
@@ -182,57 +180,54 @@
 
 
 
-				<!-- LADO DERECHO DEL CUERPO  -->
-
-
 				<section id="contenedorPrincipal" style="border: red;">
 
 
 
 					<div id="titulo_articulo">
-						<h2>Promocionesasdasd</h2>
+						<h2>busqueda</h2>
+					<input style="padding-left:15px;background-color: transparent;outline:none;border: 0;color: white;"   readonly="readonly"  value="${dato}" name="datos">
+  
 
 					</div>
+					
 
 
+ 
 					<div class="articulos">
 
 
 
-						<ct:imagen pagina="${param.pagina}" />
-
+						<ct:PaginaBusqueda prod="${dato }"/>
+						
+						
 						<%
 							int pagina = 0;
+							
 
-							double filas = new gestionProducto()
-									.cantidadDeFilas("select count(*)from producto where nom_prod like 'ps4%'");
-							System.out.println(filas);
+						
+						
 
-							double filaSinRedondear = (filas / 16);
-							System.out.println(filaSinRedondear);
-
-							long numPag = Math.round(filaSinRedondear);
-							System.out.println(numPag);
+							for (int i = 0; i < 7; i++) {
 						%>
-
-					</div>
-					<div
-						style="display: flex; flex-direction: row; justify-content: center">
-						<%
-							for (int i = 0; i < filaSinRedondear; i++) {
-						%>
-
-						<a style="color: red; text-decoration: none"
-							href="?pagina=<%=i%>">
-							<button type="button" class="btn btn-outline-success btn1">
-								<%=i + 1%>
-							</button>
-						</a>
-
+						
+						<a style="color: #04E404;text-decoration: none;"  href="?pagina=<%=i%>">
+				<button type="button" class="btn btn-outline-success btn1">
+				<%=i + 1%>
+				</button>
+				</a>
 						<%
 							}
 						%>
+
+
 					</div>
+
+
+
+
+
+
 				</section>
 			</div>
 		</div>

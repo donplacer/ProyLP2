@@ -10,7 +10,7 @@ import javax.servlet.jsp.tagext.TagSupport;
 import Mantenimiento.gestionProducto;
 import model.Producto;
 
-public class paginacionTag extends TagSupport{
+public class PaginacionTagBusqueda extends TagSupport{
 
 	
 	public int getPagina() {
@@ -21,38 +21,42 @@ public class paginacionTag extends TagSupport{
 		this.pagina = pagina;
 	}
 
+public String getProd() {
+		return prod;
+	}
+
+	public void setProd(String prod) {
+		this.prod = prod;
+	}
+
 private int pagina;
-
-
-
+private String prod="";
 	public int doStartTag()   throws JspException{
 		try {
 			JspWriter out=pageContext.getOut();
 			
-			ArrayList<Producto> listado=new gestionProducto().listaPaginacionPS4(pagina*16, 16);
+			ArrayList<Producto> listado=new gestionProducto().listaPaginacionxBusq(prod, pagina*16, 16);
 			
-		
+			 
  for (Producto u1:listado){
 				 
-	 
 				 out.print("<div class=\"articulo \">\r\n" + 
 				 		"											<div class=\"div-imagen-carrusel \">\r\n" + 
 				 		"												<a href=\"detSelect.jsp?id="+u1.getCodPro()+"&des="+u1.getDescPro()+"&estadoPro="+u1.getestadoProdu()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
-				 		"													src=\"img/imagenesProductos/imagenesPS4/PS4-"+u1.getCodPro()+".png \"\r\n" + 
+				 		"													src=\"img/imagenesProductos/"+u1.getCodPro()+".png \"\r\n" + 
 				 		"													alt=\" \" />\r\n</a> "+ 
 				 		"											</div>\r\n" + 
 				 		"											<div class=\"div-contenido-carrusel \">\r\n" + 
-				 		"												<a style='display:flex;align-items:flex-start;' href=\"# \">PS4 </a>\r\n" + 
+				 		"												<a style='display:flex;align-items:flex-start;' href=\"# \"></a>\r\n" + 
 				 		"\r\n" + 
-				 		"												<h5>"+u1.getCodPro()+"</h5>\r\n" + 
+				 		"												<h5>"+u1.getDescPro()+"</h5>\r\n" + 
 				 		"											</div>\r\n" + 
 				 		"											<a\r\n" + 
 				 		"												style='margin-top:10px;' href=\"detSelect.jsp?id="+u1.getCodPro()+"&des="+u1.getDescPro()+"&estadoPro="+u1.getestadoProdu()+"\"><button\r\n" + 
 				 		"													type=\"button\" class=\" btn btn-outline-success\">Ver Descripcion</button></a>\r\n" + 
 				 		"										</div>\r\n" + 
 				 		"");
-			
- }
+			 }
 
 					
 			
@@ -68,8 +72,4 @@ private int pagina;
 		
 		return EVAL_PAGE;
 	}
-	
-
-	
-	
 }

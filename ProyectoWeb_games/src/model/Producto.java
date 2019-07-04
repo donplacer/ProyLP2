@@ -2,9 +2,30 @@ package model;
 
 public class Producto {
 
-	private int codPro;
-	private String descPro,estadoProdu;
+	private int codPro,contador;
+	private String descPro,estadoProdu,marcaProd;
 	private double precioPro;
+	
+	public String getMarcaProd() {
+		return marcaProd;
+	}
+	public void setMarcaProd(String marcaProd) {
+		this.marcaProd = marcaProd;
+	}
+	public int getContador() {
+		return contador;
+	}
+	public void setContador(int contador) {
+		this.contador = contador;
+	}
+	public String getEstadoProdu() {
+		return estadoProdu;
+	}
+	public void setEstadoProdu(String estadoProdu) {
+		this.estadoProdu = estadoProdu;
+	}
+
+	
 	public String getestadoProdu() {
 		return estadoProdu;
 	}

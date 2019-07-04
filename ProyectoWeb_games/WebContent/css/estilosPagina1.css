@@ -279,7 +279,9 @@ background-color: #111111;
     background-color: #1B1B1B;
     margin-top: 18px;
 }
-
+.articulo h5{
+	font-size: 14px;
+}
 .articulo:hover {
    
 box-shadow:inset 1px 1px 6px 1px  #515151;

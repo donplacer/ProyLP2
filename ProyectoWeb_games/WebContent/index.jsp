@@ -48,7 +48,7 @@
 
 
 		<div id="contenedor">
-
+<form action="ServletBusqueda">
 
 			<div class="Contenedor-Busquedad">
 
@@ -65,14 +65,17 @@
 
 
 					<div style="width: 60%; display: flex; justify-content: center;">
+					
 						<input style="margin-top: 20px;" type="search"
-							placeholder="Buscar...">
-						<button style="margin-top: 20px;">Busca</button>
+							placeholder="Buscar..." name="datoBusq">
+												
 					</div>
 
 					<div class="img-carrito">
 
-						
+						<a href="CarritoCompra.jsp" style="width: 100%; height: 100%;"> <img alt=""
+								src="img/icono-carrito.png"
+								style="background-repeat: no-repeat; width: 60px; height: 100%;"></a>
 
 					</div>
 
@@ -80,7 +83,7 @@
 				</div>
 
 			</div>
-
+</form>
 		</div>
 
 
@@ -166,7 +169,7 @@
 
 
 
-
+<label id="min">10</label><label id="seg">00</label>
 
 
 	<%--navegacion --%>
@@ -191,7 +194,7 @@
 				
 
 			
-				<li><a href="#"> <img onMouseOver="cambio(1)" onMouseOut="original(1)" class="imgnav" 
+				<li><a href="videojuegos.jsp"> <img onMouseOver="cambio(1)" onMouseOut="original(1)" class="imgnav" 
 						src="img/imagenesNavegacion/mando.png">
 						<h2>Videojuegos</h2>
 
@@ -205,7 +208,7 @@
 				
 				<li>
 				
-				<a href="#"> <img onMouseOver="cambio(3)" onMouseOut="original(3)" class="imgnav" 
+				<a href="Funkos.jsp"> <img onMouseOver="cambio(3)" onMouseOut="original(3)" class="imgnav" 
 						src="img/imagenesNavegacion/superman.png">
 
 						<h2>Funko</h2>
@@ -216,8 +219,8 @@
 			</ul>
 		</div>
 
-		<section id="principalIndex">
 
+		<section id="principalIndex">
 
 
 
@@ -279,7 +282,7 @@
 						<h3>
 							<strong class="text-monospace ">Perifericos</strong>
 						</h3>
-						<a href="#">Màs Resultado</a>
+						<a href="perifericos.jsp">Màs Resultado</a>
 
 					</div>
 
@@ -288,21 +291,21 @@
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
 
-									<ct:PaginaPerifericos pagina="${param.pagina}" />
+									<ct:carruselPerifericos pag="0"/>
 									
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
 								
-									<ct:PaginaPerifericos pagina="${param.pagina}" />
+									<ct:carruselPerifericos pag="4"  />
 									
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
 									
-									<ct:PaginaPerifericos pagina="${param.pagina}" />
+									<ct:carruselPerifericos pag="8" />
 
 								</div>
 							</li>
@@ -324,7 +327,7 @@
 						<h3>
 							<strong class="text-monospace ">Funko</strong>
 						</h3>
-						<a href="#">Màs Resultados</a>
+						<a href="Funkos.jsp">Màs Resultados</a>
 
 					</div>
 
@@ -333,21 +336,22 @@
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
 
-									<ct:PaginaFunkos pagina="${param.pagina}" />
-									
+									<ct:carruselFunko pag="0"/>
 								</div>
 							</li>
+							
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
 								
-									<ct:PaginaFunkos pagina="${param.pagina}" />
+									<ct:carruselFunko pag="4"/>
 									
 								</div>
 							</li>
+							
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
 									
-									<ct:PaginaFunkos pagina="${param.pagina}" />
+									<ct:carruselFunko pag="8"/>
 
 								</div>
 							</li>
@@ -366,32 +370,33 @@
 					<div class="top border-bottom border-dark">
 
 						<h3>
-							<strong class="text-monospace ">PS4</strong>
+							<strong class="text-monospace ">PlayStation</strong>
 						</h3>
-						<a href="#">Màs Resultados</a>
+						<a href="PlayStation.jsp">Màs Resultados</a>
 
 					</div>
 
 					<div class="flexslider" style="">
+					<!--  CAJA SLIDER -->
 						<ul class="slides">
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
 
-									<ct:PaginaNintendo pagina="${param.pagina}" />
-									
+									<ct:CarruselPlayStation pag="0"/> <!--  BOTON 1 PAGINA 1 -->
 								</div>
+
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
 								
-									<ct:PaginaNintendo pagina="${param.pagina}" />
+									<ct:CarruselPlayStation  pag="4"/>   <!--  BOTON 2 PAGINA 2 -->
 									
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
 									
-									<ct:PaginaNintendo pagina="${param.pagina}" />
+									<ct:CarruselPlayStation pag="8" />   <!--  BOTON 3 PAGINA 3 -->
 
 								</div>
 							</li>
@@ -412,7 +417,7 @@
 						<h3>
 							<strong class="text-monospace ">Nintendo</strong>
 						</h3>
-						<a href="#">Màs Resultados</a>
+						<a href="Nintendo.jsp">Màs Resultados</a>
 
 					</div>
 
@@ -421,21 +426,21 @@
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
 
-									<ct:PaginaPromociones pagina="${param.pagina}" />
+									<ct:carruselNintendo pag="0"/>
 									
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark" >
 								
-									<ct:PaginaPromociones pagina="${param.pagina}" />
+									<ct:carruselNintendo pag="4" />
 									
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
 									
-									<ct:PaginaPromociones pagina="${param.pagina}" />
+									<ct:carruselNintendo pag="8" />
 
 								</div>
 							</li>
@@ -501,17 +506,16 @@
 	</footer>
 </body>
 <script type="text/javascript" src="js/codigos-valida.js"></script>
-<script src="js/jquery-3.2.1.js"></script>
+
 
 
 <!-- carrusel Productos -->
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<meta name="viewport"
-	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
 <script src="js/jquery.flexslider.js"></script>
-<script src="js/script.js"></script>
+<!-- <script src="js/script.js"></script> -->
 <script type="text/javascript" charset="utf-8">
 	$(window).load(function() {
 		$(".flexslider").flexslider({
@@ -523,14 +527,9 @@
 </script>
 
 
-<script type="text/javascript"
-	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="js/jsMenu/jquery.iconmenu.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$('#sti-menu').iconmenu();
-	});
-</script>
+
+
+
 </html>
 
