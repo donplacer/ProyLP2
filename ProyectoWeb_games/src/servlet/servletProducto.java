@@ -36,7 +36,7 @@ public class servletProducto extends HttpServlet {
 		
 		System.out.println("entroasdsadasd al servleasasdasddast");
 		
-		ArrayList<Producto>lista=new gestionProducto().listaProductosPromociones();
+		ArrayList<Producto>lista=new gestionProducto().listaProductosPromociones(0, 16);
 		
 		if(lista==null) {
 			System.out.println("error en el servlet");

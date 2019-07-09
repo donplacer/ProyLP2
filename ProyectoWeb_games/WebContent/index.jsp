@@ -15,7 +15,8 @@
 <link href='http://fonts.googleapis.com/css?family=Wire+One&v1'
 	rel='stylesheet' type='text/css' />
 
-<link href="http://allfont.es/allfont.css?fonts=bauhaus-bold-bt" rel="stylesheet" type="text/css" />
+<link href="http://allfont.es/allfont.css?fonts=bauhaus-bold-bt"
+	rel="stylesheet" type="text/css" />
 
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -48,50 +49,51 @@
 
 
 		<div id="contenedor">
-<form action="ServletBusqueda">
+			<form action="ServletBusqueda">
 
-			<div class="Contenedor-Busquedad">
+				<div class="Contenedor-Busquedad">
 
-				<div class="contenedorNav">
+					<div class="contenedorNav">
 
-					
-					
-					<div class="img-carrito">
-						<img alt="" src="img/letra2.png">
+
+
+						<div class="img-carrito">
+							<img alt="" src="img/letra2.png">
+						</div>
+
+
+
+
+
+						<div style="width: 60%; display: flex; justify-content: center;">
+
+							<input style="margin-top: 20px;" type="search"
+								placeholder="Buscar..." name="datoBusq">
+
+						</div>
+
+						<div class="img-carrito">
+
+							<a href="CarritoCompra.jsp" style="width: 100%; height: 100%;">
+								<img alt="" src="img/icono-carrito.png"
+								style="background-repeat: no-repeat; width: 60px; height: 100%;">
+							</a>
+
+						</div>
+
+
 					</div>
-						
-        
-					
-
-
-					<div style="width: 60%; display: flex; justify-content: center;">
-					
-						<input style="margin-top: 20px;" type="search"
-							placeholder="Buscar..." name="datoBusq">
-												
-					</div>
-
-					<div class="img-carrito">
-
-						<a href="CarritoCompra.jsp" style="width: 100%; height: 100%;"> <img alt=""
-								src="img/icono-carrito.png"
-								style="background-repeat: no-repeat; width: 60px; height: 100%;"></a>
-
-					</div>
-
 
 				</div>
-
-			</div>
-</form>
+			</form>
 		</div>
 
 
 		<nav id="navegacion">
 			<ul id="menu">
 				<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
-				<li><a class="icon-angle-double-down"
-					href="servletProducto"> Promociones </a>
+				<li><a class="icon-angle-double-down" href="servletProducto">
+						Promociones </a>
 					<ul class="submenu">
 						<li><a href="">VideoJuegos</a></li>
 						<li><a href="">Funko</a></li>
@@ -114,14 +116,11 @@
 					</ul></li>
 				<li class="li-eliminado"><a href="">Accesorios</a>
 					<ul class="submenu">
-                        <li><a href="">teclado</a></li>
-                        <li><a href="">mouse</a></li>
+						<li><a href="">teclado</a></li>
+						<li><a href="">mouse</a></li>
 
-                    </ul>
-				</li>
-				<li class="li-eliminado"><a href="#">Noticias</a>
-					
-				</li>
+					</ul></li>
+				<li class="li-eliminado"><a href="#">Noticias</a></li>
 			</ul>
 		</nav>
 
@@ -140,18 +139,15 @@
 
 	<div class="flexslider" style="height: 450px; margin-top: 120px;">
 		<ul class="slides" style="height: 100%; width: 100%;">
-			<li>
-			<a href="#"><img class="imagenes-Carrusel-Principal"
-				alt="" src="img/bannerCrash.png" ></a></li>
-				
-			<li>
-			<a href="#"><img class="imagenes-Carrusel-Principal"
-				src="img/imagenesCarruselPrincipal/fondo.jpg" alt=""></a></li>
+			<li><a href="#"><img class="imagenes-Carrusel-Principal"
+					alt="" src="img/bannerCrash.png"></a></li>
+
+			<li><a href="#"><img class="imagenes-Carrusel-Principal"
+					src="img/imagenesCarruselPrincipal/fondo.jpg" alt=""></a></li>
 
 
-			<li>
-			<a href="#"><img class="imagenes-Carrusel-Principal"
-				src="img/bannerCrash.png" alt=""></a></li>
+			<li><a href="#"><img class="imagenes-Carrusel-Principal"
+					src="img/bannerCrash.png" alt=""></a></li>
 
 
 
@@ -167,11 +163,6 @@
 
 
 
-
-
-<label id="min">10</label><label id="seg">00</label>
-
-
 	<%--navegacion --%>
 
 
@@ -184,35 +175,37 @@
 
 		<div id="nav_central">
 			<ul id="content_menu">
-				
-				
-				<li><a href="servletProducto"> <img onMouseOver="cambio(0)" onMouseOut="original(0)" class="imgnav" 
+
+
+				<li><a href="servletProducto"> <img onMouseOver="cambio(0)"
+						onMouseOut="original(0)" class="imgnav"
 						src="img/imagenesNavegacion/promocion.png">
 						<h2>Promociones</h2>
 
 				</a></li>
-				
 
-			
-				<li><a href="videojuegos.jsp"> <img onMouseOver="cambio(1)" onMouseOut="original(1)" class="imgnav" 
+
+
+				<li><a href="videojuegos.jsp"> <img onMouseOver="cambio(1)"
+						onMouseOut="original(1)" class="imgnav"
 						src="img/imagenesNavegacion/mando.png">
 						<h2>Videojuegos</h2>
 
 				</a></li>
-				<li><a href="#"> <img onMouseOver="cambio(2)" onMouseOut="original(2)" class="imgnav" 
+				<li><a href="#"> <img onMouseOver="cambio(2)"
+						onMouseOut="original(2)" class="imgnav"
 						src="img/imagenesNavegacion/preventa.png">
 						<h2>Preventas</h2>
 
 				</a></li>
-				
-				
-				<li>
-				
-				<a href="Funkos.jsp"> <img onMouseOver="cambio(3)" onMouseOut="original(3)" class="imgnav" 
+
+
+				<li><a href="Funkos.jsp"> <img onMouseOver="cambio(3)"
+						onMouseOut="original(3)" class="imgnav"
 						src="img/imagenesNavegacion/superman.png">
 
 						<h2>Funko</h2>
-						
+
 
 				</a></li>
 
@@ -231,36 +224,45 @@
 
 					<div class="top border-bottom border-dark">
 
+<div id="">
 						<h3>
 							<strong class="text-monospace ">Promociones</strong>
 						</h3>
 						<a href="#">Màs Resultados</a>
+</div>
 
+						<!-- TEMPORIZADOR DE PROMOCIONES -->
+
+                       <div id="temporizador">
+						<span id="min">10</span>:<span id="seg">00</span> <span id="fin"
+							style="display: none;">Promocion terminada</span>
+                       </div>
+                       
 					</div>
-					
-					
-					<%   %>
-					
-					<div class="flexslider" style="">
+
+
+
+
+					<div class="flexslider" id="select">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
+								<div class="div border-bottom border-dark">
 
-									<ct:PaginaPromociones pagina="${param.pagina}"  />
-									
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
-								
-									<ct:PaginaPromociones  pagina="${param.pagina}"  />
-									
+									<ct:CarruselPromociones pag="0" />
+
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
-									
-									<ct:PaginaPromociones pagina="${param.pagina}"  />
+
+									<ct:CarruselPromociones pag="4" />
+
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark">
+
+									<ct:CarruselPromociones pag="8" />
 
 								</div>
 							</li>
@@ -269,9 +271,9 @@
 
 				</div>
 			</div>
-			
-			
-			
+
+
+
 			<div class="div-carrusel-productos">
 
 
@@ -286,25 +288,25 @@
 
 					</div>
 
-					<div class="flexslider" style="">
+					<div class="flexslider">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
+								<div class="div border-bottom border-dark">
 
-									<ct:carruselPerifericos pag="0"/>
-									
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
-								
-									<ct:carruselPerifericos pag="4"  />
-									
+									<ct:carruselPerifericos pag="0" />
+
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
-									
+
+									<ct:carruselPerifericos pag="4" />
+
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark">
+
 									<ct:carruselPerifericos pag="8" />
 
 								</div>
@@ -315,8 +317,8 @@
 				</div>
 			</div>
 
-			
-			
+
+
 			<div class="div-carrusel-productos">
 
 
@@ -331,27 +333,27 @@
 
 					</div>
 
-					<div class="flexslider" style="">
+					<div class="flexslider">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
+								<div class="div border-bottom border-dark">
 
-									<ct:carruselFunko pag="0"/>
+									<ct:carruselFunko pag="0" />
 								</div>
 							</li>
-							
-							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
-								
-									<ct:carruselFunko pag="4"/>
-									
-								</div>
-							</li>
-							
+
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
-									
-									<ct:carruselFunko pag="8"/>
+
+									<ct:carruselFunko pag="4" />
+
+								</div>
+							</li>
+
+							<li class="imagenes">
+								<div class="div border-bottom border-dark">
+
+									<ct:carruselFunko pag="8" />
 
 								</div>
 							</li>
@@ -360,8 +362,8 @@
 
 				</div>
 			</div>
-			
-			
+
+
 			<div class="div-carrusel-productos">
 
 
@@ -377,26 +379,29 @@
 					</div>
 
 					<div class="flexslider" style="">
-					<!--  CAJA SLIDER -->
+						<!--  CAJA SLIDER -->
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
+								<div class="div border-bottom border-dark">
 
-									<ct:CarruselPlayStation pag="0"/> <!--  BOTON 1 PAGINA 1 -->
+									<ct:CarruselPlayStation pag="0" />
+									<!--  BOTON 1 PAGINA 1 -->
 								</div>
 
 							</li>
 							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
-								
-									<ct:CarruselPlayStation  pag="4"/>   <!--  BOTON 2 PAGINA 2 -->
-									
+								<div class="div border-bottom border-dark">
+
+									<ct:CarruselPlayStation pag="4" />
+									<!--  BOTON 2 PAGINA 2 -->
+
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
-									
-									<ct:CarruselPlayStation pag="8" />   <!--  BOTON 3 PAGINA 3 -->
+
+									<ct:CarruselPlayStation pag="8" />
+									<!--  BOTON 3 PAGINA 3 -->
 
 								</div>
 							</li>
@@ -405,8 +410,8 @@
 
 				</div>
 			</div>
-			
-			
+
+
 			<div class="div-carrusel-productos">
 
 
@@ -424,22 +429,22 @@
 					<div class="flexslider" style="">
 						<ul class="slides">
 							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
+								<div class="div border-bottom border-dark">
 
-									<ct:carruselNintendo pag="0"/>
-									
-								</div>
-							</li>
-							<li class="imagenes">
-								<div class="div border-bottom border-dark" >
-								
-									<ct:carruselNintendo pag="4" />
-									
+									<ct:carruselNintendo pag="0" />
+
 								</div>
 							</li>
 							<li class="imagenes">
 								<div class="div border-bottom border-dark">
-									
+
+									<ct:carruselNintendo pag="4" />
+
+								</div>
+							</li>
+							<li class="imagenes">
+								<div class="div border-bottom border-dark">
+
 									<ct:carruselNintendo pag="8" />
 
 								</div>
@@ -449,7 +454,7 @@
 
 				</div>
 			</div>
-			
+
 		</section>
 	</div>
 
@@ -498,8 +503,8 @@
 
 				<article class="cf">
 					<h3>© GAMES CM 2019</h3>
-					<p>Todos los derechos reservado</p>   
-					</article>
+					<p>Todos los derechos reservado</p>
+				</article>
 			</div>
 
 		</div>
@@ -527,7 +532,29 @@
 </script>
 
 
-
+<script type="text/javascript">
+min=1;
+seg = 6;
+int = setInterval(function(){
+	seg--;
+    document.getElementById('min').innerHTML = min;
+    document.getElementById('seg').innerHTML = seg;
+    
+    if(min==0 && seg==0){
+ clearInterval(int);
+ document.getElementById('fin').style.display="block";
+ document.getElementById('select').style.pointerEvents="none";
+    	
+    }
+    
+    if(seg == 0){
+    	 min--;
+    	 seg=6;
+    	 
+    }
+   
+},1000);
+</script>
 
 
 

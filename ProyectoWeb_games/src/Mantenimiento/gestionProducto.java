@@ -15,7 +15,7 @@ import utils.MySqlConection;
 public class gestionProducto implements InterfacesProducto{
 
 	@Override
-	public ArrayList<Producto> listaProductosPromociones() {
+	public ArrayList<Producto> listaProductosPromociones(int inicio, int NroPaginas) {
 		// TODO Auto-generated method stubç
 		ArrayList<Producto>lista=null;
 		PreparedStatement pst=null;
@@ -25,7 +25,9 @@ public class gestionProducto implements InterfacesProducto{
 		try {
 			lista=new ArrayList<>();
 			cn=MySqlConection.getConexion();
-			pst=cn.prepareStatement("select id_prod,nom_prod,pre_prod from producto;");
+			pst=cn.prepareStatement("select * from producto order by pre_prod limit ?,?");
+			pst.setInt(1, inicio);
+			pst.setInt(2, NroPaginas);
 			rs=pst.executeQuery();
 			
 			while(rs.next()) {
@@ -323,12 +325,12 @@ public class gestionProducto implements InterfacesProducto{
 		try {
 			lista=new ArrayList<>();
 			cn=MySqlConection.getConexion();
-			pst=cn.prepareStatement(" select *from producto where nom_prod like concat(?,'%')limit ?,?;");
+			pst=cn.prepareStatement("select *from producto where nom_prod like concat('%',?,'%') or marca_prod like concat('%',?,'%') limit ?,?");
 			
 			pst.setString(1, Prod);
-		
-			pst.setInt(2, inicio);
-			pst.setInt(3, NroPaginas);
+			pst.setString(2, Prod);
+			pst.setInt(3, inicio);
+			pst.setInt(4, NroPaginas);
 			
 			rs=pst.executeQuery();
 			

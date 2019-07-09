@@ -198,7 +198,7 @@
 
 
 
-						<ct:PaginaBusqueda prod="${dato }"/>
+						<ct:PaginaBusqueda prod="${dato}"/>
 						
 						
 						<%

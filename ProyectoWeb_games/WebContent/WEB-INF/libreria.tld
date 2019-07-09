@@ -33,13 +33,13 @@
   
   
   <tag>
-   <name>PaginaPromociones</name>
+   <name>CarruselPromociones</name>
    <tagclass>etiquetas.PaginacionTagIndexPromociones</tagclass>
    <bodycontent>empty</bodycontent>
    <info>Muestra los productos en el mini-carrusel</info>
    
    <attribute>
-    <name> pagina</name>
+    <name>pag</name>
     <required>false</required>
     <rtexprvalue>true</rtexprvalue>
    </attribute>

@@ -40,10 +40,22 @@ background-color: #1B1B1B;
 
 }
 }
-
-.top{
+#tituloCate{display: flex;}
+#temporizador{
+	border:1px solid black;
+	display: flex;
+	align-items: center;
+	font-size: 55px;
+	color: #5E5E5E;
+	padding-right: 75px;
 	
-	height: 15%; width: 98%; /*border: 2px solid red;*/ display: flex;flex-direction: row;
+}
+#fin{
+	font-size: 15px;
+}
+.top{border:1px solid red;
+	
+	height: 15%; width: 98%; /*border: 2px solid red;*/ display: flex;flex-direction: row;justify-content: space-between;
 }
 .top a {
 	margin-top: 35px;

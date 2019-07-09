@@ -14,15 +14,17 @@ import model.Producto;
 
 public class PaginacionTagIndexPromociones extends TagSupport{
 
-	public int getPagina() {
-		return pagina;
+	
+
+public int getPag() {
+		return pag;
 	}
 
-	public void setPagina(int pagina) {
-		this.pagina = pagina;
+	public void setPag(int pag) {
+		this.pag = pag;
 	}
 
-private int pagina;
+private int pag;
 
 
 
@@ -31,71 +33,35 @@ private int pagina;
 			
 			JspWriter out=pageContext.getOut();
 			
-			ArrayList<Producto> listado=new gestionProducto().listaPaginacionPromocion(0, 4);
+			ArrayList<Producto> listado=new gestionProducto().listaPaginacionPromocion(pag, 4);
 			
 			
-			 int numero=1;
-			 int numero2=1;
+			 
 			 
 			 
 			 
 			 for (Producto p:listado) {
-				 
-				 
-		 
-				 while(numero<=4) {
-					 	numero++;
-					 	if(numero2<=2) {
-					 		numero2++;
+			
 					 		 out.print("<div class=\"carrusel \">\r\n" + 
-								 		"\r\n" + 
-								 		"										<div class=\"div-imagen-carrusel\">\r\n" + 
-								 		"											<img class=\"imagenes-carrusel-Producto\"\r\n" + 
-								 		"												src=\"img/imagenesProductos/imagenesPS4/PS4-1.png\"\r\n" + 
-								 		"												alt=\"\" />\r\n" + 
-								 		"										</div>\r\n" + 
-								 		"										<div class=\"div-contenido-carrusel\">\r\n" + 
-								 		"											<a href=\"#\">con carrusel </a>\r\n" + 
-								 		"\r\n" + 
-								 		"											<h5>$235,90</h5>\r\n" + 
-								 		"										</div>\r\n" + 
-								 		"										<button type=\"button\" class=\"btn btn-outline-success\">AGREGAR\r\n" + 
-								 		"											AL CARRITO</button>\r\n" + 
-								 		"									</div>");
+					 		 
+          "                                         <div class=\"div-imagen-carrusel \">\r\n" + 
+ 		"												<a  href=\"detSelect.jsp?id="+p.getCodPro()+"&des="+p.getDescPro()+"&estadoPro="+p.getestadoProdu()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
+ 		"													src=\"img/imagenesProductos/"+p.getCodPro()+".png \"\r\n" + 
+ 		"													alt=\" \" />\r\n</a> "+ 
+ 		"											</div>\r\n" + 
+ 		"											<div class=\"div-contenido-carrusel \">\r\n" + 
+ 		"												<a style='display:flex;align-items:flex-start;' href=\"# \">PS4 </a>\r\n" + 
+ 		"\r\n" + 
+ 		"												<h5>"+p.getDescPro()+"</h5>\r\n" + 
+ 		"											</div>\r\n" + 
+ 		"											<a\r\n" + 
+ 		"												style='margin-top:10px;' href=\"detSelect.jsp?id="+p.getCodPro()+"&des="+p.getDescPro()+"&estadoPro="+p.getestadoProdu()+"\"><button\r\n" + 
+ 		"													type=\"button\" class=\" btn btn-outline-success\">Ver Descripcion</button></a>\r\n" + 
+ 		"										</div>\r\n" + 
+ 		"");
 					 	}
 						
-						 
-						 else {
-							 out.print("<div class=\"carrusel carrusel-eliminado \">\r\n" + 
-								 		"\r\n" + 
-								 		"										<div class=\"div-imagen-carrusel\">\r\n" + 
-								 		"											<img class=\"imagenes-carrusel-Producto\"\r\n" + 
-								 		"												src=\"img/imagenesProductos/imagenesPS4/PS4division2.png\"\r\n" + 
-								 		"												alt=\"\" />\r\n" + 
-								 		"										</div>\r\n" + 
-								 		"										<div class=\"div-contenido-carrusel\">\r\n" + 
-								 		"											<a href=\"#\">Juego wiiu </a>\r\n" + 
-								 		"\r\n" + 
-								 		"											<h5>$235,90</h5>\r\n" + 
-								 		"										</div>\r\n" + 
-								 		"										<button type=\"button\" class=\"btn btn-outline-success\">vete a la\r\n" + 
-								 		"											AL CARRITO</button>\r\n" + 
-								 		"									</div>");
-						 
-						 }
-								 
-						
-					 }
-				
-			 			
-				 
 					
-						
-						 
-							
-			
-			 }
-			 
 
  
 			

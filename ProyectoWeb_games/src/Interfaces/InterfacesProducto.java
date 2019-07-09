@@ -8,7 +8,7 @@ import model.Producto;
 public interface InterfacesProducto {
 
 	//ListarProductos
-	public ArrayList<Producto>listaProductosPromociones();
+	public ArrayList<Producto>listaProductosPromociones(int inicio, int NroPaginas);
 	
 	
 	//LISTA LOS PRODUCTO POR BUSQUEDA
