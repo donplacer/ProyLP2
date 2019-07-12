@@ -38,7 +38,7 @@ private int pagina;
 				 out.print("<div class=\"articulo \">\r\n" + 
 				 		"											<div class=\"div-imagen-carrusel \">\r\n" + 
 				 		"												<a href=\"detSelect.jsp?id="+u1.getCodPro()+"&des="+u1.getDescPro()+"&estadoPro="+u1.getestadoProdu()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
-				 		"													src=\"img/imagenesProductos/imagenesPS4/PS4-"+u1.getCodPro()+".png \"\r\n" + 
+				 		"													src=\"img/imagenesProductos	/"+u1.getCodPro()+".png \"\r\n" + 
 				 		"													alt=\" \" />\r\n</a> "+ 
 				 		"											</div>\r\n" + 
 				 		"											<div class=\"div-contenido-carrusel \">\r\n" + 

@@ -35,7 +35,7 @@ public interface InterfacesProducto {
 	public Producto obtener(int cod);
 	
 	public int cantidadDeFilas(String consulta);
-	public int cantidadDeFilasBusq( );
+	public int cantidadDeFilasBusq(String nombre );
 
 
 

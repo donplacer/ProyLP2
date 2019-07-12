@@ -348,7 +348,7 @@ public class gestionProducto implements InterfacesProducto{
 			
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println("eror en la gesiotn de listasr Productos PS4");
+			System.out.println("eror en la gesiotn de paginacionXbusquedad Productos PS4");
 		}
 		
 		
@@ -357,7 +357,7 @@ public class gestionProducto implements InterfacesProducto{
 	}
 
 	@Override
-	public int cantidadDeFilasBusq() {
+	public int cantidadDeFilasBusq(String nombre) {
 		ResultSet rs=null;
 		PreparedStatement pst=null;
 		Connection cn=null;
@@ -365,7 +365,9 @@ public class gestionProducto implements InterfacesProducto{
 		try {
 			cn=MySqlConection.getConexion();
 		
-			pst=cn.prepareStatement("select count(*) from producto where nom_prod like concat('x','%') or marca_prod like concat('nin','%') limit 0,16");
+			pst=cn.prepareStatement("select count(*) from producto where nom_prod like concat('%',?,'%') or marca_prod like concat('%',?,'%');");
+			pst.setString(1, nombre);
+			pst.setString(2, nombre);
 			
 			rs=pst.executeQuery();
 			while(rs.next()) {

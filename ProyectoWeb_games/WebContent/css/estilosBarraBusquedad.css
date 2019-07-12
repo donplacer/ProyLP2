@@ -1,21 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin:400);
 
-.contenedorNav {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
 
 
 #contenedor {
 	
-    width: 100%;
+    width: 70%;
     
     height: 70%;
     display:flex;
-    justify-content:center;
+
     
 z-index: 1;
 	
@@ -26,16 +19,13 @@ z-index: 1;
 
 }
 
-.Contenedor-Busquedad {
-    width: 98%;
-    display: flex;
-    justify-content: center;
-}
+
 .Contenedor-Busquedad{
-	
-	width: 98%;
+	border:1px solid purple;
+	width: 50%;
+	height:100%;
 	display: flex;
-	justify-content: center;
+	align-items:center;
 	flex-direction: row; 
 	
 
@@ -46,25 +36,27 @@ z-index: 1;
 	height: 100%; display: flex; 
 	
 	justify-content:space-between;
-	width: 90%; 
+	width: 95%; 
 	
 	
 
 }
 
 .contenedorNav img{
-
-	width: 100%;
-	height: 90%;
+	
+	width: 70%;
+	height: 30px;
 	
 }
 
 .img-carrito{
-	margin-top:20px;
-	margin-right:50px;
-	width: 25%;
-	height: 87%;
 	
+	border:1px solid brown;
+	
+	width: 25%;
+	height: 100%;
+	display:flex;
+	align-items: center;
 }
 
 .Contenedor-Busquedad:before,
@@ -77,25 +69,7 @@ z-index: 1;
     width: 800px;
 }
 
-.Contenedor-Busquedad:before {
-    background: #444;
-    background: -webkit-linear-gradient(left, #151515, #444, #151515);
-    background: -moz-linear-gradient(left, #151515, #444, #151515);
-    background: -o-linear-gradient(left, #151515, #444, #151515);
-    background: -ms-linear-gradient(left, #151515, #444, #151515);
-    background: linear-gradient(left, #151515, #444, #151515);
-    top: 192px;
-}
 
-.Contenedor-Busquedad:after {
-    background: #000;
-    background: -webkit-linear-gradient(left, #151515, #000, #151515);
-    background: -moz-linear-gradient(left, #151515, #000, #151515);
-    background: -o-linear-gradient(left, #151515, #000, #151515);
-    background: -ms-linear-gradient(left, #151515, #000, #151515);
-    background: linear-gradient(left, #151515, #000, #151515);
-    top: 191px;
-}
 
 .Contenedor-Busquedad form {
     background: #111;
@@ -144,7 +118,7 @@ z-index: 1;
     line-height: 40px;
 }
 
-.Contenedor-Busquedadp input::-webkit-input-placeholder {
+.Contenedor-Busquedad input::-webkit-input-placeholder {
     color: #888;
 }
 

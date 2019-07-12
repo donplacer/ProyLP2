@@ -48,48 +48,48 @@
 	<header>
 
 
-		<div id="contenedor">
+		<div id="contenedor" >
 			<form action="ServletBusqueda">
 
-				<div class="Contenedor-Busquedad">
+				
 
 					<div class="contenedorNav">
 
 
 
 						<div class="img-carrito">
-							<img alt="" src="img/letra2.png">
+							<img  alt="" src="img/letra2.png">
 						</div>
 
 
 
 
 
-						<div style="width: 60%; display: flex; justify-content: center;">
+						<div class="Contenedor-Busquedad" >
 
-							<input style="margin-top: 20px;" type="search"
+							<input style="width: 80%;" type="search"
 								placeholder="Buscar..." name="datoBusq">
-
+								<button style="">Buscar</button>
 						</div>
 
-						<div class="img-carrito">
+						<div class="img-carrito" style="display: flex; justify-content: flex-end;">
 
-							<a href="CarritoCompra.jsp" style="width: 100%; height: 100%;">
+							<a href="CarritoCompra.jsp">
 								<img alt="" src="img/icono-carrito.png"
-								style="background-repeat: no-repeat; width: 60px; height: 100%;">
+								style="background-repeat: no-repeat; width: 60px; height: 50px;">
 							</a>
 
 						</div>
 
 
-					</div>
+					
 
 				</div>
 			</form>
 		</div>
 
 
-		<nav id="navegacion">
+		<nav id="navegacion" >
 			<ul id="menu">
 				<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
 				<li><a class="icon-angle-double-down" href="servletProducto">
@@ -222,14 +222,17 @@
 
 				<div class="carrusel-productos">
 
-					<div class="top border-bottom border-dark">
+					<div class="top border-bottom border-dark" >
 
-<div id="">
+				
 						<h3>
 							<strong class="text-monospace ">Promociones</strong>
+							<a href="#">Màs Resultados</a>
+						
 						</h3>
-						<a href="#">Màs Resultados</a>
-</div>
+						
+						
+					
 
 						<!-- TEMPORIZADOR DE PROMOCIONES -->
 
@@ -283,8 +286,9 @@
 
 						<h3>
 							<strong class="text-monospace ">Perifericos</strong>
+								<a href="perifericos.jsp">Màs Resultado</a>
 						</h3>
-						<a href="perifericos.jsp">Màs Resultado</a>
+					
 
 					</div>
 
@@ -328,8 +332,9 @@
 
 						<h3>
 							<strong class="text-monospace ">Funko</strong>
+							<a href="Funkos.jsp">Màs Resultados</a>
 						</h3>
-						<a href="Funkos.jsp">Màs Resultados</a>
+						
 
 					</div>
 
@@ -373,8 +378,9 @@
 
 						<h3>
 							<strong class="text-monospace ">PlayStation</strong>
+							<a href="PlayStation.jsp">Màs Resultados</a>
 						</h3>
-						<a href="PlayStation.jsp">Màs Resultados</a>
+						
 
 					</div>
 
@@ -421,8 +427,9 @@
 
 						<h3>
 							<strong class="text-monospace ">Nintendo</strong>
+							<a href="Nintendo.jsp">Màs Resultados</a>
 						</h3>
-						<a href="Nintendo.jsp">Màs Resultados</a>
+						
 
 					</div>
 
