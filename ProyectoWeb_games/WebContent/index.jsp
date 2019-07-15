@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
@@ -50,61 +49,133 @@
 	<form action="ServletBusqueda">
 
 		<header>
-			<div id="contenedor" style="width: 70%;">
+			<div id="contenedor" style="width: 100%;">
 
 
-
+               <!-----------------------------------------------------     LOGO GAMESCM  ------------------------------------------>
 
 				<div class="img-carrito">
 					<img alt="" src="img/letra2.png">
 				</div>
+				 <!-------------------------------------------------------------------------------------------------------------------------->
 
 
+          <!-----------------------------------------------------     MENU NAVEGACION HORIZONTAL  ------------------------------------------>
 				<div class="Contenedor-medio">
-					<nav id="navegacion">
-						<ul id="menu">
-							<li class="li"><a class="icon-home" href="index.jsp">
-									Inicio</a></li>
+					
+        <ul id="nav">
 
-							<li class="li"><a class="icon-angle-double-down"
-								href="servletProducto"> Promociones </a>
-								<ul class="submenu">
-									<li><a href="">VideoJuegos</a></li>
-									<li><a href="">Funko</a></li>
+            <li><a href="#s1">Videojuegos</a>
 
-								</ul></li>
-							<li class="li"><a class="icon-angle-double-down"
-								href="pagIndexVideoJuegos.jsp"> VideoJuegos </a>
-								<ul class="submenu">
-									<li><a href="">PlayStation</a></li>
-									<li><a href="">Nintendo</a></li>
-									<li><a href="">Advance</a></li>
-									<li><a href="">Apple</a></li>
-									<li><a href="">Acer</a></li>
-								</ul></li>
-							<li class="li-eliminado li"><a href="">Preventas</a>
-								<ul class="submenu">
-									<li><a href="">VideoJuegos</a></li>
-									<li><a href="">Funko</a></li>
+                <span id="s1"></span>
 
-								</ul></li>
-							<li class="li-eliminado li"><a href="">Accesorios</a>
-								<ul class="submenu">
-									<li><a href="">teclado</a></li>
-									<li><a href="">mouse</a></li>
+                <ul class="subs" >
 
-								</ul></li>
-							<li class="li-eliminado li"><a href="#">Noticias</a></li>
-						</ul>
-					</nav>
+                    <li><a href="#">PlayStation</a>
+
+                        <ul>
+
+                            <li><a href="#">Consolas</a></li>
+
+                            <li><a href="#">Juegos</a></li>
+
+                            <li><a href="#">Accesorios</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li ><a href="#">Nintendo</a>
+
+                        <ul>
+
+                            <li><a href="#">Consolas </a></li>
+
+                            <li><a href="#">Juegos</a></li>
+
+                            <li><a href="#">Accesorios</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+            <li><a href="#s1">Computación</a>
+
+                <span id="s1"></span>
+
+                <ul class="subs">
+
+                    <li><a href="#">Periféricos</a>
+
+                        <ul>
+
+                            <li><a href="#">Mouse</a></li>
+
+                            <li><a href="#">Teclados </a></li>
+
+                            <li><a href="#">Audifonos </a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">Almacenamiento </a>
+
+                        <ul>
+
+                            <li><a href="#">Discos duros</a></li>
+
+                            <li><a href="#">Memorias SSD</a></li>
+
+                            <li><a href="#">Memorias Usb</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="active"><a href="#s2">Funkos</a>
+
+                <span id="s2"></span>
+
+                <ul class="subs">
+
+                    <li><a href="#">Funko</a>
+
+                        <ul>
+
+                            <li><a href="#">Funko pop</a></li>
+
+                            <li><a href="#">Funko box collector</a></li>
+
+                            <li><a href="#"> Preventas</a></li>
+
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+
+
+        </ul>
+
+    
+				      <!-------------------------------------------------------------------------------------------------------------------------->
+				
+					
 				</div>
-				<!-- 
-						
-
-							
-								<button style="">Buscar</button>
-						
- -->
+			
+			      <!-----------------------------------------------------     BARRA BUQUEDA   ------------------------------------------>
 				<div class="img-Busquedad">
 
 
@@ -116,8 +187,11 @@
 							placeholder="Buscar..." name="datoBusq">
 					</div>
 
-				</div>
-
+				</div>       
+ 
+                  <!----------------------------------------------------------------------------------------------->
+                  
+                  
 			</div>
 
 		</header>
@@ -140,26 +214,14 @@
 
 	<%--Carrusel Principal --%>
 
-
-	<div class="flexslider" style="height: 450px; margin-top: 120px;">
-		<ul class="slides" style="height: 100%; width: 100%;">
-			<li><a href="#"><img class="imagenes-Carrusel-Principal"
-					alt="" src="img/promocion.png"></a></li>
-
 	<div class="flexslider" style="height: 600px; margin-top: 70px;">
 		<ul class="slides" style="width: 100%;">
-
-
-
-			<li><a href="#"><img class="imagenes-Carrusel-Principal"
-					src="img/disenio3.jpg" alt=""></a></li>
 
 			<li><a href="#"><img  class="imagenes-Carrusel-Principal"
 					alt="" src="img/razer.jpg"></a></li>
 
 			<li><a href="#"><img  class="imagenes-Carrusel-Principal"
 					src="img/sorteos.jpg" alt=""></a></li>
-
 
 
 			<li><a href="#"><img  class="imagenes-Carrusel-Principal"
@@ -542,7 +604,7 @@
 			<iframe
 				src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGamesCM.SRL%2F&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
 				width="340" height="500"
-				style="border:none; background-color: black; color: #44D62C; overflow: hidden"
+				style="border: none; background-color: black; color: #44D62C; overflow: hidden"
 				scrolling="no" frameborder="0" allowTransparency="true"
 				allow="encrypted-media"></iframe>
 
@@ -558,8 +620,7 @@
 
 <!-- carrusel Productos -->
 
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
 <script src="js/jquery.flexslider.js"></script>
 
@@ -567,7 +628,7 @@
 <!--
 
 //-->
-</script>
+
 <!-- <script src="js/script.js"></script> -->
 <script type="text/javascript" charset="utf-8">
 	$(window).load(function() {
@@ -607,4 +668,3 @@ int = setInterval(function(){
 
 
 </html>
-
