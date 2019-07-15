@@ -235,7 +235,6 @@ public class gestionProducto implements InterfacesProducto{
 					
 					return lista;
 				}
-
 		
 		
 		
@@ -461,6 +460,8 @@ public class gestionProducto implements InterfacesProducto{
 		
 		return p;
 	}
+
+	
 
 	
 	

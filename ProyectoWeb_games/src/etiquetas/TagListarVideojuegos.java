@@ -49,7 +49,7 @@ private int pag;
 					 		"													alt=\" \" />\r\n</a> "+ 
 					 		"											</div>\r\n" + 
 					 		"											<div class=\"div-contenido-carrusel \">\r\n" + 
-					 		"												<a style='display:flex;align-items:flex-start;' href=\"# \"></a>\r\n" + 
+					 		"												<a style='display:flex;align-items:flex-start;' href=\"# \">"+p.getMarcaProd()+"</a>\r\n" + 
 					 		"\r\n" + 
 					 		"												<h5>"+p.getDescPro()+"</h5>\r\n" + 
 					 		"											</div>\r\n" + 

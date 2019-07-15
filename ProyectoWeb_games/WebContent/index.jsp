@@ -22,17 +22,15 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-<link rel="stylesheet" type="text/css"
-	href="css/estilosBarraBusquedad.css">
+	
+	
+
 <link rel="stylesheet" type="text/css" href="css/firstmobile.css">
-<link rel="stylesheet" type="text/css" href="estilosIndex.css">
-<link rel="stylesheet" type="text/css" href="css/estilosCarrusel.css">
-<link rel="stylesheet" type="text/css"
-	href="css/estilosCarruselPrincipal.css">
+<link rel="stylesheet" type="text/css" href="css/estilosIndex.css">
 <link rel="stylesheet" type="text/css"
 	href="css/estilosCarruselProductos.css">
-<!-- ESTILOS PARA MENU ANIMADO -->
-<link rel="stylesheet" type="text/css" href="css/menuAnimado.css">
+
+
 
 <link
 	href="https://file.myfontastic.com/7Y2CeESwdu83DsVFwBMsPb/icons.css"
@@ -41,88 +39,90 @@
 
 </head>
 
-<body>
-
-
-
-	<header>
-
-
-		<div id="contenedor" >
-			<form action="ServletBusqueda">
-
-				
-
-					<div class="contenedorNav">
-
-
-
-						<div class="img-carrito">
-							<img  alt="" src="img/letra2.png">
-						</div>
+<body style="background-color: #1B1B1B;">
 
 
 
 
 
-						<div class="Contenedor-Busquedad" >
 
-							<input style="width: 80%;" type="search"
-								placeholder="Buscar..." name="datoBusq">
+
+	<form action="ServletBusqueda">
+
+		<header>
+			<div id="contenedor" style="width: 70%;">
+
+
+
+
+				<div class="img-carrito">
+					<img alt="" src="img/letra2.png">
+				</div>
+
+
+				<div class="Contenedor-medio">
+					<nav id="navegacion">
+						<ul id="menu">
+							<li class="li"><a class="icon-home" href="index.jsp">
+									Inicio</a></li>
+
+							<li class="li"><a class="icon-angle-double-down"
+								href="servletProducto"> Promociones </a>
+								<ul class="submenu">
+									<li><a href="">VideoJuegos</a></li>
+									<li><a href="">Funko</a></li>
+
+								</ul></li>
+							<li class="li"><a class="icon-angle-double-down"
+								href="pagIndexVideoJuegos.jsp"> VideoJuegos </a>
+								<ul class="submenu">
+									<li><a href="">PlayStation</a></li>
+									<li><a href="">Nintendo</a></li>
+									<li><a href="">Advance</a></li>
+									<li><a href="">Apple</a></li>
+									<li><a href="">Acer</a></li>
+								</ul></li>
+							<li class="li-eliminado li"><a href="">Preventas</a>
+								<ul class="submenu">
+									<li><a href="">VideoJuegos</a></li>
+									<li><a href="">Funko</a></li>
+
+								</ul></li>
+							<li class="li-eliminado li"><a href="">Accesorios</a>
+								<ul class="submenu">
+									<li><a href="">teclado</a></li>
+									<li><a href="">mouse</a></li>
+
+								</ul></li>
+							<li class="li-eliminado li"><a href="#">Noticias</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- 
+						
+
+							
 								<button style="">Buscar</button>
-						</div>
-
-						<div class="img-carrito" style="display: flex; justify-content: flex-end;">
-
-							<a href="CarritoCompra.jsp">
-								<img alt="" src="img/icono-carrito.png"
-								style="background-repeat: no-repeat; width: 60px; height: 50px;">
-							</a>
-
-						</div>
+						
+ -->
+				<div class="img-Busquedad">
 
 
-					
+					<img class="boton" alt="" src="img/iconoBusquedad.png"
+						style="background-repeat: no-repeat;">
+
+					<div class="Contenedor-Busquedad" style="margin-left: 7px;">
+						<input style="display: none;" class="barraOculta " type="search"
+							placeholder="Buscar..." name="datoBusq">
+					</div>
 
 				</div>
-			</form>
-		</div>
 
+			</div>
 
-		<nav id="navegacion" >
-			<ul id="menu">
-				<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
-				<li><a class="icon-angle-double-down" href="servletProducto">
-						Promociones </a>
-					<ul class="submenu">
-						<li><a href="">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
+		</header>
 
-					</ul></li>
-				<li><a class="icon-angle-double-down"
-					href="pagIndexVideoJuegos.jsp"> VideoJuegos </a>
-					<ul class="submenu">
-						<li><a href="">PlayStation</a></li>
-						<li><a href="">Nintendo</a></li>
-						<li><a href="">Advance</a></li>
-						<li><a href="">Apple</a></li>
-						<li><a href="">Acer</a></li>
-					</ul></li>
-				<li class="li-eliminado"><a href="">Preventas</a>
-					<ul class="submenu">
-						<li><a href="">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
-
-					</ul></li>
-				<li class="li-eliminado"><a href="">Accesorios</a>
-					<ul class="submenu">
-						<li><a href="">teclado</a></li>
-						<li><a href="">mouse</a></li>
-
-					</ul></li>
-				<li class="li-eliminado"><a href="#">Noticias</a></li>
-			</ul>
-		</nav>
+	</form>
 
 
 
@@ -132,22 +132,26 @@
 
 
 
-	</header>
+
+
+
+
 
 
 	<%--Carrusel Principal --%>
 
-	<div class="flexslider" style="height: 450px; margin-top: 120px;">
-		<ul class="slides" style="height: 100%; width: 100%;">
-			<li><a href="#"><img class="imagenes-Carrusel-Principal"
-					alt="" src="img/bannerCrash.png"></a></li>
+	<div class="flexslider" style="height: 600px; margin-top: 70px;">
+		<ul class="slides" style="width: 100%;">
 
-			<li><a href="#"><img class="imagenes-Carrusel-Principal"
-					src="img/imagenesCarruselPrincipal/fondo.jpg" alt=""></a></li>
+			<li><a href="#"><img  class="imagenes-Carrusel-Principal"
+					alt="" src="img/razer.jpg"></a></li>
+
+			<li><a href="#"><img  class="imagenes-Carrusel-Principal"
+					src="img/sorteos.jpg" alt=""></a></li>
 
 
-			<li><a href="#"><img class="imagenes-Carrusel-Principal"
-					src="img/bannerCrash.png" alt=""></a></li>
+			<li><a href="#"><img  class="imagenes-Carrusel-Principal"
+					src="img/bannerPhantomPromociones28Julio.jpg" alt=""></a></li>
 
 
 
@@ -173,7 +177,7 @@
 	<div id="menu-Principal">
 
 
-		<div id="nav_central">
+		<div id="nav_central" style="margin-top: 15px;">
 			<ul id="content_menu">
 
 
@@ -224,23 +228,23 @@
 
 					<div class="top border-bottom border-dark" >
 
-				
+
 						<h3>
-							<strong class="text-monospace ">Promociones</strong>
-							<a href="#">Màs Resultados</a>
-						
+							<strong class="text-monospace ">Promociones</strong> <a href="#">Màs
+								Resultados</a>
+
 						</h3>
-						
-						
-					
+
+
+
 
 						<!-- TEMPORIZADOR DE PROMOCIONES -->
 
-                       <div id="temporizador">
-						<span id="min">10</span>:<span id="seg">00</span> <span id="fin"
-							style="display: none;">Promocion terminada</span>
-                       </div>
-                       
+						<div id="temporizador">
+							<span id="min">10</span>:<span id="seg">00</span> <span id="fin"
+								style="display: none;">Promocion terminada</span>
+						</div>
+
 					</div>
 
 
@@ -285,10 +289,10 @@
 					<div class="top border-bottom border-dark">
 
 						<h3>
-							<strong class="text-monospace ">Perifericos</strong>
-								<a href="perifericos.jsp">Màs Resultado</a>
+							<strong class="text-monospace ">Perifericos</strong> <a
+								href="perifericos.jsp">Màs Resultado</a>
 						</h3>
-					
+
 
 					</div>
 
@@ -331,10 +335,10 @@
 					<div class="top border-bottom border-dark">
 
 						<h3>
-							<strong class="text-monospace ">Funko</strong>
-							<a href="Funkos.jsp">Màs Resultados</a>
+							<strong class="text-monospace ">Funko</strong> <a
+								href="Funkos.jsp">Màs Resultados</a>
 						</h3>
-						
+
 
 					</div>
 
@@ -377,10 +381,10 @@
 					<div class="top border-bottom border-dark">
 
 						<h3>
-							<strong class="text-monospace ">PlayStation</strong>
-							<a href="PlayStation.jsp">Màs Resultados</a>
+							<strong class="text-monospace ">PlayStation</strong> <a
+								href="PlayStation.jsp">Màs Resultados</a>
 						</h3>
-						
+
 
 					</div>
 
@@ -426,10 +430,10 @@
 					<div class="top border-bottom border-dark">
 
 						<h3>
-							<strong class="text-monospace ">Nintendo</strong>
-							<a href="Nintendo.jsp">Màs Resultados</a>
+							<strong class="text-monospace ">Nintendo</strong> <a
+								href="Nintendo.jsp">Màs Resultados</a>
 						</h3>
-						
+
 
 					</div>
 
@@ -516,6 +520,25 @@
 
 		</div>
 	</footer>
+
+	<section class="chat-container">
+		<div class="chat-button">
+			<img style="width: 70px; height: 70px;" alt=""
+				src="botonMensajeCambio.png">
+		</div>
+		<div class="chat-content">
+			<iframe
+				src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGamesCM.SRL%2F&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+				width="340" height="500"
+				style="border: none; background-color: black; color: #44D62C; overflow: hidden"
+				scrolling="no" frameborder="0" allowTransparency="true"
+				allow="encrypted-media"></iframe>
+
+
+		</div>
+	</section>
+
+
 </body>
 <script type="text/javascript" src="js/codigos-valida.js"></script>
 
@@ -527,6 +550,12 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
 <script src="js/jquery.flexslider.js"></script>
+
+<script src="js/scriptIndex.js"></script>
+<!--
+
+//-->
+</script>
 <!-- <script src="js/script.js"></script> -->
 <script type="text/javascript" charset="utf-8">
 	$(window).load(function() {
