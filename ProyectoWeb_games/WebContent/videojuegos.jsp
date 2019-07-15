@@ -43,65 +43,62 @@
 		<!-- ENCABEZADO DE LA PAGINA-->
 
 
-		<header>
+	<header>
 
 
+		<div id="contenedor" >
+			<form action="ServletBusqueda">
 
-
-			<div id="contenedor" style="background-color: #111111;height: 80px;">
-
-
-				<div class="Contenedor-Busquedad">
+				
 
 					<div class="contenedorNav">
 
+
+
 						<div class="img-carrito">
-						<img alt="" src="img/letra2.png">
-					</div>
-
-
-						<div style="width: 60%; display: flex; justify-content: center;">
-							<input style="margin-top: 20px;" type="search"
-								placeholder="Buscar...">
-							<button style="margin-top: 20px;">Buscar</button>
+							<img  alt="" src="img/letra2.png">
 						</div>
 
-						<div class="img-carrito">
 
-							<a href="#" style="width: 100%; height: 100%;"> <img alt=""
-								src="img/icono-carrito.png"
-								style="background-repeat: no-repeat; width: 60px; height: 100%;">
+
+
+
+						<div class="Contenedor-Busquedad" >
+
+							<input style="width: 80%;" type="search"
+								placeholder="Buscar..." name="datoBusq">
+								<button style="">Buscar</button>
+						</div>
+
+						<div class="img-carrito" style="display: flex; justify-content: flex-end;">
+
+							<a href="CarritoCompra.jsp">
+								<img alt="" src="img/icono-carrito.png"
+								style="background-repeat: no-repeat; width: 60px; height: 50px;">
 							</a>
 
 						</div>
 
 
-					</div>
+					
 
 				</div>
-
-			</div>
-
-		</header>
+			</form>
+		</div>
 
 
-
-		<!--NAVEGACION DE LA PAGINA-->
-
-
-
-		<nav id="navegacion" style="width: 100%;">
+		<nav id="navegacion" >
 			<ul id="menu">
 				<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
-				<li><a class="icon-angle-double-down"
-					href="pagIndexPromocion.jsp"> Promociones </a>
+				<li><a class="icon-angle-double-down" href="servletProducto">
+						Promociones </a>
 					<ul class="submenu">
-						<li><a href="pagIndexVideoJuegos.jsp">VideoJuegos</a></li>
+						<li><a href="">VideoJuegos</a></li>
 						<li><a href="">Funko</a></li>
 
 					</ul></li>
-				<li><a class="icon-angle-double-down" href=""> VideoJuegos
-				</a>
+				<li><a class="icon-angle-double-down"
+					href="pagIndexVideoJuegos.jsp"> VideoJuegos </a>
 					<ul class="submenu">
 						<li><a href="">PlayStation</a></li>
 						<li><a href="">Nintendo</a></li>
@@ -109,21 +106,25 @@
 						<li><a href="">Apple</a></li>
 						<li><a href="">Acer</a></li>
 					</ul></li>
-				<li><a href="">Preventas</a>
+				<li class="li-eliminado"><a href="">Preventas</a>
 					<ul class="submenu">
 						<li><a href="">VideoJuegos</a></li>
 						<li><a href="">Funko</a></li>
 
 					</ul></li>
-				<li><a href="">Accesorios</a>
+				<li class="li-eliminado"><a href="">Accesorios</a>
 					<ul class="submenu">
 						<li><a href="">teclado</a></li>
 						<li><a href="">mouse</a></li>
 
 					</ul></li>
+				<li class="li-eliminado"><a href="#">Noticias</a></li>
 			</ul>
 		</nav>
 
+
+
+	</header>
 
 
 
@@ -142,7 +143,7 @@
 
 
 		<!--CUERPO DE LA PAGINA-->
-		<div id="content-principal">
+		<div id="content-principal" >
 
 			<div id="principal">
 
@@ -157,14 +158,23 @@
 						</div>
 						<div id="nav_izq">
 							<ul>
-								<a href="" style="font-weight: bold;">Consolas</a>
-							
+								<a href="" style="font-weight: bold;">Videojuegos</a>
+								<li><a href="">PlayStation</a></li>
+								<li><a href="">Nintendo</a></li>
 
 							</ul>
-						<ul>
-								<a href="" style="font-weight: bold;">Juegos</a>
-							
+							<ul>
+								<a href="" style="font-weight: bold;">Accesorios</a>
+								<li><a href="">Audifonos</a></li>
+								<li><a href="">Teclados</a></li>
+								<li><a href="">Mouses</a></li>
 
+							</ul>
+							<ul>
+								<a href="" style="font-weight: bold;">Funkos</a>
+								<li><a href="">Funko Pop</a></li>
+								<li><a href="">Funko 5 Star</a></li>
+								<li><a href="">Funko Rock Candy</a></li>
 							</ul>
 						</div>
 					</div>
@@ -174,14 +184,14 @@
 
 
 				<!-- LADO DERECHO DEL CUERPO  -->
-				
-				
+
+
 				<section id="contenedorPrincipal" style="border: red;">
 
 
 
 					<div id="titulo_articulo">
-						<h2>Videojuegos</h2>
+						<h2>Promociones</h2>
 
 					</div>
 
@@ -190,12 +200,13 @@
 
 
 
-						<ct:paginaVideojuegos pag="${param.pagina}"  />
+						<ct:imagen pagina="${param.pagina}" />
 
 						<%
 							int pagina = 0;
 
-							double filas = new gestionProducto().cantidadDeFilas("select count(*) from producto where id_cat=1 or id_cat=2");
+							double filas = new gestionProducto()
+									.cantidadDeFilas("select count(*)from producto where nom_prod like 'ps4%'");
 							System.out.println(filas);
 
 							double filaSinRedondear = (filas / 16);
@@ -206,9 +217,7 @@
 						%>
 
 					</div>
-					
-					
-						<div
+					<div
 						style="display: flex; flex-direction: row; justify-content: center">
 						<%
 							for (int i = 0; i < filaSinRedondear; i++) {
@@ -225,11 +234,6 @@
 							}
 						%>
 					</div>
-
-
-
-
-
 				</section>
 			</div>
 		</div>

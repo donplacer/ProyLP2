@@ -17,6 +17,10 @@ public interface InterfacesProducto {
 	//LISTA LOS PRODUCTO EN PROMOCION
 	public ArrayList<Producto> listaPaginacionPromocion(int inicio,int NroPaginas);
 	
+	//LISTA LOS PRODUCTOS VIDEOJUEGOS(sony y nintendo)
+	
+		public ArrayList<Producto> listaDeVideojuegos(int inicio,int NroPaginas);
+	
 	//LISTA LOS PRODUCTOS DE LOS PERIFERICOS
 	public ArrayList<Producto> listaPaginacionPerifericos(int inicio,int NroPaginas);
 	
@@ -30,8 +34,7 @@ public interface InterfacesProducto {
 	//LISTA LOS PRODUCTO (NINTENDO)
 	public ArrayList<Producto> listaPaginacionNintendo(int inicio,int NroPaginas);
 	
-	//LISTA LOS PRODUCTOs (Videojuegos Genral)
-	public ArrayList<Producto> listaDeVideojuegos(int inicio,int NroPaginas);
+	
 	public Producto obtener(int cod);
 	
 	public int cantidadDeFilas(String consulta);

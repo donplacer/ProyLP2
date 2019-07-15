@@ -29,7 +29,8 @@ private int pagina;
 		try {
 			JspWriter out=pageContext.getOut();
 			
-			ArrayList<Producto> listado=new gestionProducto().listaPaginacionPS4(pagina*16, 16);
+			ArrayList<Producto> listado=new gestionProducto().listaPaginacionPromocion
+					(pagina*16, 16);
 			
 		
  for (Producto u1:listado){
@@ -42,9 +43,9 @@ private int pagina;
 				 		"													alt=\" \" />\r\n</a> "+ 
 				 		"											</div>\r\n" + 
 				 		"											<div class=\"div-contenido-carrusel \">\r\n" + 
-				 		"												<a style='display:flex;align-items:flex-start;' href=\"# \">PS4 </a>\r\n" + 
+				 		"												<a style='display:flex;align-items:flex-start;' href=\"# \">"+u1.getMarcaProd()+" </a>\r\n" + 
 				 		"\r\n" + 
-				 		"												<h5>"+u1.getCodPro()+"</h5>\r\n" + 
+				 		"												<h5>"+u1.getDescPro()+"</h5>\r\n" + 
 				 		"											</div>\r\n" + 
 				 		"											<a\r\n" + 
 				 		"												style='margin-top:10px;' href=\"detSelect.jsp?id="+u1.getCodPro()+"&des="+u1.getDescPro()+"&estadoPro="+u1.getestadoProdu()+"\"><button\r\n" + 

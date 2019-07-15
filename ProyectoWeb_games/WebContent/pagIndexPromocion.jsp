@@ -18,8 +18,7 @@
 	crossorigin="anonymous">
 
 <!-- ESTILOS BARRA BUSQUEDA -->
-<link rel="stylesheet" type="text/css"
-	href="css/estilosBarraBusquedad.css">
+
 <!-- ENLACCE PARA ICONOS -->
 <link
 	href="https://file.myfontastic.com/7Y2CeESwdu83DsVFwBMsPb/icons.css"
@@ -42,93 +41,94 @@
 
 		<!-- ENCABEZADO DE LA PAGINA-->
 
-
-	<header>
-
-
-		<div id="contenedor" >
-			<form action="ServletBusqueda">
-
-				
-
-					<div class="contenedorNav">
+	<form action="ServletBusqueda">
+		<header style="bordeR:1px solid purple;">
 
 
 
-						<div class="img-carrito">
-							<img  alt="" src="img/letra2.png">
-						</div>
+		
+
+
+
+				<div id="contenedor" >
+
+
+
+					<div class="img-carrito">
+						<img alt="" src="img/letra2.png">
+					</div>
 
 
 
 
 
-						<div class="Contenedor-Busquedad" >
+					<div class="Contenedor-Busquedad">
 
-							<input style="width: 80%;" type="search"
-								placeholder="Buscar..." name="datoBusq">
-								<button style="">Buscar</button>
-						</div>
+						<input style="width: 40%;margin-top: 30px;" type="search" placeholder="Buscar..."
+							name="datoBusq">
+						<button style="height: 30px;margin-top: 30px;">Buscar</button>
+					</div>
 
-						<div class="img-carrito" style="display: flex; justify-content: flex-end;">
+					<div class="img-carrito"
+						style="display: flex; justify-content: flex-end;">
 
-							<a href="CarritoCompra.jsp">
-								<img alt="" src="img/icono-carrito.png"
-								style="background-repeat: no-repeat; width: 60px; height: 50px;">
-							</a>
+						<a href="CarritoCompra.jsp"> <img alt=""
+							src="img/icono-carrito.png"
+							style="background-repeat: no-repeat; width: 60px; height: 50px;">
+						</a>
 
-						</div>
-
-
-					
+					</div>
 
 				</div>
-			</form>
-		</div>
-
-
-		<nav id="navegacion" >
-			<ul id="menu">
-				<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
-				<li><a class="icon-angle-double-down" href="servletProducto">
-						Promociones </a>
-					<ul class="submenu">
-						<li><a href="">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
-
-					</ul></li>
-				<li><a class="icon-angle-double-down"
-					href="pagIndexVideoJuegos.jsp"> VideoJuegos </a>
-					<ul class="submenu">
-						<li><a href="">PlayStation</a></li>
-						<li><a href="">Nintendo</a></li>
-						<li><a href="">Advance</a></li>
-						<li><a href="">Apple</a></li>
-						<li><a href="">Acer</a></li>
-					</ul></li>
-				<li class="li-eliminado"><a href="">Preventas</a>
-					<ul class="submenu">
-						<li><a href="">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
-
-					</ul></li>
-				<li class="li-eliminado"><a href="">Accesorios</a>
-					<ul class="submenu">
-						<li><a href="">teclado</a></li>
-						<li><a href="">mouse</a></li>
-
-					</ul></li>
-				<li class="li-eliminado"><a href="#">Noticias</a></li>
-			</ul>
-		</nav>
 
 
 
-	</header>
+		
 
 
 
+			<nav id="navegacion" >
+				<ul id="menu">
+					<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
+					<li><a class="icon-angle-double-down" href="servletProducto">
+							Promociones </a>
+						<ul class="submenu">
+							<li><a href="">VideoJuegos</a></li>
+							<li><a href="">Funko</a></li>
 
+						</ul></li>
+					<li><a class="icon-angle-double-down"
+						href="pagIndexVideoJuegos.jsp"> VideoJuegos </a>
+						<ul class="submenu">
+							<li><a href="">PlayStation</a></li>
+							<li><a href="">Nintendo</a></li>
+							<li><a href="">Advance</a></li>
+							<li><a href="">Apple</a></li>
+							<li><a href="">Acer</a></li>
+						</ul></li>
+					<li class="li-eliminado"><a href="">Preventas</a>
+						<ul class="submenu">
+							<li><a href="">VideoJuegos</a></li>
+							<li><a href="">Funko</a></li>
+
+						</ul></li>
+					<li class="li-eliminado"><a href="">Accesorios</a>
+						<ul class="submenu">
+							<li><a href="">teclado</a></li>
+							<li><a href="">mouse</a></li>
+
+						</ul></li>
+					<li class="li-eliminado"><a href="#">Noticias</a></li>
+				</ul>
+			</nav>
+
+
+
+		</header>
+
+
+
+	</form>
 
 
 
@@ -143,7 +143,7 @@
 
 
 		<!--CUERPO DE LA PAGINA-->
-		<div id="content-principal" >
+		<div id="content-principal">
 
 			<div id="principal">
 
@@ -191,7 +191,7 @@
 
 
 					<div id="titulo_articulo">
-						<h2>Promocionesasdasd</h2>
+						<h2>Promociones</h2>
 
 					</div>
 
@@ -223,8 +223,7 @@
 							for (int i = 0; i < filaSinRedondear; i++) {
 						%>
 
-						<a style="color: red; text-decoration: none"
-							href="?pagina=<%=i%>">
+						<a style="color: red; text-decoration: none" href="?pagina=<%=i%>">
 							<button type="button" class="btn btn-outline-success btn1">
 								<%=i + 1%>
 							</button>
