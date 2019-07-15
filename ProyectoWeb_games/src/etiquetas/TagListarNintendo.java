@@ -55,7 +55,7 @@ private int pag;
 					 		"											</div>\r\n" + 
 					 		"											<a\r\n" + 
 					 		"												style='margin-top:10px;' href=\"cargardatos?id="+p.getCodPro()+"\"><button\r\n" + 
-					 		"													type=\"button\" class=\" btn btn-outline-success\">Ver Descripcion</button></a>\r\n" + 
+					 		"													type=\"button\" class=\" btn btn-outline-success\">Agregar al carrito</button></a>\r\n" + 
 					 		"										</div>\r\n" + 
 					 		"");
 						

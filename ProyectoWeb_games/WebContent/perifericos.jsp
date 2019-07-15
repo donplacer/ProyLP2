@@ -194,7 +194,7 @@
 
 
 
-						<ct:PaginaPerifericos pag="${param.pagina}" prodXpag="16" />
+						<ct:PaginaPerifericos pag="${param.pagina}"/>
 
 						<%
 							int pagina = 0;

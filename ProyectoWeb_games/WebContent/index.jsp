@@ -140,10 +140,10 @@
 	<div class="flexslider" style="height: 450px; margin-top: 120px;">
 		<ul class="slides" style="height: 100%; width: 100%;">
 			<li><a href="#"><img class="imagenes-Carrusel-Principal"
-					alt="" src="img/bannerCrash.png"></a></li>
+					alt="" src="img/promocion.png"></a></li>
 
 			<li><a href="#"><img class="imagenes-Carrusel-Principal"
-					src="img/imagenesCarruselPrincipal/fondo.jpg" alt=""></a></li>
+					src="img/disenio3.jpg" alt=""></a></li>
 
 
 			<li><a href="#"><img class="imagenes-Carrusel-Principal"

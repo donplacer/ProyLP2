@@ -323,6 +323,7 @@ public class gestionProducto implements InterfacesProducto{
 		Connection cn=null;
 		
 		try {
+			
 			lista=new ArrayList<>();
 			cn=MySqlConection.getConexion();
 			pst=cn.prepareStatement("select *from producto where nom_prod like concat('%',?,'%') or marca_prod like concat('%',?,'%') limit ?,?");

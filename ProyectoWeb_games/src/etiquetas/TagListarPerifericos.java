@@ -39,7 +39,7 @@ public void setProdXpag(int prodXpag) {
 			
 			JspWriter out=pageContext.getOut();
 			
-			ArrayList<Producto> listado=new gestionProducto().listaPaginacionPerifericos(pag, prodXpag);
+			ArrayList<Producto> listado=new gestionProducto().listaPaginacionPerifericos(pag*16	, 16);
 			
 			 
 			 for (Producto p:listado) {
@@ -48,7 +48,7 @@ public void setProdXpag(int prodXpag) {
 		 
 				 out.print("<div class=\"articulo \">\r\n" + 
 					 		"											<div class=\"div-imagen-carrusel \">\r\n" + 
-					 		"												<a href=\"detSelect.jsp?id="+p.getCodPro()+"&des="+p.getDescPro()+"&estadoPro="+p.getestadoProdu()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
+					 		"												<a href=\"cargardatos?id="+p.getCodPro()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
 					 		"													src=\"img/imagenesProductos/"+p.getCodPro()+".png \"\r\n" + 
 					 		"													alt=\" \" />\r\n</a> "+ 
 					 		"											</div>\r\n" + 
@@ -59,7 +59,7 @@ public void setProdXpag(int prodXpag) {
 					 		"											</div>\r\n" + 
 					 		"											<a\r\n" + 
 					 		"												style='margin-top:10px;' href=\"cargardatos?id="+p.getCodPro()+"&des="+p.getDescPro()+"&estadoPro="+p.getestadoProdu()+"\"><button\r\n" + 
-					 		"													type=\"button\" class=\" btn btn-outline-success\">Ver Descripcion</button></a>\r\n" + 
+					 		"													type=\"button\" class=\" btn btn-outline-success\">Agregar al carrito</button></a>\r\n" + 
 					 		"										</div>\r\n" + 
 					 		"");
 						

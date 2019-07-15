@@ -117,19 +117,19 @@
 
                     <div id="galeria">
                         <div id="panel">
-                            <img id="img/P00<%=request.getParameter("id") %>.jpg" src="img/1.jpg" />
+                            <img  id="img_vista" src="img/imagenesProductos/${p.codPro}.png"  />
 
                         </div>
 
                         <div id="img_opc">
-                            <img src="" alt="no img"/>
-                            <img src="img/2.jpg" />
-                            <img src="img/3.jpg" />
-                            <img src="img/4.jpg" />
-                            <img src="img/5.png" />
+                            <img src="img/imagenesProductos/${p.codPro}.png" alt="no img"/>
+                            <img src="img/imagenesProductos/${p.codPro}.1.png" />
+                            <img src="img/imagenesProductos/${p.codPro}.2.png" />
+                            <img src="img/imagenesProductos/${p.codPro}.3.png" />
+                            <img src="img/imagenesProductos/${p.codPro}.4.png" alt="no img"/>
                         </div>
                         <div class="precio">
-                            <span>S/. 1,799</span>
+                            <span>S/.${p.precioPro}</span>
                         </div>
                         <div class="disponibilidad">
                             <span>Disponibilidad : </span><span style="color: #04e404">En Existencia</span>
@@ -291,7 +291,7 @@
     }
 </script>
 <!-- SCRIPT PARA USAR JQUERERY -->
-<script src="jquery-3.2.1.js "></script>
+<script src="js/jquery-3.2.1.js "></script>
 <script src="scriptPagVideojuegos.js"></script>
 
 <script>
