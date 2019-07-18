@@ -321,12 +321,12 @@
 
 
 						<!-- TEMPORIZADOR DE PROMOCIONES -->
-
+<!-- 
 						<div id="temporizador">
 							<span id="min">10</span>:<span id="seg">00</span> <span id="fin"
 								style="display: none;">Promocion terminada</span>
 						</div>
-
+ -->
 					</div>
 
 
