@@ -89,7 +89,7 @@
 
 			<nav id="navegacion" >
 				<ul id="menu">
-					<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
+					<li><a class="icon-home" href="index.jsp"> Iniciasdaasddasso</a></li>
 					<li><a class="icon-angle-double-down" href="servletProducto">
 							Promociones </a>
 						<ul class="submenu">
