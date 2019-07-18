@@ -19,8 +19,7 @@
 	crossorigin="anonymous">
 
 <!-- ESTILOS BARRA BUSQUEDA -->
-<link rel="stylesheet" type="text/css"
-	href="css/estilosBarraBusquedad.css">
+
 <!-- ENLACCE PARA ICONOS -->
 <link
 	href="https://file.myfontastic.com/7Y2CeESwdu83DsVFwBMsPb/icons.css"

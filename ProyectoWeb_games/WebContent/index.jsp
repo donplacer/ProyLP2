@@ -68,11 +68,15 @@
 			<li style="border-bottom:3px solid black;"><a href="index.jsp"> <img onMouseOver="cambio(0)"
 						onMouseOut="original(0)" class="imgnav" style="width: 30px;height: 30px;"  
 						src="img/imagenesNavegacion/casita.png">
-					<h2></h2>
-	
-				</li>
-				
-            <li style="border-top: none;"><a href="#s1">Videojuegos</a>
+
+
+
+            
+
+				</a><h2></h2></li>
+			
+            <li><a href="#s1">Videojuegos</a>
+
 
 
                 <span id="s1"></span>
