@@ -226,7 +226,7 @@
 
 			</div>
 		</footer>
-	</div>
+	
 
 	<!-- LADO CENTRAL DEL CUERPO -->
 </body>

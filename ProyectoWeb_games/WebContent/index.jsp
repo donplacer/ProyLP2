@@ -54,7 +54,9 @@
                <!-----------------------------------------------------     LOGO GAMESCM  ------------------------------------------>
 
 				<div class="img-carrito">
+					
 					<img alt="" src="img/letra2.png">
+					
 				</div>
 				 <!-------------------------------------------------------------------------------------------------------------------------->
 
@@ -63,8 +65,18 @@
 				<div class="Contenedor-medio">
 					
         <ul id="nav">
+			<li style="border-bottom:3px solid black;"><a href="index.jsp"> <img onMouseOver="cambio(0)"
+						onMouseOut="original(0)" class="imgnav" style="width: 30px;height: 30px;"  
+						src="img/imagenesNavegacion/casita.png">
+					
+
 
             <li><a href="videojuegos.jsp">Videojuegoasdasdasds</a>
+
+				</a><h2></h2></li>
+			
+            <li><a href="#s1">Videojuegos</a>
+
 
                 <span id="s1"></span>
 
@@ -254,31 +266,31 @@
 			<ul id="content_menu">
 
 
-				<li><a href="servletProducto"> <img onMouseOver="cambio(0)"
-						onMouseOut="original(0)" class="imgnav"
+				<li><a href="servletProducto"> <img onMouseOver="cambio(1)"
+						onMouseOut="original(1)" class="imgnav"
 						src="img/imagenesNavegacion/promocion.png">
-						<h2>Promociones</h2>
+						<h2>Promocion</h2>
 
 				</a></li>
 
 
 
-				<li><a href="videojuegos.jsp"> <img onMouseOver="cambio(1)"
-						onMouseOut="original(1)" class="imgnav"
+				<li><a href="videojuegos.jsp"> <img onMouseOver="cambio(2)"
+						onMouseOut="original(2)" class="imgnav"
 						src="img/imagenesNavegacion/mando.png">
 						<h2>Videojuegos</h2>
 
 				</a></li>
-				<li><a href="#"> <img onMouseOver="cambio(2)"
-						onMouseOut="original(2)" class="imgnav"
+				<li><a href="#"> <img onMouseOver="cambio(3)"
+						onMouseOut="original(3)" class="imgnav"
 						src="img/imagenesNavegacion/preventa.png">
 						<h2>Preventas</h2>
 
 				</a></li>
 
 
-				<li><a href="Funkos.jsp"> <img onMouseOver="cambio(3)"
-						onMouseOut="original(3)" class="imgnav"
+				<li><a href="Funkos.jsp"> <img onMouseOver="cambio(4)"
+						onMouseOut="original(4)" class="imgnav"
 						src="img/imagenesNavegacion/superman.png">
 
 						<h2>Funko</h2>
@@ -312,12 +324,12 @@
 
 
 						<!-- TEMPORIZADOR DE PROMOCIONES -->
-
+<!-- 
 						<div id="temporizador">
 							<span id="min">10</span>:<span id="seg">00</span> <span id="fin"
 								style="display: none;">Promocion terminada</span>
 						</div>
-
+ -->
 					</div>
 
 
@@ -596,8 +608,9 @@
 
 	<section class="chat-container">
 		<div class="chat-button">
-			<img style="width: 70px; height: 70px;" alt=""
-				src="botonMensajeCambio.png">
+			<img onMouseOver="cambio(5)"
+						onMouseOut="original(5)" class="imgnav" style="width: 70px; height: 70px;" alt=""
+				src="img/imagenesNavegacion/botonMensaje.png">
 		</div>
 		<div class="chat-content">
 			<iframe
