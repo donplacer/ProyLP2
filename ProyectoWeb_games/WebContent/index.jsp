@@ -71,7 +71,7 @@
 					
 
 
-            <li><a href="videojuegos.jsp">Videojuegoasdasdasds</a>
+            
 
 				</a><h2></h2></li>
 			
