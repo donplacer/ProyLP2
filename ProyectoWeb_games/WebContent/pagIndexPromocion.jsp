@@ -91,7 +91,7 @@
 				<ul id="menu">
 					<li><a class="icon-home" href="index.jsp"> Iniciasdaasddasso</a></li>
 					<li><a class="icon-angle-double-down" href="servletProducto">
-							Promociones </a>
+							Promocione </a>
 						<ul class="submenu">
 							<li><a href="">VideoJuegos</a></li>
 							<li><a href="">Funko</a></li>
