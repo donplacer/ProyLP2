@@ -64,7 +64,7 @@
 					
         <ul id="nav">
 
-            <li><a href="videojuegos.jsp">Videojuegos</a>
+            <li><a href="videojuegos.jsp">Videojuegoasdasdasds</a>
 
                 <span id="s1"></span>
 
