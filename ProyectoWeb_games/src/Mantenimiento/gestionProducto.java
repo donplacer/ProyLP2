@@ -64,7 +64,7 @@ public class gestionProducto implements InterfacesProducto{
 		try {
 			lista=new ArrayList<>();
 			cn=MySqlConection.getConexion();
-			pst=cn.prepareStatement("select*from producto where nom_prod like 'ps4%' LIMIT ?,?;");
+			pst=cn.prepareStatement("select*from producto where marca_prod='sony' LIMIT ?,?;");
 		
 			pst.setInt(1, inicio);
 			pst.setInt(2, NroPaginas);
@@ -159,7 +159,7 @@ public class gestionProducto implements InterfacesProducto{
 				try {
 					lista=new ArrayList<>();
 					cn=MySqlConection.getConexion();
-					pst=cn.prepareStatement("select*from producto where nom_prod like 'funko%' LIMIT ?,?");
+					pst=cn.prepareStatement("select*from producto where id_Cat=6 LIMIT ?,?");
 				
 					pst.setInt(1, inicio);
 					pst.setInt(2, NroPaginas);
@@ -205,7 +205,7 @@ public class gestionProducto implements InterfacesProducto{
 					try {
 						lista=new ArrayList<>();
 						cn=MySqlConection.getConexion();
-						pst=cn.prepareStatement("select*from producto where nom_prod like 'NINTENDO%' LIMIT ?,?");
+						pst=cn.prepareStatement("select*from producto where marca_prod='nintendo' LIMIT ?,?");
 					   
 						pst.setInt(1, inicio);
 						pst.setInt(2, NroPaginas);
@@ -387,7 +387,7 @@ public class gestionProducto implements InterfacesProducto{
 	}
 
 	@Override
-	public ArrayList<Producto> listaDeVideojuegos(int inicio, int NroPaginas) {
+	public ArrayList<Producto> listaDeVideojuegos(int cat,int inicio, int NroPaginas) {
 		ArrayList<Producto>lista=null;
 		ResultSet rs=null;
 		
@@ -398,12 +398,27 @@ public class gestionProducto implements InterfacesProducto{
 		try {
 			lista=new ArrayList<>();
 			cn=MySqlConection.getConexion();
-			pst=cn.prepareStatement("select *from producto where id_cat=1 or id_cat=2 LIMIT ?,?");
-		
-			pst.setInt(1, inicio);
-			pst.setInt(2, NroPaginas);
+			if (cat!=0) {
+				pst=cn.prepareStatement("select *from producto where id_cat =? limit ?,? ");
+				pst.setInt(1, cat);
+				pst.setInt(2, inicio);
+				pst.setInt(3, NroPaginas);
+				
+				rs=pst.executeQuery();
+			}
+				else {
+					pst=cn.prepareStatement("select *from producto where id_cat =1 or id_cat =2 or id_cat =8  limit ?,? ");
 			
-			rs=pst.executeQuery();
+					pst.setInt(1, inicio);
+					pst.setInt(2, NroPaginas);
+					
+					rs=pst.executeQuery();
+				}
+				
+			
+			
+		
+			
 			
 			while(rs.next()) {
 				
@@ -420,7 +435,7 @@ public class gestionProducto implements InterfacesProducto{
 			
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println("eror en la gesiotn de listasr Productos PS4");
+			System.out.println("eror en la gesiotn de listasr videoegos ");
 		}
 		
 		
@@ -460,6 +475,132 @@ public class gestionProducto implements InterfacesProducto{
 		
 		
 		return p;
+	}
+
+	@Override
+	public ArrayList<Producto> listaPaginacionProdXconsolas(int inicio, int NroPaginas) {
+		ArrayList<Producto>lista=null;
+		ResultSet rs=null;
+		
+		PreparedStatement pst=null;
+
+		Connection cn=null;
+		
+		try {
+			lista=new ArrayList<>();
+			cn=MySqlConection.getConexion();
+			pst=cn.prepareStatement("select *from producto where id_cat =2  limit ?,? ");
+		
+			pst.setInt(1, inicio);
+			pst.setInt(2, NroPaginas);
+			
+			rs=pst.executeQuery();
+			
+			while(rs.next()) {
+				
+				Producto p=new Producto();
+				p.setCodPro(rs.getInt(1));
+				p.setDescPro(rs.getString(2));
+				p.setPrecioPro(rs.getDouble(5));
+				p.setMarcaProd(rs.getString(4));
+			
+				lista.add(p);
+				
+			}
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("eror en la gesiotn de listasr videoegos ");
+		}
+		
+		
+		
+		return lista;
+	}
+
+	@Override
+	public ArrayList<Producto> listaPaginacionProdXjuegos(int inicio, int NroPaginas) {
+		ArrayList<Producto>lista=null;
+		ResultSet rs=null;
+		
+		PreparedStatement pst=null;
+
+		Connection cn=null;
+		
+		try {
+			lista=new ArrayList<>();
+			cn=MySqlConection.getConexion();
+			pst=cn.prepareStatement("select *from producto where id_cat =1  limit ?,? ");
+		
+			pst.setInt(1, inicio);
+			pst.setInt(2, NroPaginas);
+			
+			rs=pst.executeQuery();
+			
+			while(rs.next()) {
+				
+				Producto p=new Producto();
+				p.setCodPro(rs.getInt(1));
+				p.setDescPro(rs.getString(2));
+				p.setPrecioPro(rs.getDouble(5));
+				p.setMarcaProd(rs.getString(4));
+			
+				lista.add(p);
+				
+			}
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("eror en la gesiotn de listasr videoegos ");
+		}
+		
+		
+		
+		return lista;
+	}
+
+	@Override
+	public ArrayList<Producto> listaPaginacionProdXAccesorio(int inicio, int NroPaginas) {
+		ArrayList<Producto>lista=null;
+		ResultSet rs=null;
+		
+		PreparedStatement pst=null;
+
+		Connection cn=null;
+		
+		try {
+			lista=new ArrayList<>();
+			cn=MySqlConection.getConexion();
+			pst=cn.prepareStatement("select *from producto where id_cat =8 limit ?,? ");
+		
+			pst.setInt(1, inicio);
+			pst.setInt(2, NroPaginas);
+			
+			rs=pst.executeQuery();
+			
+			while(rs.next()) {
+				
+				Producto p=new Producto();
+				p.setCodPro(rs.getInt(1));
+				p.setDescPro(rs.getString(2));
+				p.setPrecioPro(rs.getDouble(5));
+				p.setMarcaProd(rs.getString(4));
+			
+				lista.add(p);
+				
+			}
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("eror en la gesiotn de listasr videoegos ");
+		}
+		
+		
+		
+		return lista;
 	}
 
 	

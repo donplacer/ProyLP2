@@ -25,9 +25,8 @@
 	
 
 <link rel="stylesheet" type="text/css" href="css/firstmobile.css">
-<link rel="stylesheet" type="text/css" href="css/estilosIndex.css">
-<link rel="stylesheet" type="text/css"
-	href="css/estilosCarruselProductos.css">
+<link rel="stylesheet" type="text/css" href="css/estilosIndex.css"> <!-- ------------ESTILOS INDEX------- -->
+<link rel="stylesheet" type="text/css" href="css/estilosCarruselProductos.css">   <!-- ------------ESTILOS CARRUSEL DE LOS PRODUCTOS -------- -->
 
 
 
@@ -65,13 +64,13 @@
 					
         <ul id="nav">
 
-            <li><a href="#s1">Videojuegos</a>
+            <li><a href="videojuegos.jsp">Videojuegos</a>
 
                 <span id="s1"></span>
 
                 <ul class="subs" >
 
-                    <li><a href="#">PlayStation</a>
+                    <li><a href="PlayStation.jsp">PlayStation</a>
 
                         <ul>
 
@@ -85,7 +84,7 @@
 
                     </li>
 
-                    <li ><a href="#">Nintendo</a>
+                    <li ><a href="Nintendo.jsp">Nintendo</a>
 
                         <ul>
 
@@ -624,7 +623,7 @@
 
 <script src="js/jquery.flexslider.js"></script>
 
-<script src="js/scriptIndex.js"></script>
+<script src="js/scriptIndex.js"></script>  <!--   --------------- MOVIMIENTO BUSCADOR ------- -->
 <!--
 
 //-->

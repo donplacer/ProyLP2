@@ -19,7 +19,7 @@ public interface InterfacesProducto {
 	
 	//LISTA LOS PRODUCTOS VIDEOJUEGOS(sony y nintendo)
 	
-		public ArrayList<Producto> listaDeVideojuegos(int inicio,int NroPaginas);
+		public ArrayList<Producto> listaDeVideojuegos(int cat,int inicio,int NroPaginas);
 	
 	//LISTA LOS PRODUCTOS DE LOS PERIFERICOS
 	public ArrayList<Producto> listaPaginacionPerifericos(int inicio,int NroPaginas);
@@ -34,6 +34,9 @@ public interface InterfacesProducto {
 	//LISTA LOS PRODUCTO (NINTENDO)
 	public ArrayList<Producto> listaPaginacionNintendo(int inicio,int NroPaginas);
 	
+	public ArrayList<Producto> listaPaginacionProdXconsolas(int inicio,int NroPaginas);
+	public ArrayList<Producto> listaPaginacionProdXjuegos(int inicio,int NroPaginas);
+	public ArrayList<Producto> listaPaginacionProdXAccesorio(int inicio,int NroPaginas);
 	
 	public Producto obtener(int cod);
 	

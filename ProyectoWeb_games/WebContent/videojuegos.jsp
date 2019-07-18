@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 
+<%@page import="org.apache.jasper.tagplugins.jstl.core.Param"%>
 <%@page import="com.sun.org.apache.xalan.internal.xsltc.compiler.sym"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="Mantenimiento.gestionProducto"%>
@@ -37,96 +38,158 @@
 
 <body>
 
-	<div id="body " style="background-color: #1B1B1B;">
+	
+	<form action="ServletBusqueda">
+
+		<header>
+			<div id="contenedor" style="width: 100%;">
 
 
-		<!-- ENCABEZADO DE LA PAGINA-->
+               <!-----------------------------------------------------     LOGO GAMESCM  ------------------------------------------>
 
-
-	<header>
-
-
-		<div id="contenedor" >
-			<form action="ServletBusqueda">
-
-				
-
-					<div class="contenedorNav">
-
-
-
-						<div class="img-carrito">
-							<img  alt="" src="img/letra2.png">
-						</div>
-
-
-
-
-
-						<div class="Contenedor-Busquedad" >
-
-							<input style="width: 80%;" type="search"
-								placeholder="Buscar..." name="datoBusq">
-								<button style="">Buscar</button>
-						</div>
-
-						<div class="img-carrito" style="display: flex; justify-content: flex-end;">
-
-							<a href="CarritoCompra.jsp">
-								<img alt="" src="img/icono-carrito.png"
-								style="background-repeat: no-repeat; width: 60px; height: 50px;">
-							</a>
-
-						</div>
-
-
-					
-
+				<div class="img-carrito">
+					<img alt="" src="img/letra2.png">
 				</div>
-			</form>
-		</div>
+				 <!-------------------------------------------------------------------------------------------------------------------------->
 
 
-		<nav id="navegacion" >
-			<ul id="menu">
-				<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
-				<li><a class="icon-angle-double-down" href="servletProducto">
-						Promociones </a>
-					<ul class="submenu">
-						<li><a href="">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
+          <!-----------------------------------------------------     MENU NAVEGACION HORIZONTAL  ------------------------------------------>
+				<div class="Contenedor-medio">
+					
+        <ul id="nav">
 
-					</ul></li>
-				<li><a class="icon-angle-double-down"
-					href="pagIndexVideoJuegos.jsp"> VideoJuegos </a>
-					<ul class="submenu">
-						<li><a href="">PlayStation</a></li>
-						<li><a href="">Nintendo</a></li>
-						<li><a href="">Advance</a></li>
-						<li><a href="">Apple</a></li>
-						<li><a href="">Acer</a></li>
-					</ul></li>
-				<li class="li-eliminado"><a href="">Preventas</a>
-					<ul class="submenu">
-						<li><a href="">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
+            <li><a href="videojuegos.jsp">Videojuegos</a>
 
-					</ul></li>
-				<li class="li-eliminado"><a href="">Accesorios</a>
-					<ul class="submenu">
-						<li><a href="">teclado</a></li>
-						<li><a href="">mouse</a></li>
+                <span id="s1"></span>
 
-					</ul></li>
-				<li class="li-eliminado"><a href="#">Noticias</a></li>
-			</ul>
-		</nav>
+                <ul class="subs" >
+
+                    <li><a href="#">PlayStation</a>
+
+                        <ul>
+
+                            <li><a href="#">Consolas</a></li>
+
+                            <li><a href="#">Juegos</a></li>
+
+                            <li><a href="#">Accesorios</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li ><a href="#">Nintendo</a>
+
+                        <ul>
+
+                            <li><a href="#">Consolas </a></li>
+
+                            <li><a href="#">Juegos</a></li>
+
+                            <li><a href="#">Accesorios</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+            <li><a href="#s1">Computación</a>
+
+                <span id="s1"></span>
+
+                <ul class="subs">
+
+                    <li><a href="#">Periféricos</a>
+
+                        <ul>
+
+                            <li><a href="#">Mouse</a></li>
+
+                            <li><a href="#">Teclados </a></li>
+
+                            <li><a href="#">Audifonos </a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">Almacenamiento </a>
+
+                        <ul>
+
+                            <li><a href="#">Discos duros</a></li>
+
+                            <li><a href="#">Memorias SSD</a></li>
+
+                            <li><a href="#">Memorias Usb</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="active"><a href="#s2">Funkos</a>
+
+                <span id="s2"></span>
+
+                <ul class="subs">
+
+                    <li><a href="#">Funko</a>
+
+                        <ul>
+
+                            <li><a href="#">Funko pop</a></li>
+
+                            <li><a href="#">Funko box collector</a></li>
+
+                            <li><a href="#"> Preventas</a></li>
+
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+
+            </li>
 
 
 
-	</header>
+        </ul>
+
+    
+				      <!-------------------------------------------------------------------------------------------------------------------------->
+				
+					
+				</div>
+			
+			      <!-----------------------------------------------------     BARRA BUQUEDA   ------------------------------------------>
+				<div class="img-Busquedad">
 
 
+					<img class="boton" alt="" src="img/iconoBusquedad.png"
+						style="background-repeat: no-repeat;">
+
+					<div class="Contenedor-Busquedad" style="margin-left: 7px;">
+						<input style="display: none;" class="barraOculta " type="search"
+							placeholder="Buscar..." name="datoBusq">
+					</div>
+
+				</div>       
+ 
+                  <!----------------------------------------------------------------------------------------------->
+                  
+                  
+			</div>
+
+		</header>
+
+	</form>
 
 
 
@@ -158,24 +221,20 @@
 						</div>
 						<div id="nav_izq">
 							<ul>
-								<a href="" style="font-weight: bold;">Videojuegos</a>
-								<li><a href="">PlayStation</a></li>
-								<li><a href="">Nintendo</a></li>
+								<a href="" style="font-weight: bold;">Play Statión</a>
+								<li><a href="?cate=2">Consolas</a></li>
+								<li><a href="?cate=1">Videojuegos</a></li>
+								<li><a href="?cate=8">Accesorios</a></li>
 
 							</ul>
 							<ul>
-								<a href="" style="font-weight: bold;">Accesorios</a>
-								<li><a href="">Audifonos</a></li>
-								<li><a href="">Teclados</a></li>
-								<li><a href="">Mouses</a></li>
+								<a href="" style="font-weight: bold;">Nintendo</a>
+								<li><a href="?cate=2">Consolas</a></li>
+								<li><a href="?cate=1">Videojuegos</a></li>
+								<li><a href="?cate=8">Accesorios</a></li>
 
 							</ul>
-							<ul>
-								<a href="" style="font-weight: bold;">Funkos</a>
-								<li><a href="">Funko Pop</a></li>
-								<li><a href="">Funko 5 Star</a></li>
-								<li><a href="">Funko Rock Candy</a></li>
-							</ul>
+							
 						</div>
 					</div>
 				</aside>
@@ -191,7 +250,7 @@
 
 
 					<div id="titulo_articulo">
-						<h2>Promociones</h2>
+						<h2>VideoJuegos</h2><!--   FALTA HACERLO AUTOMATICO -->
 
 					</div>
 
@@ -200,13 +259,15 @@
 
 
 
-						<ct:imagen pagina="${param.pagina}" />
+						<ct:paginaVideojuegos pag="${param.pagina}" cat="${param.cate}" />
 
 						<%
 							int pagina = 0;
 
+					
 							double filas = new gestionProducto()
-									.cantidadDeFilas("select count(*)from producto where nom_prod like 'ps4%'");
+									.cantidadDeFilas("select count(*)from producto where id_cat =1 or id_cat =2 or id_cat =8 ");
+							
 							System.out.println(filas);
 
 							double filaSinRedondear = (filas / 16);
@@ -303,6 +364,8 @@
 <!-- SCRIPT PARA USAR JQUERERY -->
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/scriptPagVideojuegos.js"></script>
+
+<script src="js/scriptIndex.js"></script>  <!--   --------------- MOVIMIENTO BUSCADOR ------- -->
 <script>
 	function openNav() {
 		document.getElementById("sideNavigation").style.width = "250px";

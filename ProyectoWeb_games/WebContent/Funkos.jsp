@@ -37,94 +37,159 @@
 
 <body>
 
-	<div id="body " style="background-color: #1B1B1B;">
+	
 
-
-		<!-- ENCABEZADO DE LA PAGINA-->
-
+	<form action="ServletBusqueda">
 
 		<header>
+			<div id="contenedor" style="width: 100%;">
 
 
+               <!-----------------------------------------------------     LOGO GAMESCM  ------------------------------------------>
 
-
-			<div id="contenedor" style="background-color: #111111;height: 80px;">
-
-
-				<div class="Contenedor-Busquedad">
-
-					<div class="contenedorNav">
-
-						<div class="img-carrito">
-						<img alt="" src="img/letra2.png">
-					</div>
-
-
-						<div style="width: 60%; display: flex; justify-content: center;">
-							<input style="margin-top: 20px;" type="search"
-								placeholder="Buscar...">
-							<button style="margin-top: 20px;">Buscar</button>
-						</div>
-
-						<div class="img-carrito">
-
-							<a href="#" style="width: 100%; height: 100%;"> <img alt=""
-								src="img/icono-carrito.png"
-								style="background-repeat: no-repeat; width: 60px; height: 100%;">
-							</a>
-
-						</div>
-
-
-					</div>
-
+				<div class="img-carrito">
+					<img alt="" src="img/letra2.png">
 				</div>
+				 <!-------------------------------------------------------------------------------------------------------------------------->
 
+
+          <!-----------------------------------------------------     MENU NAVEGACION HORIZONTAL  ------------------------------------------>
+				<div class="Contenedor-medio">
+					
+        <ul id="nav">
+
+            <li><a href="#s1">Videojuegos</a>
+
+                <span id="s1"></span>
+
+                <ul class="subs" >
+
+                    <li><a href="#">PlayStation</a>
+
+                        <ul>
+
+                            <li><a href="#">Consolas</a></li>
+
+                            <li><a href="#">Juegos</a></li>
+
+                            <li><a href="#">Accesorios</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li ><a href="#">Nintendo</a>
+
+                        <ul>
+
+                            <li><a href="#">Consolas </a></li>
+
+                            <li><a href="#">Juegos</a></li>
+
+                            <li><a href="#">Accesorios</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+            <li><a href="#s1">Computación</a>
+
+                <span id="s1"></span>
+
+                <ul class="subs">
+
+                    <li><a href="#">Periféricos</a>
+
+                        <ul>
+
+                            <li><a href="#">Mouse</a></li>
+
+                            <li><a href="#">Teclados </a></li>
+
+                            <li><a href="#">Audifonos </a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">Almacenamiento </a>
+
+                        <ul>
+
+                            <li><a href="#">Discos duros</a></li>
+
+                            <li><a href="#">Memorias SSD</a></li>
+
+                            <li><a href="#">Memorias Usb</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="active"><a href="#s2">Funkos</a>
+
+                <span id="s2"></span>
+
+                <ul class="subs">
+
+                    <li><a href="#">Funko</a>
+
+                        <ul>
+
+                            <li><a href="#">Funko pop</a></li>
+
+                            <li><a href="#">Funko box collector</a></li>
+
+                            <li><a href="#"> Preventas</a></li>
+
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+
+
+        </ul>
+
+    
+				      <!-------------------------------------------------------------------------------------------------------------------------->
+				
+					
+				</div>
+			
+			      <!-----------------------------------------------------     BARRA BUQUEDA   ------------------------------------------>
+				<div class="img-Busquedad">
+
+
+					<img class="boton" alt="" src="img/iconoBusquedad.png"
+						style="background-repeat: no-repeat;">
+
+					<div class="Contenedor-Busquedad" style="margin-left: 7px;">
+						<input style="display: none;" class="barraOculta " type="search"
+							placeholder="Buscar..." name="datoBusq">
+					</div>
+
+				</div>       
+ 
+                  <!----------------------------------------------------------------------------------------------->
+                  
+                  
 			</div>
 
 		</header>
 
-
-
-		<!--NAVEGACION DE LA PAGINA-->
-
-
-
-		<nav id="navegacion" style="width: 100%;">
-			<ul id="menu">
-				<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
-				<li><a class="icon-angle-double-down"
-					href="pagIndexPromocion.jsp"> Promociones </a>
-					<ul class="submenu">
-						<li><a href="pagIndexVideoJuegos.jsp">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
-
-					</ul></li>
-				<li><a class="icon-angle-double-down" href=""> VideoJuegos
-				</a>
-					<ul class="submenu">
-						<li><a href="">PlayStation</a></li>
-						<li><a href="">Nintendo</a></li>
-						<li><a href="">Advance</a></li>
-						<li><a href="">Apple</a></li>
-						<li><a href="">Acer</a></li>
-					</ul></li>
-				<li><a href="">Preventas</a>
-					<ul class="submenu">
-						<li><a href="">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
-
-					</ul></li>
-				<li><a href="">Accesorios</a>
-					<ul class="submenu">
-						<li><a href="">teclado</a></li>
-						<li><a href="">mouse</a></li>
-
-					</ul></li>
-			</ul>
-		</nav>
-
-
+	</form>
 
 
 
@@ -295,6 +360,8 @@
 <!-- SCRIPT PARA USAR JQUERERY -->
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/scriptPagVideojuegos.js"></script>
+
+<script src="js/scriptIndex.js"></script>  <!--   --------------- MOVIMIENTO BUSCADOR ------- -->
 <script>
 	function openNav() {
 		document.getElementById("sideNavigation").style.width = "250px";

@@ -23,19 +23,29 @@ public int getPag() {
 	}
 
 private int pag;
-
+private int cat;
 
 
 	
 
 
 
+	public int getCat() {
+	return cat;
+}
+
+public void setCat(int cat) {
+	this.cat = cat;
+}
+
 	public int doStartTag()   throws JspException{
 		try {
 			
 			JspWriter out=pageContext.getOut();
-			
-			ArrayList<Producto> listado=new gestionProducto().listaDeVideojuegos(pag*16, 16);
+			if (cat!=0) {
+				
+			}
+			ArrayList<Producto> listado=new gestionProducto().listaDeVideojuegos(cat,pag*16, 16);
 			
 			 
 			 for (Producto p:listado) {

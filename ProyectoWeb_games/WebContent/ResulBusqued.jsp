@@ -35,100 +35,160 @@
 
 <body>
 
-	<div id="body " style="background-color: #1B1B1B;">
+	
+	<form action="ServletBusqueda">
+
+		<header>
+			<div id="contenedor" style="width: 100%;">
 
 
-		<!-- ENCABEZADO DE LA PAGINA-->
+               <!-----------------------------------------------------     LOGO GAMESCM  ------------------------------------------>
 
-
-	<header>
-
-
-		<div id="contenedor" >
-			<form action="ServletBusqueda">
-
-				
-
-					<div class="contenedorNav">
-
-
-
-						<div class="img-carrito">
-							<img  alt="" src="img/letra2.png">
-						</div>
-
-
-
-
-
-						<div class="Contenedor-Busquedad" >
-
-							<input style="width: 80%;" type="search"
-								placeholder="Buscar..." name="datoBusq">
-								<button style="">Buscar</button>
-						</div>
-
-						<div class="img-carrito" style="display: flex; justify-content: flex-end;">
-
-							<a href="CarritoCompra.jsp">
-								<img alt="" src="img/icono-carrito.png"
-								style="background-repeat: no-repeat; width: 60px; height: 50px;">
-							</a>
-
-						</div>
-
-
-					
-
+				<div class="img-carrito">
+					<img alt="" src="img/letra2.png">
 				</div>
-			</form>
-		</div>
+				 <!-------------------------------------------------------------------------------------------------------------------------->
 
 
-		<nav id="navegacion" >
-			<ul id="menu">
-				<li><a class="icon-home" href="index.jsp"> Inicio</a></li>
-				<li><a class="icon-angle-double-down" href="servletProducto">
-						Promociones </a>
-					<ul class="submenu">
-						<li><a href="">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
+          <!-----------------------------------------------------     MENU NAVEGACION HORIZONTAL  ------------------------------------------>
+				<div class="Contenedor-medio">
+					
+        <ul id="nav">
 
-					</ul></li>
-				<li><a class="icon-angle-double-down"
-					href="pagIndexVideoJuegos.jsp"> VideoJuegos </a>
-					<ul class="submenu">
-						<li><a href="">PlayStation</a></li>
-						<li><a href="">Nintendo</a></li>
-						<li><a href="">Advance</a></li>
-						<li><a href="">Apple</a></li>
-						<li><a href="">Acer</a></li>
-					</ul></li>
-				<li class="li-eliminado"><a href="">Preventas</a>
-					<ul class="submenu">
-						<li><a href="">VideoJuegos</a></li>
-						<li><a href="">Funko</a></li>
+            <li><a href="#s1">Videojuegos</a>
 
-					</ul></li>
-				<li class="li-eliminado"><a href="">Accesorios</a>
-					<ul class="submenu">
-						<li><a href="">teclado</a></li>
-						<li><a href="">mouse</a></li>
+                <span id="s1"></span>
 
-					</ul></li>
-				<li class="li-eliminado"><a href="#">Noticias</a></li>
-			</ul>
-		</nav>
+                <ul class="subs" >
+
+                    <li><a href="#">PlayStation</a>
+
+                        <ul>
+
+                            <li><a href="#">Consolas</a></li>
+
+                            <li><a href="#">Juegos</a></li>
+
+                            <li><a href="#">Accesorios</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li ><a href="#">Nintendo</a>
+
+                        <ul>
+
+                            <li><a href="#">Consolas </a></li>
+
+                            <li><a href="#">Juegos</a></li>
+
+                            <li><a href="#">Accesorios</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+            <li><a href="#s1">Computación</a>
+
+                <span id="s1"></span>
+
+                <ul class="subs">
+
+                    <li><a href="#">Periféricos</a>
+
+                        <ul>
+
+                            <li><a href="#">Mouse</a></li>
+
+                            <li><a href="#">Teclados </a></li>
+
+                            <li><a href="#">Audifonos </a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">Almacenamiento </a>
+
+                        <ul>
+
+                            <li><a href="#">Discos duros</a></li>
+
+                            <li><a href="#">Memorias SSD</a></li>
+
+                            <li><a href="#">Memorias Usb</a></li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li class="active"><a href="#s2">Funkos</a>
+
+                <span id="s2"></span>
+
+                <ul class="subs">
+
+                    <li><a href="#">Funko</a>
+
+                        <ul>
+
+                            <li><a href="#">Funko pop</a></li>
+
+                            <li><a href="#">Funko box collector</a></li>
+
+                            <li><a href="#"> Preventas</a></li>
+
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+
+            </li>
 
 
 
+        </ul>
+
+    
+				      <!-------------------------------------------------------------------------------------------------------------------------->
+				
+					
+				</div>
+			
+			      <!-----------------------------------------------------     BARRA BUQUEDA   ------------------------------------------>
+				<div class="img-Busquedad">
 
 
+					<img class="boton" alt="" src="img/iconoBusquedad.png"
+						style="background-repeat: no-repeat;">
+
+					<div class="Contenedor-Busquedad" style="margin-left: 7px;">
+						<input style="display: none;" class="barraOculta " type="search"
+							placeholder="Buscar..." name="datoBusq">
+					</div>
+
+				</div>       
+ 
+                  <!----------------------------------------------------------------------------------------------->
+                  
+                  
+			</div>
+
+		</header>
+
+	</form>
 
 
-
-
-	</header>
 	
 		<!--CUERPO DE LA PAGINA-->
 		<div id="content-principal">
@@ -294,6 +354,7 @@
 <!-- SCRIPT PARA USAR JQUERERY -->
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/scriptPagVideojuegos.js"></script>
+<script src="js/scriptIndex.js"></script>  <!--   --------------- MOVIMIENTO BUSCADOR ------- -->
 <script>
 	function openNav() {
 		document.getElementById("sideNavigation").style.width = "250px";
