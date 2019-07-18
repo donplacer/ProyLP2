@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<img alt="" src="botonMensajeNuevo.png">
+<img alt="" src="img/casita.png">
 
 </body>
 </html>

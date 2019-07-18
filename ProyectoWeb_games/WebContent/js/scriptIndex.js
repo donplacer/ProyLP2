@@ -21,6 +21,24 @@ $(document).ready(function(){
 
 
 */
+	
+	/*hover para la imagen el boton de inicio (Casita)*/
+	   $(".imgCasita").hover(
+	    		function(){
+	    			//hacer que todos sean transparentes
+	    			
+
+	    				 $(this).animate({opacity:0});
+	    			
+	    		},
+	    		function(){
+	    			//al salir mouse todos se hacen opacos
+	    			
+	    				 $(this).animate({opacity:1});
+	    				 
+	    		}
+	    	);
+	    
 
     $(".boton").click(function(){		
         $('.barraOculta').toggle('slow');	
