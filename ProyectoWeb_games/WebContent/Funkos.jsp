@@ -57,8 +57,18 @@
 				<div class="Contenedor-medio">
 					
         <ul id="nav">
+			
+			<li style=""><a href="index.jsp"> <img onMouseOver="cambio(0)"
+						onMouseOut="original(0)" class="imgnav" style="width: 30px;height: 30px;"  
+						src="img/imagenesNavegacion/casita.png">
+					
 
-            <li><a href="#s1">Videojuegos</a>
+
+            
+
+				</a><h2></h2></li>
+			
+            <li><a href="videojuegos.jsp">Videojuegos</a>
 
                 <span id="s1"></span>
 
@@ -133,7 +143,7 @@
 
             </li>
 
-            <li class="active"><a href="#s2">Funkos</a>
+            <li class="active"><a href="Funkos.jsp">Funkos</a>
 
                 <span id="s2"></span>
 
@@ -351,10 +361,25 @@
 
 			</div>
 		</footer>
-	</div>
-
+	
 	<!-- LADO CENTRAL DEL CUERPO -->
+		<section class="chat-container">
+		<div class="chat-button">
+			<img onMouseOver="cambio(5)"
+						onMouseOut="original(5)" class="imgnav" style="width: 70px; height: 70px;" alt=""
+				src="img/imagenesNavegacion/botonMensaje.png">
+		</div>
+		<div class="chat-content">
+			<iframe
+				src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGamesCM.SRL%2F&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+				width="340" height="500"
+				style="border: none; background-color: black; color: #44D62C; overflow: hidden"
+				scrolling="no" frameborder="0" allowTransparency="true"
+				allow="encrypted-media"></iframe>
 
+
+		</div>
+	</section>
 
 </body>
 <!-- SCRIPT PARA USAR JQUERERY -->
@@ -362,6 +387,7 @@
 <script src="js/scriptPagVideojuegos.js"></script>
 
 <script src="js/scriptIndex.js"></script>  <!--   --------------- MOVIMIENTO BUSCADOR ------- -->
+<script src="js/codigos-valida.js"></script> 
 <script>
 	function openNav() {
 		document.getElementById("sideNavigation").style.width = "250px";

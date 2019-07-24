@@ -43,7 +43,7 @@ public class TagCarruselPerifericos extends TagSupport{
 				 out.print("<div class=\"carrusel \">\r\n" + 
 					 		"\r\n" + 
 					 		"										<div class=\"div-imagen-carrusel\">\r\n" + 
-					 		"											<img class=\"imagenes-carrusel-Producto\"\r\n" + 
+					 		"											<a href=\"cargardatos?id="+p.getCodPro()+"\"><img class=\"imagenes-carrusel-Producto\"\r\n" + 
 					 		"												src=\"img/imagenesProductos/"+p.getCodPro()+".png\"\r\n" + 
 					 		"												alt=\"no img\" />\r\n" + 
 					 		"										</div>\r\n" + 

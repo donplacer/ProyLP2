@@ -44,7 +44,7 @@ private int pag;
 		 
 				 out.print("<div class=\"articulo \">\r\n" + 
 					 		"											<div class=\"div-imagen-carrusel \">\r\n" + 
-					 		"												<a href=\"detSelect.jsp?id="+p.getCodPro()+"&des="+p.getDescPro()+"&estadoPro="+p.getestadoProdu()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
+					 		"												<a href=\"cargardatos?id="+p.getCodPro()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
 					 		"													src=\"img/imagenesProductos/"+p.getCodPro()+".png \"\r\n" + 
 					 		"													alt=\" \" />\r\n</a> "+ 
 					 		"											</div>\r\n" + 

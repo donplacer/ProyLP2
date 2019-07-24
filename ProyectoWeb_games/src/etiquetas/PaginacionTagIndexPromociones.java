@@ -45,8 +45,8 @@ private int pag;
 					 		 out.print("<div class=\"carrusel \">\r\n" + 
 					 		 
           "                                         <div class=\"div-imagen-carrusel \">\r\n" + 
- 		"												<a  href=\"detSelect.jsp?id="+p.getCodPro()+"&des="+p.getDescPro()+"&estadoPro="+p.getestadoProdu()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
- 		"													src=\"img/imagenesProductos/"+p.getCodPro()+".png \"\r\n" + 
+ 		"												<a href=\"cargardatos?id="+p.getCodPro()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
+ 		"													src=\"img/imagenesProductos/"+p.getCodPro()+" \"\r\n" + 
  		"													alt=\" \" />\r\n</a> "+ 
  		"											</div>\r\n" + 
  		"											<div class=\"div-contenido-carrusel \">\r\n" + 
