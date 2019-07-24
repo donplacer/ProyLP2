@@ -56,7 +56,17 @@
 				<div class="Contenedor-medio">
 					
         <ul id="nav">
+			<li style=""><a href="index.jsp"> <img onMouseOver="cambio(0)"
+						onMouseOut="original(0)" class="imgnav" style="width: 30px;height: 30px;"  
+						src="img/imagenesNavegacion/casita.png">
+					
 
+
+            
+
+				</a><h2></h2></li>
+			
+			
             <li><a href="videojuegos.jsp">Videojuegos</a>
 
                 <span id="s1"></span>
@@ -132,7 +142,7 @@
 
             </li>
 
-            <li class="active"><a href="#s2">Funkos</a>
+            <li class="active"><a href="Funkos.jsp">Funkos</a>
 
                 <span id="s2"></span>
 
