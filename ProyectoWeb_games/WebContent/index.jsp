@@ -62,10 +62,10 @@
 
 
           <!-----------------------------------------------------     MENU NAVEGACION HORIZONTAL  ------------------------------------------>
-				<div class="Contenedor-medio">
+				<div class="Contenedor-medio" >
 					
-        <ul id="nav">
-			<li style=""><a href="index.jsp"> <img onMouseOver="cambio(0)"
+        <ul id="nav" >
+			<li ><a href="index.jsp"> <img onMouseOver="cambio(0)"
 						onMouseOut="original(0)" class="imgnav" style="width: 30px;height: 30px;"  
 						src="img/imagenesNavegacion/casita.png">
 
@@ -229,8 +229,8 @@
 	<div class="flexslider" style="height: 600px; margin-top: 70px;">
 		<ul class="slides" style="width: 100%;">
 
-			<li><a href="#"><img  class="imagenes-Carrusel-Principal"
-					alt="" src="img/razer.jpg"></a></li>
+			<li><a href="#"><img style="width: 100%;"  class="imagenes-Carrusel-Principal"
+					alt="" src="img/disenio3.jpg"></a></li>
 
 			<li><a href="#"><img  class="imagenes-Carrusel-Principal"
 					src="img/sorteos.jpg" alt=""></a></li>

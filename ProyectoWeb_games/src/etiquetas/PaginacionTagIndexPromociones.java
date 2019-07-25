@@ -46,7 +46,7 @@ private int pag;
 					 		 
           "                                         <div class=\"div-imagen-carrusel \">\r\n" + 
  		"												<a href=\"cargardatos?id="+p.getCodPro()+"\"><img class=\"imagenes-carrusel-Producto \"\r\n" + 
- 		"													src=\"img/imagenesProductos/"+p.getCodPro()+" \"\r\n" + 
+ 		"													src=\"img/ps4.png \"\r\n" + 
  		"													alt=\" \" />\r\n</a> "+ 
  		"											</div>\r\n" + 
  		"											<div class=\"div-contenido-carrusel \">\r\n" + 
